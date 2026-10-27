@@ -1,0 +1,19 @@
+<launch>
+  <arg name="ns" default="$(env ROS_NAMESPACE '')" />
+  <arg name="rvizconfig" default="$(find-pkg-share amsagv)/rviz/world.rviz" />
+  <arg name="model" default="$(find-pkg-share amsagv)/urdf/world.urdf.xacro" />
+  <arg name="show" default="true" />
+
+  <group>
+    <push_ros_namespace namespace="$(var ns)" />
+    
+    <node name="world_model" pkg="robot_state_publisher" exec="robot_state_publisher">
+      <param name="robot_description" value="$(command 'xacro $(var model)')" type="str" />
+      <remap from="robot_description" to="world_model" />
+      <remap from="/tf" to="world_model/tf" />
+      <remap from="/tf_static" to="world_model/tf_static" />
+    </node>
+
+    <node name="rviz" pkg="rviz2" exec="rviz2" args="-d $(var rvizconfig)" if="$(var show)" />
+  </group>
+</launch>

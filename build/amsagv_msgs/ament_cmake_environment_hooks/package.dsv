@@ -1,0 +1,5 @@
+source;share/amsagv_msgs/local_setup.bash
+source;share/amsagv_msgs/local_setup.dsv
+source;share/amsagv_msgs/local_setup.fish
+source;share/amsagv_msgs/local_setup.sh
+source;share/amsagv_msgs/local_setup.zsh

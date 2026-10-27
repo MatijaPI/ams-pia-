@@ -1,0 +1,20 @@
+{
+  "package_name": "amsagv_msgs",
+  "output_dir": "/home/pia/ros/build/amsagv_msgs/rosidl_generator_type_description/amsagv_msgs",
+  "idl_tuples": [
+    "/home/pia/ros/build/amsagv_msgs/rosidl_adapter/amsagv_msgs:msg/Action.idl",
+    "/home/pia/ros/build/amsagv_msgs/rosidl_adapter/amsagv_msgs:msg/ActionStamped.idl",
+    "/home/pia/ros/build/amsagv_msgs/rosidl_adapter/amsagv_msgs:msg/Actions.idl",
+    "/home/pia/ros/build/amsagv_msgs/rosidl_adapter/amsagv_msgs:msg/ActionsStamped.idl",
+    "/home/pia/ros/build/amsagv_msgs/rosidl_adapter/amsagv_msgs:msg/Line.idl",
+    "/home/pia/ros/build/amsagv_msgs/rosidl_adapter/amsagv_msgs:msg/LineStamped.idl",
+    "/home/pia/ros/build/amsagv_msgs/rosidl_adapter/amsagv_msgs:msg/Tag.idl",
+    "/home/pia/ros/build/amsagv_msgs/rosidl_adapter/amsagv_msgs:msg/TagStamped.idl",
+    "/home/pia/ros/build/amsagv_msgs/rosidl_adapter/amsagv_msgs:msg/Tags.idl",
+    "/home/pia/ros/build/amsagv_msgs/rosidl_adapter/amsagv_msgs:msg/TagsStamped.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/lyrical/share/std_msgs/",
+    "builtin_interfaces:/opt/ros/lyrical/share/builtin_interfaces/"
+  ]
+}

@@ -1,0 +1,16 @@
+[console_scripts]
+agv = amsagv.agv:main
+control_line = amsagv.control_line:main
+control_point = amsagv.control_point:main
+control_point_odom = amsagv.control_point_odom:main
+display = amsagv.display:main
+front = amsagv.front:main
+localisation = amsagv.localisation:main
+localisation_gps = amsagv.localisation_gps:main
+path_converter = amsagv.path_converter:main
+path_planning = amsagv.path_planning:main
+set_odom_frame = amsagv.set_odom_frame:main
+tag_beep = amsagv.tag_beep:main
+tag_converter = amsagv.tag_converter:main
+tag_reader = amsagv.tag_reader:main
+tags_converters = amsagv.tags_converters:main

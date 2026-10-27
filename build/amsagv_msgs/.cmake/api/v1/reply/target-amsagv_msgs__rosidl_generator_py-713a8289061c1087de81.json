@@ -1,0 +1,893 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "libamsagv_msgs__rosidl_generator_py.so"
+		}
+	],
+	"backtrace" : 5,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"ament_execute_extensions",
+			"rosidl_generate_interfaces",
+			"_install",
+			"ament_cmake_symlink_install_targets",
+			"install",
+			"target_link_libraries",
+			"set_target_properties",
+			"find_package",
+			"add_dependencies",
+			"add_definitions",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"/opt/ros/lyrical/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake",
+			"/opt/ros/lyrical/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake",
+			"/opt/ros/lyrical/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake",
+			"CMakeLists.txt",
+			"/opt/ros/lyrical/share/ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_targets.cmake",
+			"/opt/ros/lyrical/share/ament_cmake_core/cmake/symlink_install/install.cmake",
+			"/opt/ros/lyrical/share/std_msgs/cmake/export_std_msgs__rosidl_typesupport_fastrtps_cExport.cmake",
+			"/opt/ros/lyrical/share/std_msgs/cmake/ament_cmake_export_targets-extras.cmake",
+			"/opt/ros/lyrical/share/std_msgs/cmake/std_msgsConfig.cmake",
+			"/opt/ros/lyrical/share/std_msgs/cmake/export_std_msgs__rosidl_typesupport_fastrtps_cppExport.cmake",
+			"/opt/ros/lyrical/share/rmw/cmake/rmwExport.cmake",
+			"/opt/ros/lyrical/share/rmw/cmake/ament_cmake_export_targets-extras.cmake",
+			"/opt/ros/lyrical/share/rmw/cmake/rmwConfig.cmake",
+			"/opt/ros/lyrical/share/rosidl_typesupport_fastrtps_cpp/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/opt/ros/lyrical/share/rosidl_typesupport_fastrtps_cpp/cmake/rosidl_typesupport_fastrtps_cppConfig.cmake",
+			"/opt/ros/lyrical/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/opt/ros/lyrical/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake",
+			"/opt/ros/lyrical/share/std_msgs/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/opt/ros/lyrical/share/std_msgs/cmake/std_msgs__rosidl_typesupport_introspection_cppExport.cmake",
+			"/opt/ros/lyrical/share/std_msgs/cmake/std_msgs__rosidl_typesupport_introspection_cExport.cmake",
+			"/opt/ros/lyrical/share/rosidl_generator_c/cmake/rosidl_generator_c_generate_interfaces.cmake",
+			"/opt/ros/lyrical/share/rcutils/cmake/rcutilsExport.cmake",
+			"/opt/ros/lyrical/share/rcutils/cmake/ament_cmake_export_targets-extras.cmake",
+			"/opt/ros/lyrical/share/rcutils/cmake/rcutilsConfig.cmake",
+			"/opt/ros/lyrical/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/opt/ros/lyrical/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake",
+			"/opt/ros/lyrical/share/ament_cmake_ros_core/cmake/ament_cmake_ros_core-extras.cmake",
+			"/opt/ros/lyrical/share/ament_cmake_ros_core/cmake/ament_cmake_ros_coreConfig.cmake",
+			"/opt/ros/lyrical/share/rcutils/cmake/ament_cmake_export_dependencies-extras.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 13,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 280,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 48,
+				"parent" : 2
+			},
+			{
+				"file" : 0,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 156,
+				"parent" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 254,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 37,
+				"parent" : 6
+			},
+			{
+				"command" : 4,
+				"file" : 4,
+				"line" : 50,
+				"parent" : 7
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 182,
+				"parent" : 4
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 248,
+				"parent" : 4
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 248,
+				"parent" : 4
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 157,
+				"parent" : 4
+			},
+			{
+				"command" : 9,
+				"file" : 3,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"file" : 8,
+				"parent" : 13
+			},
+			{
+				"command" : 1,
+				"file" : 8,
+				"line" : 41,
+				"parent" : 14
+			},
+			{
+				"file" : 7,
+				"parent" : 15
+			},
+			{
+				"command" : 1,
+				"file" : 7,
+				"line" : 9,
+				"parent" : 16
+			},
+			{
+				"file" : 6,
+				"parent" : 17
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 61,
+				"parent" : 18
+			},
+			{
+				"command" : 1,
+				"file" : 7,
+				"line" : 9,
+				"parent" : 16
+			},
+			{
+				"file" : 9,
+				"parent" : 20
+			},
+			{
+				"command" : 8,
+				"file" : 9,
+				"line" : 61,
+				"parent" : 21
+			},
+			{
+				"command" : 1,
+				"file" : 8,
+				"line" : 41,
+				"parent" : 14
+			},
+			{
+				"file" : 17,
+				"parent" : 23
+			},
+			{
+				"command" : 9,
+				"file" : 17,
+				"line" : 21,
+				"parent" : 24
+			},
+			{
+				"file" : 16,
+				"parent" : 25
+			},
+			{
+				"command" : 1,
+				"file" : 16,
+				"line" : 41,
+				"parent" : 26
+			},
+			{
+				"file" : 15,
+				"parent" : 27
+			},
+			{
+				"command" : 9,
+				"file" : 15,
+				"line" : 21,
+				"parent" : 28
+			},
+			{
+				"file" : 14,
+				"parent" : 29
+			},
+			{
+				"command" : 1,
+				"file" : 14,
+				"line" : 41,
+				"parent" : 30
+			},
+			{
+				"file" : 13,
+				"parent" : 31
+			},
+			{
+				"command" : 9,
+				"file" : 13,
+				"line" : 21,
+				"parent" : 32
+			},
+			{
+				"file" : 12,
+				"parent" : 33
+			},
+			{
+				"command" : 1,
+				"file" : 12,
+				"line" : 41,
+				"parent" : 34
+			},
+			{
+				"file" : 11,
+				"parent" : 35
+			},
+			{
+				"command" : 1,
+				"file" : 11,
+				"line" : 9,
+				"parent" : 36
+			},
+			{
+				"file" : 10,
+				"parent" : 37
+			},
+			{
+				"command" : 8,
+				"file" : 10,
+				"line" : 61,
+				"parent" : 38
+			},
+			{
+				"command" : 1,
+				"file" : 7,
+				"line" : 9,
+				"parent" : 16
+			},
+			{
+				"file" : 18,
+				"parent" : 40
+			},
+			{
+				"command" : 8,
+				"file" : 18,
+				"line" : 61,
+				"parent" : 41
+			},
+			{
+				"command" : 1,
+				"file" : 7,
+				"line" : 9,
+				"parent" : 16
+			},
+			{
+				"file" : 19,
+				"parent" : 43
+			},
+			{
+				"command" : 8,
+				"file" : 19,
+				"line" : 61,
+				"parent" : 44
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 165,
+				"parent" : 4
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 48,
+				"parent" : 2
+			},
+			{
+				"file" : 20,
+				"parent" : 47
+			},
+			{
+				"command" : 7,
+				"file" : 20,
+				"line" : 170,
+				"parent" : 48
+			},
+			{
+				"command" : 9,
+				"file" : 15,
+				"line" : 21,
+				"parent" : 28
+			},
+			{
+				"file" : 25,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 25,
+				"line" : 41,
+				"parent" : 51
+			},
+			{
+				"file" : 24,
+				"parent" : 52
+			},
+			{
+				"command" : 9,
+				"file" : 24,
+				"line" : 21,
+				"parent" : 53
+			},
+			{
+				"file" : 23,
+				"parent" : 54
+			},
+			{
+				"command" : 1,
+				"file" : 23,
+				"line" : 41,
+				"parent" : 55
+			},
+			{
+				"file" : 22,
+				"parent" : 56
+			},
+			{
+				"command" : 1,
+				"file" : 22,
+				"line" : 9,
+				"parent" : 57
+			},
+			{
+				"file" : 21,
+				"parent" : 58
+			},
+			{
+				"command" : 8,
+				"file" : 21,
+				"line" : 61,
+				"parent" : 59
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 159,
+				"parent" : 4
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 251,
+				"parent" : 4
+			},
+			{
+				"command" : 1,
+				"file" : 23,
+				"line" : 41,
+				"parent" : 55
+			},
+			{
+				"file" : 28,
+				"parent" : 63
+			},
+			{
+				"command" : 9,
+				"file" : 28,
+				"line" : 21,
+				"parent" : 64
+			},
+			{
+				"file" : 27,
+				"parent" : 65
+			},
+			{
+				"command" : 1,
+				"file" : 27,
+				"line" : 41,
+				"parent" : 66
+			},
+			{
+				"file" : 26,
+				"parent" : 67
+			},
+			{
+				"command" : 11,
+				"file" : 26,
+				"line" : 18,
+				"parent" : 68
+			},
+			{
+				"command" : 12,
+				"file" : 0,
+				"line" : 170,
+				"parent" : 4
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-fPIC"
+				},
+				{
+					"backtrace" : 62,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 62,
+					"fragment" : "-Wextra"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 10,
+					"define" : "FASTCDR_DYN_LINK"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "RCUTILS_ENABLE_FAULT_INJECTION"
+				},
+				{
+					"backtrace" : 69,
+					"define" : "ROS_PACKAGE_NAME=\"amsagv_msgs\""
+				},
+				{
+					"define" : "amsagv_msgs__rosidl_generator_py_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 70,
+					"path" : "/home/pia/ros/build/amsagv_msgs/rosidl_generator_c"
+				},
+				{
+					"backtrace" : 70,
+					"path" : "/home/pia/ros/build/amsagv_msgs/rosidl_generator_py"
+				},
+				{
+					"backtrace" : 12,
+					"isSystem" : true,
+					"path" : "/opt/ros/lyrical/include/std_msgs"
+				},
+				{
+					"backtrace" : 12,
+					"isSystem" : true,
+					"path" : "/opt/ros/lyrical/include/builtin_interfaces"
+				},
+				{
+					"backtrace" : 12,
+					"isSystem" : true,
+					"path" : "/opt/ros/lyrical/include/rosidl_runtime_c"
+				},
+				{
+					"backtrace" : 12,
+					"isSystem" : true,
+					"path" : "/opt/ros/lyrical/include/rcutils"
+				},
+				{
+					"backtrace" : 12,
+					"isSystem" : true,
+					"path" : "/opt/ros/lyrical/include/rosidl_buffer"
+				},
+				{
+					"backtrace" : 12,
+					"isSystem" : true,
+					"path" : "/opt/ros/lyrical/include/rosidl_typesupport_interface"
+				},
+				{
+					"backtrace" : 46,
+					"isSystem" : true,
+					"path" : "/usr/lib/aarch64-linux-gnu/python3-numpy/numpy/_core/include"
+				},
+				{
+					"backtrace" : 46,
+					"isSystem" : true,
+					"path" : "/usr/include/python3.13"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "/opt/ros/lyrical/include"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "/opt/ros/lyrical/include/rosidl_runtime_cpp"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "/opt/ros/lyrical/include/rosidl_typesupport_fastrtps_cpp"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "/opt/ros/lyrical/include/rosidl_buffer_backend"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "/opt/ros/lyrical/include/rmw"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "/opt/ros/lyrical/include/rosidl_dynamic_typesupport"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "/opt/ros/lyrical/include/rosidl_typesupport_fastrtps_c"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "/opt/ros/lyrical/include/rosidl_typesupport_introspection_c"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "/opt/ros/lyrical/include/rosidl_typesupport_introspection_cpp"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 12,
+			"id" : "amsagv_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 61,
+			"id" : "amsagv_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 61,
+			"id" : "amsagv_msgs__py::@4b97891bcef47f37b3c1"
+		}
+	],
+	"id" : "amsagv_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 8,
+				"path" : "lib"
+			},
+			{
+				"backtrace" : 8,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/home/pia/ros/install/amsagv_msgs"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/pia/ros/build/amsagv_msgs:/opt/ros/lyrical/lib:",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "libamsagv_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "/opt/ros/lyrical/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "/opt/ros/lyrical/lib/libstd_msgs__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "/opt/ros/lyrical/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "/opt/ros/lyrical/lib/libstd_msgs__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "/opt/ros/lyrical/lib/libstd_msgs__rosidl_generator_py.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "/opt/ros/lyrical/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "/opt/ros/lyrical/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "/opt/ros/lyrical/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "/opt/ros/lyrical/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "/opt/ros/lyrical/lib/libbuiltin_interfaces__rosidl_generator_py.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "libamsagv_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "/opt/ros/lyrical/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "/opt/ros/lyrical/lib/libstd_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "/opt/ros/lyrical/lib/libstd_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "/opt/ros/lyrical/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 19,
+				"fragment" : "/opt/ros/lyrical/lib/librosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 19,
+				"fragment" : "/opt/ros/lyrical/lib/librosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 19,
+				"fragment" : "/opt/ros/lyrical/lib/libfastcdr.so.2.3.6",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "/opt/ros/lyrical/lib/librmw.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 39,
+				"fragment" : "/opt/ros/lyrical/lib/librosidl_dynamic_typesupport.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 42,
+				"fragment" : "/opt/ros/lyrical/lib/librosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 45,
+				"fragment" : "/opt/ros/lyrical/lib/librosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 46,
+				"fragment" : "/usr/lib/aarch64-linux-gnu/libpython3.13.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "/opt/ros/lyrical/lib/libbuiltin_interfaces__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "/opt/ros/lyrical/lib/libbuiltin_interfaces__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 49,
+				"fragment" : "/opt/ros/lyrical/lib/librosidl_runtime_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 45,
+				"fragment" : "/opt/ros/lyrical/lib/librosidl_buffer.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 49,
+				"fragment" : "/opt/ros/lyrical/lib/librcutils.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 60,
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 60,
+				"fragment" : "-latomic",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,-rpath-link,/opt/ros/lyrical/lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "amsagv_msgs__rosidl_generator_py",
+	"nameOnDisk" : "libamsagv_msgs__rosidl_generator_py.so",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/pia/ros/build/amsagv_msgs/rosidl_generator_py/amsagv_msgs/msg/_action_s.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/pia/ros/build/amsagv_msgs/rosidl_generator_py/amsagv_msgs/msg/_action_stamped_s.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/pia/ros/build/amsagv_msgs/rosidl_generator_py/amsagv_msgs/msg/_actions_s.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/pia/ros/build/amsagv_msgs/rosidl_generator_py/amsagv_msgs/msg/_actions_stamped_s.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/pia/ros/build/amsagv_msgs/rosidl_generator_py/amsagv_msgs/msg/_line_s.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/pia/ros/build/amsagv_msgs/rosidl_generator_py/amsagv_msgs/msg/_line_stamped_s.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/pia/ros/build/amsagv_msgs/rosidl_generator_py/amsagv_msgs/msg/_tag_s.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/pia/ros/build/amsagv_msgs/rosidl_generator_py/amsagv_msgs/msg/_tag_stamped_s.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/pia/ros/build/amsagv_msgs/rosidl_generator_py/amsagv_msgs/msg/_tags_s.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/pia/ros/build/amsagv_msgs/rosidl_generator_py/amsagv_msgs/msg/_tags_stamped_s.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

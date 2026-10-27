@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/pia/ros/src/amsagv_msgs" FILES "/opt/ros/lyrical/lib/python3.13/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/amsagv_msgs/environment")

@@ -1,0 +1,55 @@
+[14.038s] Invoking command in '/home/pia/ros/build/amsagv': AMENT_PREFIX_PATH=/home/pia/ros/install/amsagv_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pia/ros/install/amsagv_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/pia/ros/install/amsagv_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pia/ros/build/amsagv/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pia/ros/install/amsagv/lib/python3.13/site-packages:/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/pia/ros/build/amsagv/build --no-deps symlink_data
+[17.885s] running develop
+[20.730s] running egg_info
+[21.044s] creating amsagv.egg-info
+[21.045s] writing amsagv.egg-info/PKG-INFO
+[21.049s] writing dependency_links to amsagv.egg-info/dependency_links.txt
+[21.052s] writing entry points to amsagv.egg-info/entry_points.txt
+[21.054s] writing requirements to amsagv.egg-info/requires.txt
+[21.055s] writing top-level names to amsagv.egg-info/top_level.txt
+[21.056s] writing manifest file 'amsagv.egg-info/SOURCES.txt'
+[21.693s] reading manifest file 'amsagv.egg-info/SOURCES.txt'
+[21.701s] writing manifest file 'amsagv.egg-info/SOURCES.txt'
+[22.021s] running build_ext
+[22.021s] Creating /home/pia/ros/install/amsagv/lib/python3.13/site-packages/amsagv.egg-link (link to .)
+[22.027s] Installing agv script to /home/pia/ros/install/amsagv/lib/amsagv
+[22.029s] Installing control_line script to /home/pia/ros/install/amsagv/lib/amsagv
+[22.030s] Installing control_point script to /home/pia/ros/install/amsagv/lib/amsagv
+[22.031s] Installing control_point_odom script to /home/pia/ros/install/amsagv/lib/amsagv
+[22.032s] Installing display script to /home/pia/ros/install/amsagv/lib/amsagv
+[22.034s] Installing front script to /home/pia/ros/install/amsagv/lib/amsagv
+[22.035s] Installing localisation script to /home/pia/ros/install/amsagv/lib/amsagv
+[22.036s] Installing localisation_gps script to /home/pia/ros/install/amsagv/lib/amsagv
+[22.037s] Installing path_converter script to /home/pia/ros/install/amsagv/lib/amsagv
+[22.038s] Installing path_planning script to /home/pia/ros/install/amsagv/lib/amsagv
+[22.040s] Installing set_odom_frame script to /home/pia/ros/install/amsagv/lib/amsagv
+[22.041s] Installing tag_beep script to /home/pia/ros/install/amsagv/lib/amsagv
+[22.042s] Installing tag_converter script to /home/pia/ros/install/amsagv/lib/amsagv
+[22.043s] Installing tag_reader script to /home/pia/ros/install/amsagv/lib/amsagv
+[22.045s] Installing tags_converters script to /home/pia/ros/install/amsagv/lib/amsagv
+[22.047s] 
+[22.047s] Installed /home/pia/ros/build/amsagv
+[22.048s] running symlink_data
+[22.049s] creating /home/pia/ros/install/amsagv/share/ament_index/resource_index/packages
+[22.051s] symbolically linking /home/pia/ros/build/amsagv/resource/amsagv -> /home/pia/ros/install/amsagv/share/ament_index/resource_index/packages
+[22.052s] symbolically linking /home/pia/ros/build/amsagv/package.xml -> /home/pia/ros/install/amsagv/share/amsagv
+[22.053s] creating /home/pia/ros/install/amsagv/share/amsagv/launch
+[22.055s] symbolically linking /home/pia/ros/build/amsagv/launch/rviz.launch.xml -> /home/pia/ros/install/amsagv/share/amsagv/launch
+[22.056s] symbolically linking /home/pia/ros/build/amsagv/launch/agv.launch.xml -> /home/pia/ros/install/amsagv/share/amsagv/launch
+[22.057s] creating /home/pia/ros/install/amsagv/share/amsagv/urdf
+[22.058s] symbolically linking /home/pia/ros/build/amsagv/urdf/world.urdf.xacro -> /home/pia/ros/install/amsagv/share/amsagv/urdf
+[22.060s] creating /home/pia/ros/install/amsagv/share/amsagv/meshes
+[22.061s] symbolically linking /home/pia/ros/build/amsagv/meshes/agv1.dae -> /home/pia/ros/install/amsagv/share/amsagv/meshes
+[22.062s] symbolically linking /home/pia/ros/build/amsagv/meshes/ground.dae -> /home/pia/ros/install/amsagv/share/amsagv/meshes
+[22.063s] symbolically linking /home/pia/ros/build/amsagv/meshes/agv.dae -> /home/pia/ros/install/amsagv/share/amsagv/meshes
+[22.064s] symbolically linking /home/pia/ros/build/amsagv/meshes/agv3.dae -> /home/pia/ros/install/amsagv/share/amsagv/meshes
+[22.065s] symbolically linking /home/pia/ros/build/amsagv/meshes/agv2.dae -> /home/pia/ros/install/amsagv/share/amsagv/meshes
+[22.066s] symbolically linking /home/pia/ros/build/amsagv/meshes/agv4.dae -> /home/pia/ros/install/amsagv/share/amsagv/meshes
+[22.067s] symbolically linking /home/pia/ros/build/amsagv/meshes/agv5.dae -> /home/pia/ros/install/amsagv/share/amsagv/meshes
+[22.068s] symbolically linking /home/pia/ros/build/amsagv/meshes/agv0.dae -> /home/pia/ros/install/amsagv/share/amsagv/meshes
+[22.069s] symbolically linking /home/pia/ros/build/amsagv/meshes/ground.png -> /home/pia/ros/install/amsagv/share/amsagv/meshes
+[22.070s] creating /home/pia/ros/install/amsagv/share/amsagv/rviz
+[22.071s] symbolically linking /home/pia/ros/build/amsagv/rviz/world.rviz -> /home/pia/ros/install/amsagv/share/amsagv/rviz
+[22.073s] creating /home/pia/ros/install/amsagv/share/amsagv/data
+[22.073s] symbolically linking /home/pia/ros/build/amsagv/data/complete.oga -> /home/pia/ros/install/amsagv/share/amsagv/data
+[22.447s] Invoked command in '/home/pia/ros/build/amsagv' returned '0': AMENT_PREFIX_PATH=/home/pia/ros/install/amsagv_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pia/ros/install/amsagv_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/pia/ros/install/amsagv_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pia/ros/build/amsagv/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pia/ros/install/amsagv/lib/python3.13/site-packages:/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/pia/ros/build/amsagv/build --no-deps symlink_data

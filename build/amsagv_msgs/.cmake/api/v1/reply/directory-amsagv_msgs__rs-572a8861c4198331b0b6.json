@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "amsagv_msgs__rs",
+		"source" : "/home/pia/ros/build/amsagv_msgs/amsagv_msgs__rs"
+	}
+}

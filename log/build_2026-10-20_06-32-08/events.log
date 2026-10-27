@@ -1,0 +1,3228 @@
+[0.000000] (-) TimerEvent: {}
+[0.001650] (amsagv_msgs) JobQueued: {'identifier': 'amsagv_msgs', 'dependencies': OrderedDict()}
+[0.002243] (amsagv) JobQueued: {'identifier': 'amsagv', 'dependencies': OrderedDict({'amsagv_msgs': '/home/pia/ros/install/amsagv_msgs'})}
+[0.003786] (amsagv_msgs) JobStarted: {'identifier': 'amsagv_msgs'}
+[0.098806] (-) TimerEvent: {}
+[0.146410] (amsagv_msgs) JobProgress: {'identifier': 'amsagv_msgs', 'progress': 'cmake'}
+[0.149830] (amsagv_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/pia/ros/src/amsagv_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/pia/ros/install/amsagv_msgs'], 'cwd': '/home/pia/ros/build/amsagv_msgs', 'env': OrderedDict({'USER': 'pia', 'SSH_CLIENT': '10.8.134.103 53486 22', 'ROS_NAMESPACE': '/moi', 'TEXTDOMAIN': 'pam_chksshpwd', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/lyrical/opt/zenoh_cpp_vendor/lib:/opt/ros/lyrical/opt/gz_math_vendor/lib:/opt/ros/lyrical/opt/gz_utils_vendor/lib:/opt/ros/lyrical/opt/rviz_ogre_vendor/lib:/opt/ros/lyrical/opt/mimick_vendor/lib:/opt/ros/lyrical/opt/gz_cmake_vendor/lib:/opt/ros/lyrical/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pia', 'OLDPWD': '/home/pia', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DPKG_DEB_THREADS_MAX': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLCON_PREFIX_PATH': '/opt/ros/lyrical', 'ROS_DISTRO': 'lyrical', 'LOGNAME': 'pia', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/opt/ros/lyrical/lib/aarch64-linux-gnu/pkgconfig:/opt/ros/lyrical/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '39', 'PATH': '/opt/ros/lyrical/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'en_GB.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.7z=01;31:*.ace=01;31:*.alz=01;31:*.apk=01;31:*.arc=01;31:*.arj=01;31:*.bz=01;31:*.bz2=01;31:*.cab=01;31:*.cpio=01;31:*.crate=01;31:*.deb=01;31:*.drpm=01;31:*.dwm=01;31:*.dz=01;31:*.ear=01;31:*.egg=01;31:*.esd=01;31:*.gz=01;31:*.jar=01;31:*.lha=01;31:*.lrz=01;31:*.lz=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.lzo=01;31:*.pyz=01;31:*.rar=01;31:*.rpm=01;31:*.rz=01;31:*.sar=01;31:*.swm=01;31:*.t7z=01;31:*.tar=01;31:*.taz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tgz=01;31:*.tlz=01;31:*.txz=01;31:*.tz=01;31:*.tzo=01;31:*.tzst=01;31:*.udeb=01;31:*.war=01;31:*.whl=01;31:*.wim=01;31:*.xz=01;31:*.z=01;31:*.zip=01;31:*.zoo=01;31:*.zst=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.jxl=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '26', 'AMENT_PREFIX_PATH': '/opt/ros/lyrical', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/pia/ros/build/amsagv_msgs', 'SSH_CONNECTION': '10.8.134.103 53486 10.8.134.126 22', 'PYTHONPATH': '/opt/ros/lyrical/opt/gz_math_vendor/lib/python:/opt/ros/lyrical/lib/python3.13/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/lyrical/opt/gz_math_vendor:/opt/ros/lyrical/opt/gz_utils_vendor:/opt/ros/lyrical/opt/gz_cmake_vendor:/opt/ros/lyrical'}), 'shell': False}
+[0.199061] (-) TimerEvent: {}
+[0.300059] (-) TimerEvent: {}
+[0.400986] (-) TimerEvent: {}
+[0.501972] (-) TimerEvent: {}
+[0.602969] (-) TimerEvent: {}
+[0.703889] (-) TimerEvent: {}
+[0.804809] (-) TimerEvent: {}
+[0.905858] (-) TimerEvent: {}
+[1.006776] (-) TimerEvent: {}
+[1.107705] (-) TimerEvent: {}
+[1.208623] (-) TimerEvent: {}
+[1.309599] (-) TimerEvent: {}
+[1.410646] (-) TimerEvent: {}
+[1.511622] (-) TimerEvent: {}
+[1.612662] (-) TimerEvent: {}
+[1.713869] (-) TimerEvent: {}
+[1.815109] (-) TimerEvent: {}
+[1.916264] (-) TimerEvent: {}
+[2.017175] (-) TimerEvent: {}
+[2.118147] (-) TimerEvent: {}
+[2.219077] (-) TimerEvent: {}
+[2.320034] (-) TimerEvent: {}
+[2.421051] (-) TimerEvent: {}
+[2.522291] (-) TimerEvent: {}
+[2.565773] (amsagv_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 14.2.0\n'}
+[2.622536] (-) TimerEvent: {}
+[2.723503] (-) TimerEvent: {}
+[2.824489] (-) TimerEvent: {}
+[2.925451] (-) TimerEvent: {}
+[3.026369] (-) TimerEvent: {}
+[3.127328] (-) TimerEvent: {}
+[3.228457] (-) TimerEvent: {}
+[3.329409] (-) TimerEvent: {}
+[3.430398] (-) TimerEvent: {}
+[3.531360] (-) TimerEvent: {}
+[3.632315] (-) TimerEvent: {}
+[3.733449] (-) TimerEvent: {}
+[3.834723] (-) TimerEvent: {}
+[3.935801] (-) TimerEvent: {}
+[4.019894] (amsagv_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 14.2.0\n'}
+[4.036022] (-) TimerEvent: {}
+[4.120889] (amsagv_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[4.136269] (-) TimerEvent: {}
+[4.237415] (-) TimerEvent: {}
+[4.338331] (-) TimerEvent: {}
+[4.439249] (-) TimerEvent: {}
+[4.540189] (-) TimerEvent: {}
+[4.641169] (-) TimerEvent: {}
+[4.742223] (-) TimerEvent: {}
+[4.843214] (-) TimerEvent: {}
+[4.930300] (amsagv_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[4.943407] (-) TimerEvent: {}
+[5.044312] (-) TimerEvent: {}
+[5.087505] (amsagv_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[5.092776] (amsagv_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[5.097530] (amsagv_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[5.144577] (-) TimerEvent: {}
+[5.187110] (amsagv_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[5.244831] (-) TimerEvent: {}
+[5.345906] (-) TimerEvent: {}
+[5.446915] (-) TimerEvent: {}
+[5.547890] (-) TimerEvent: {}
+[5.648844] (-) TimerEvent: {}
+[5.749945] (-) TimerEvent: {}
+[5.851053] (-) TimerEvent: {}
+[5.947658] (amsagv_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[5.951142] (-) TimerEvent: {}
+[6.051929] (-) TimerEvent: {}
+[6.103756] (amsagv_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[6.106256] (amsagv_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.111879] (amsagv_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.152147] (-) TimerEvent: {}
+[6.184517] (amsagv_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.8.8 (/opt/ros/lyrical/share/ament_cmake/cmake)\n'}
+[6.252388] (-) TimerEvent: {}
+[6.353396] (-) TimerEvent: {}
+[6.454329] (-) TimerEvent: {}
+[6.555231] (-) TimerEvent: {}
+[6.656095] (-) TimerEvent: {}
+[6.757007] (-) TimerEvent: {}
+[6.858133] (-) TimerEvent: {}
+[6.959299] (-) TimerEvent: {}
+[7.060270] (-) TimerEvent: {}
+[7.161243] (-) TimerEvent: {}
+[7.262227] (-) TimerEvent: {}
+[7.363137] (-) TimerEvent: {}
+[7.464094] (-) TimerEvent: {}
+[7.565095] (-) TimerEvent: {}
+[7.666104] (-) TimerEvent: {}
+[7.766991] (-) TimerEvent: {}
+[7.867913] (-) TimerEvent: {}
+[7.968872] (-) TimerEvent: {}
+[8.069954] (-) TimerEvent: {}
+[8.122933] (amsagv_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[8.170180] (-) TimerEvent: {}
+[8.271135] (-) TimerEvent: {}
+[8.372224] (-) TimerEvent: {}
+[8.380348] (amsagv_msgs) StdoutLine: {'line': b'-- Found std_msgs: 5.9.3 (/opt/ros/lyrical/share/std_msgs/cmake)\n'}
+[8.472479] (-) TimerEvent: {}
+[8.573478] (-) TimerEvent: {}
+[8.674430] (-) TimerEvent: {}
+[8.695265] (amsagv_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_c/cmake)\n'}
+[8.773892] (amsagv_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_cpp/cmake)\n'}
+[8.774897] (-) TimerEvent: {}
+[8.875700] (-) TimerEvent: {}
+[8.926381] (amsagv_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[8.975939] (-) TimerEvent: {}
+[9.058792] (amsagv_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[9.076152] (-) TimerEvent: {}
+[9.177100] (-) TimerEvent: {}
+[9.278151] (-) TimerEvent: {}
+[9.350147] (amsagv_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.8.1 (/opt/ros/lyrical/share/rosidl_default_generators/cmake)\n'}
+[9.378365] (-) TimerEvent: {}
+[9.478990] (amsagv_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 5.2.1 (/opt/ros/lyrical/share/rosidl_adapter/cmake)\n'}
+[9.479998] (-) TimerEvent: {}
+[9.580835] (-) TimerEvent: {}
+[9.681999] (-) TimerEvent: {}
+[9.783102] (-) TimerEvent: {}
+[9.884039] (-) TimerEvent: {}
+[9.985043] (-) TimerEvent: {}
+[10.086129] (-) TimerEvent: {}
+[10.187070] (-) TimerEvent: {}
+[10.288002] (-) TimerEvent: {}
+[10.389007] (-) TimerEvent: {}
+[10.487979] (amsagv_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.13.5") found components: Interpreter\n'}
+[10.489163] (-) TimerEvent: {}
+[10.590068] (-) TimerEvent: {}
+[10.690981] (-) TimerEvent: {}
+[10.791908] (-) TimerEvent: {}
+[10.892757] (-) TimerEvent: {}
+[10.993738] (-) TimerEvent: {}
+[11.094630] (-) TimerEvent: {}
+[11.195526] (-) TimerEvent: {}
+[11.296471] (-) TimerEvent: {}
+[11.397506] (-) TimerEvent: {}
+[11.498441] (-) TimerEvent: {}
+[11.599368] (-) TimerEvent: {}
+[11.700303] (-) TimerEvent: {}
+[11.801365] (-) TimerEvent: {}
+[11.902360] (-) TimerEvent: {}
+[12.003306] (-) TimerEvent: {}
+[12.104429] (-) TimerEvent: {}
+[12.205593] (-) TimerEvent: {}
+[12.306642] (-) TimerEvent: {}
+[12.407666] (-) TimerEvent: {}
+[12.508612] (-) TimerEvent: {}
+[12.609697] (-) TimerEvent: {}
+[12.710655] (-) TimerEvent: {}
+[12.811587] (-) TimerEvent: {}
+[12.912527] (-) TimerEvent: {}
+[13.013510] (-) TimerEvent: {}
+[13.114485] (-) TimerEvent: {}
+[13.215492] (-) TimerEvent: {}
+[13.316437] (-) TimerEvent: {}
+[13.417360] (-) TimerEvent: {}
+[13.518411] (-) TimerEvent: {}
+[13.619484] (-) TimerEvent: {}
+[13.720348] (-) TimerEvent: {}
+[13.821394] (-) TimerEvent: {}
+[13.922404] (-) TimerEvent: {}
+[14.023335] (-) TimerEvent: {}
+[14.124423] (-) TimerEvent: {}
+[14.225539] (-) TimerEvent: {}
+[14.326473] (-) TimerEvent: {}
+[14.427430] (-) TimerEvent: {}
+[14.528549] (-) TimerEvent: {}
+[14.629653] (-) TimerEvent: {}
+[14.730616] (-) TimerEvent: {}
+[14.831626] (-) TimerEvent: {}
+[14.932677] (-) TimerEvent: {}
+[15.033718] (-) TimerEvent: {}
+[15.134738] (-) TimerEvent: {}
+[15.235702] (-) TimerEvent: {}
+[15.336652] (-) TimerEvent: {}
+[15.437830] (-) TimerEvent: {}
+[15.538862] (-) TimerEvent: {}
+[15.639739] (-) TimerEvent: {}
+[15.740703] (-) TimerEvent: {}
+[15.841782] (-) TimerEvent: {}
+[15.942706] (-) TimerEvent: {}
+[16.043715] (-) TimerEvent: {}
+[16.144829] (-) TimerEvent: {}
+[16.245879] (-) TimerEvent: {}
+[16.347016] (-) TimerEvent: {}
+[16.448060] (-) TimerEvent: {}
+[16.549052] (-) TimerEvent: {}
+[16.650114] (-) TimerEvent: {}
+[16.751135] (-) TimerEvent: {}
+[16.852174] (-) TimerEvent: {}
+[16.953111] (-) TimerEvent: {}
+[17.054152] (-) TimerEvent: {}
+[17.155215] (-) TimerEvent: {}
+[17.256178] (-) TimerEvent: {}
+[17.357219] (-) TimerEvent: {}
+[17.458231] (-) TimerEvent: {}
+[17.559120] (-) TimerEvent: {}
+[17.660078] (-) TimerEvent: {}
+[17.761040] (-) TimerEvent: {}
+[17.862111] (-) TimerEvent: {}
+[17.963066] (-) TimerEvent: {}
+[18.064082] (-) TimerEvent: {}
+[18.165045] (-) TimerEvent: {}
+[18.266206] (-) TimerEvent: {}
+[18.367334] (-) TimerEvent: {}
+[18.468285] (-) TimerEvent: {}
+[18.569245] (-) TimerEvent: {}
+[18.670412] (-) TimerEvent: {}
+[18.771434] (-) TimerEvent: {}
+[18.872394] (-) TimerEvent: {}
+[18.973520] (-) TimerEvent: {}
+[19.074502] (-) TimerEvent: {}
+[19.175419] (-) TimerEvent: {}
+[19.276341] (-) TimerEvent: {}
+[19.330584] (amsagv_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[19.376597] (-) TimerEvent: {}
+[19.477478] (-) TimerEvent: {}
+[19.578382] (-) TimerEvent: {}
+[19.679370] (-) TimerEvent: {}
+[19.780404] (-) TimerEvent: {}
+[19.881423] (-) TimerEvent: {}
+[19.982467] (-) TimerEvent: {}
+[20.083559] (-) TimerEvent: {}
+[20.184406] (-) TimerEvent: {}
+[20.285376] (-) TimerEvent: {}
+[20.386349] (-) TimerEvent: {}
+[20.487234] (-) TimerEvent: {}
+[20.588151] (-) TimerEvent: {}
+[20.689151] (-) TimerEvent: {}
+[20.790308] (-) TimerEvent: {}
+[20.891227] (-) TimerEvent: {}
+[20.992184] (-) TimerEvent: {}
+[21.093202] (-) TimerEvent: {}
+[21.194149] (-) TimerEvent: {}
+[21.295068] (-) TimerEvent: {}
+[21.368431] (amsagv_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[21.395327] (-) TimerEvent: {}
+[21.496265] (-) TimerEvent: {}
+[21.597208] (-) TimerEvent: {}
+[21.698339] (-) TimerEvent: {}
+[21.799518] (-) TimerEvent: {}
+[21.900414] (-) TimerEvent: {}
+[22.001452] (-) TimerEvent: {}
+[22.102458] (-) TimerEvent: {}
+[22.203505] (-) TimerEvent: {}
+[22.304398] (-) TimerEvent: {}
+[22.405371] (-) TimerEvent: {}
+[22.506343] (-) TimerEvent: {}
+[22.607397] (-) TimerEvent: {}
+[22.708346] (-) TimerEvent: {}
+[22.809457] (-) TimerEvent: {}
+[22.910513] (-) TimerEvent: {}
+[23.011589] (-) TimerEvent: {}
+[23.112660] (-) TimerEvent: {}
+[23.213635] (-) TimerEvent: {}
+[23.314528] (-) TimerEvent: {}
+[23.415465] (-) TimerEvent: {}
+[23.516399] (-) TimerEvent: {}
+[23.617360] (-) TimerEvent: {}
+[23.718237] (-) TimerEvent: {}
+[23.819315] (-) TimerEvent: {}
+[23.920319] (-) TimerEvent: {}
+[24.021210] (-) TimerEvent: {}
+[24.122150] (-) TimerEvent: {}
+[24.223180] (-) TimerEvent: {}
+[24.324254] (-) TimerEvent: {}
+[24.425210] (-) TimerEvent: {}
+[24.526194] (-) TimerEvent: {}
+[24.627099] (-) TimerEvent: {}
+[24.728098] (-) TimerEvent: {}
+[24.829136] (-) TimerEvent: {}
+[24.930160] (-) TimerEvent: {}
+[25.031257] (-) TimerEvent: {}
+[25.047544] (amsagv_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.13.5") found components: Interpreter Development NumPy Development.Module Development.Embed\n'}
+[25.131458] (-) TimerEvent: {}
+[25.232441] (-) TimerEvent: {}
+[25.333509] (-) TimerEvent: {}
+[25.434378] (-) TimerEvent: {}
+[25.520862] (amsagv_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.13.5") found components: Interpreter\n'}
+[25.534626] (-) TimerEvent: {}
+[25.574422] (amsagv_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.20.6 (/opt/ros/lyrical/share/ament_lint_auto/cmake)\n'}
+[25.634864] (-) TimerEvent: {}
+[25.735845] (-) TimerEvent: {}
+[25.823240] (amsagv_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[25.834294] (amsagv_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[25.835997] (-) TimerEvent: {}
+[25.875116] (amsagv_msgs) StdoutLine: {'line': b'-- Configuring done (25.1s)\n'}
+[25.936265] (-) TimerEvent: {}
+[26.037199] (-) TimerEvent: {}
+[26.138171] (-) TimerEvent: {}
+[26.239110] (-) TimerEvent: {}
+[26.340121] (-) TimerEvent: {}
+[26.389835] (amsagv_msgs) StdoutLine: {'line': b'-- Generating done (0.5s)\n'}
+[26.440357] (-) TimerEvent: {}
+[26.493862] (amsagv_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/pia/ros/build/amsagv_msgs\n'}
+[26.540660] (-) TimerEvent: {}
+[26.584635] (amsagv_msgs) CommandEnded: {'returncode': 0}
+[26.587711] (amsagv_msgs) JobProgress: {'identifier': 'amsagv_msgs', 'progress': 'build'}
+[26.591676] (amsagv_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pia/ros/build/amsagv_msgs', '--', '-j4', '-l4'], 'cwd': '/home/pia/ros/build/amsagv_msgs', 'env': OrderedDict({'USER': 'pia', 'SSH_CLIENT': '10.8.134.103 53486 22', 'ROS_NAMESPACE': '/moi', 'TEXTDOMAIN': 'pam_chksshpwd', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/lyrical/opt/zenoh_cpp_vendor/lib:/opt/ros/lyrical/opt/gz_math_vendor/lib:/opt/ros/lyrical/opt/gz_utils_vendor/lib:/opt/ros/lyrical/opt/rviz_ogre_vendor/lib:/opt/ros/lyrical/opt/mimick_vendor/lib:/opt/ros/lyrical/opt/gz_cmake_vendor/lib:/opt/ros/lyrical/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pia', 'OLDPWD': '/home/pia', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DPKG_DEB_THREADS_MAX': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLCON_PREFIX_PATH': '/opt/ros/lyrical', 'ROS_DISTRO': 'lyrical', 'LOGNAME': 'pia', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/opt/ros/lyrical/lib/aarch64-linux-gnu/pkgconfig:/opt/ros/lyrical/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '39', 'PATH': '/opt/ros/lyrical/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'en_GB.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.7z=01;31:*.ace=01;31:*.alz=01;31:*.apk=01;31:*.arc=01;31:*.arj=01;31:*.bz=01;31:*.bz2=01;31:*.cab=01;31:*.cpio=01;31:*.crate=01;31:*.deb=01;31:*.drpm=01;31:*.dwm=01;31:*.dz=01;31:*.ear=01;31:*.egg=01;31:*.esd=01;31:*.gz=01;31:*.jar=01;31:*.lha=01;31:*.lrz=01;31:*.lz=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.lzo=01;31:*.pyz=01;31:*.rar=01;31:*.rpm=01;31:*.rz=01;31:*.sar=01;31:*.swm=01;31:*.t7z=01;31:*.tar=01;31:*.taz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tgz=01;31:*.tlz=01;31:*.txz=01;31:*.tz=01;31:*.tzo=01;31:*.tzst=01;31:*.udeb=01;31:*.war=01;31:*.whl=01;31:*.wim=01;31:*.xz=01;31:*.z=01;31:*.zip=01;31:*.zoo=01;31:*.zst=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.jxl=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '26', 'AMENT_PREFIX_PATH': '/opt/ros/lyrical', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/pia/ros/build/amsagv_msgs', 'SSH_CONNECTION': '10.8.134.103 53486 10.8.134.126 22', 'PYTHONPATH': '/opt/ros/lyrical/opt/gz_math_vendor/lib/python:/opt/ros/lyrical/lib/python3.13/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/lyrical/opt/gz_math_vendor:/opt/ros/lyrical/opt/gz_utils_vendor:/opt/ros/lyrical/opt/gz_cmake_vendor:/opt/ros/lyrical'}), 'shell': False}
+[26.640906] (-) TimerEvent: {}
+[26.741956] (-) TimerEvent: {}
+[26.842933] (-) TimerEvent: {}
+[26.943994] (-) TimerEvent: {}
+[26.996143] (amsagv_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[26.997591] (amsagv_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[27.044272] (-) TimerEvent: {}
+[27.145802] (-) TimerEvent: {}
+[27.246767] (-) TimerEvent: {}
+[27.347992] (-) TimerEvent: {}
+[27.449002] (-) TimerEvent: {}
+[27.550206] (-) TimerEvent: {}
+[27.651358] (-) TimerEvent: {}
+[27.752377] (-) TimerEvent: {}
+[27.853267] (-) TimerEvent: {}
+[27.954233] (-) TimerEvent: {}
+[28.055159] (-) TimerEvent: {}
+[28.156069] (-) TimerEvent: {}
+[28.256996] (-) TimerEvent: {}
+[28.358040] (-) TimerEvent: {}
+[28.458954] (-) TimerEvent: {}
+[28.559878] (-) TimerEvent: {}
+[28.660786] (-) TimerEvent: {}
+[28.761806] (-) TimerEvent: {}
+[28.862741] (-) TimerEvent: {}
+[28.963664] (-) TimerEvent: {}
+[29.064573] (-) TimerEvent: {}
+[29.165522] (-) TimerEvent: {}
+[29.266439] (-) TimerEvent: {}
+[29.367356] (-) TimerEvent: {}
+[29.468272] (-) TimerEvent: {}
+[29.569228] (-) TimerEvent: {}
+[29.670268] (-) TimerEvent: {}
+[29.771395] (-) TimerEvent: {}
+[29.873456] (-) TimerEvent: {}
+[29.975273] (-) TimerEvent: {}
+[30.078644] (-) TimerEvent: {}
+[30.180827] (-) TimerEvent: {}
+[30.225902] (amsagv_msgs) StdoutLine: {'line': b'[  1%] Built target amsagv_msgs__rosidl_generator_type_description\n'}
+[30.281110] (-) TimerEvent: {}
+[30.317925] (amsagv_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[30.381461] (-) TimerEvent: {}
+[30.403782] (amsagv_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[30.485615] (-) TimerEvent: {}
+[30.507065] (amsagv_msgs) StdoutLine: {'line': b'[  2%] Built target amsagv_msgs__rs\n'}
+[30.585881] (-) TimerEvent: {}
+[30.687001] (-) TimerEvent: {}
+[30.788065] (-) TimerEvent: {}
+[30.889134] (-) TimerEvent: {}
+[30.990260] (-) TimerEvent: {}
+[31.091207] (-) TimerEvent: {}
+[31.192122] (-) TimerEvent: {}
+[31.293047] (-) TimerEvent: {}
+[31.394143] (-) TimerEvent: {}
+[31.495071] (-) TimerEvent: {}
+[31.595989] (-) TimerEvent: {}
+[31.696890] (-) TimerEvent: {}
+[31.797913] (-) TimerEvent: {}
+[31.898843] (-) TimerEvent: {}
+[31.999734] (-) TimerEvent: {}
+[32.100586] (-) TimerEvent: {}
+[32.201492] (-) TimerEvent: {}
+[32.302481] (-) TimerEvent: {}
+[32.403424] (-) TimerEvent: {}
+[32.504380] (-) TimerEvent: {}
+[32.605243] (-) TimerEvent: {}
+[32.706185] (-) TimerEvent: {}
+[32.807087] (-) TimerEvent: {}
+[32.907936] (-) TimerEvent: {}
+[33.008834] (-) TimerEvent: {}
+[33.109872] (-) TimerEvent: {}
+[33.210892] (-) TimerEvent: {}
+[33.311791] (-) TimerEvent: {}
+[33.412676] (-) TimerEvent: {}
+[33.513722] (-) TimerEvent: {}
+[33.614675] (-) TimerEvent: {}
+[33.715663] (-) TimerEvent: {}
+[33.816608] (-) TimerEvent: {}
+[33.917511] (-) TimerEvent: {}
+[34.018481] (-) TimerEvent: {}
+[34.119376] (-) TimerEvent: {}
+[34.220310] (-) TimerEvent: {}
+[34.321473] (-) TimerEvent: {}
+[34.422453] (-) TimerEvent: {}
+[34.523446] (-) TimerEvent: {}
+[34.624395] (-) TimerEvent: {}
+[34.725385] (-) TimerEvent: {}
+[34.826219] (-) TimerEvent: {}
+[34.927079] (-) TimerEvent: {}
+[35.027948] (-) TimerEvent: {}
+[35.128861] (-) TimerEvent: {}
+[35.229801] (-) TimerEvent: {}
+[35.330706] (-) TimerEvent: {}
+[35.431612] (-) TimerEvent: {}
+[35.532559] (-) TimerEvent: {}
+[35.633615] (-) TimerEvent: {}
+[35.737612] (-) TimerEvent: {}
+[35.838699] (-) TimerEvent: {}
+[35.939813] (-) TimerEvent: {}
+[36.045625] (-) TimerEvent: {}
+[36.147022] (-) TimerEvent: {}
+[36.248346] (-) TimerEvent: {}
+[36.349680] (-) TimerEvent: {}
+[36.453908] (-) TimerEvent: {}
+[36.555197] (-) TimerEvent: {}
+[36.656528] (-) TimerEvent: {}
+[36.759837] (-) TimerEvent: {}
+[36.866136] (-) TimerEvent: {}
+[36.967478] (-) TimerEvent: {}
+[37.069100] (-) TimerEvent: {}
+[37.071181] (amsagv_msgs) StdoutLine: {'line': b'[  2%] Built target amsagv_msgs__cpp\n'}
+[37.169393] (-) TimerEvent: {}
+[37.270309] (-) TimerEvent: {}
+[37.371304] (-) TimerEvent: {}
+[37.472435] (-) TimerEvent: {}
+[37.573627] (-) TimerEvent: {}
+[37.677682] (-) TimerEvent: {}
+[37.778998] (-) TimerEvent: {}
+[37.881039] (-) TimerEvent: {}
+[37.985747] (-) TimerEvent: {}
+[38.087348] (-) TimerEvent: {}
+[38.189055] (-) TimerEvent: {}
+[38.291010] (-) TimerEvent: {}
+[38.393203] (-) TimerEvent: {}
+[38.498748] (-) TimerEvent: {}
+[38.602501] (-) TimerEvent: {}
+[38.704419] (-) TimerEvent: {}
+[38.809611] (-) TimerEvent: {}
+[38.911689] (-) TimerEvent: {}
+[39.012697] (-) TimerEvent: {}
+[39.098521] (amsagv_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/action__description.c.o\x1b[0m\n'}
+[39.100949] (amsagv_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/action__functions.c.o\x1b[0m\n'}
+[39.102655] (amsagv_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/action__type_support.c.o\x1b[0m\n'}
+[39.103711] (amsagv_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/action_stamped__description.c.o\x1b[0m\n'}
+[39.113082] (-) TimerEvent: {}
+[39.214735] (-) TimerEvent: {}
+[39.315827] (-) TimerEvent: {}
+[39.416971] (-) TimerEvent: {}
+[39.500422] (amsagv_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/action_stamped__functions.c.o\x1b[0m\n'}
+[39.517547] (-) TimerEvent: {}
+[39.616399] (amsagv_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/action_stamped__type_support.c.o\x1b[0m\n'}
+[39.618149] (-) TimerEvent: {}
+[39.701998] (amsagv_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/actions__functions.c.o\x1b[0m\n'}
+[39.705932] (amsagv_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/actions__description.c.o\x1b[0m\n'}
+[39.721663] (-) TimerEvent: {}
+[39.823294] (-) TimerEvent: {}
+[39.930133] (-) TimerEvent: {}
+[39.999356] (amsagv_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/actions__type_support.c.o\x1b[0m\n'}
+[40.005977] (amsagv_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/actions_stamped__description.c.o\x1b[0m\n'}
+[40.030416] (-) TimerEvent: {}
+[40.105807] (amsagv_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/actions_stamped__functions.c.o\x1b[0m\n'}
+[40.133634] (-) TimerEvent: {}
+[40.234915] (-) TimerEvent: {}
+[40.300686] (amsagv_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/actions_stamped__type_support.c.o\x1b[0m\n'}
+[40.307511] (amsagv_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/line__description.c.o\x1b[0m\n'}
+[40.335371] (-) TimerEvent: {}
+[40.441832] (amsagv_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/line__functions.c.o\x1b[0m\n'}
+[40.443396] (-) TimerEvent: {}
+[40.549908] (-) TimerEvent: {}
+[40.603766] (amsagv_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/line__type_support.c.o\x1b[0m\n'}
+[40.653636] (-) TimerEvent: {}
+[40.686586] (amsagv_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/line_stamped__functions.c.o\x1b[0m\n'}
+[40.697676] (amsagv_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/line_stamped__description.c.o\x1b[0m\n'}
+[40.753915] (-) TimerEvent: {}
+[40.855288] (-) TimerEvent: {}
+[40.921261] (amsagv_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/line_stamped__type_support.c.o\x1b[0m\n'}
+[40.957650] (-) TimerEvent: {}
+[40.963462] (amsagv_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/tag__description.c.o\x1b[0m\n'}
+[41.061635] (-) TimerEvent: {}
+[41.122939] (amsagv_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/tag__functions.c.o\x1b[0m\n'}
+[41.165668] (-) TimerEvent: {}
+[41.209942] (amsagv_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/tag__type_support.c.o\x1b[0m\n'}
+[41.265943] (-) TimerEvent: {}
+[41.301939] (amsagv_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/tag_stamped__description.c.o\x1b[0m\n'}
+[41.354600] (amsagv_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/tag_stamped__functions.c.o\x1b[0m\n'}
+[41.366281] (-) TimerEvent: {}
+[41.470240] (-) TimerEvent: {}
+[41.572458] (-) TimerEvent: {}
+[41.609251] (amsagv_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/tag_stamped__type_support.c.o\x1b[0m\n'}
+[41.615161] (amsagv_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/tags__description.c.o\x1b[0m\n'}
+[41.672839] (-) TimerEvent: {}
+[41.725952] (amsagv_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/tags__functions.c.o\x1b[0m\n'}
+[41.773190] (-) TimerEvent: {}
+[41.856930] (amsagv_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/tags__type_support.c.o\x1b[0m\n'}
+[41.873575] (-) TimerEvent: {}
+[41.940452] (amsagv_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/tags_stamped__description.c.o\x1b[0m\n'}
+[41.977629] (-) TimerEvent: {}
+[42.012202] (amsagv_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/tags_stamped__functions.c.o\x1b[0m\n'}
+[42.077964] (-) TimerEvent: {}
+[42.182130] (-) TimerEvent: {}
+[42.184118] (amsagv_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/tags_stamped__type_support.c.o\x1b[0m\n'}
+[42.282388] (-) TimerEvent: {}
+[42.384280] (-) TimerEvent: {}
+[42.473027] (amsagv_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32m\x1b[1mLinking C shared library libamsagv_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[42.484559] (-) TimerEvent: {}
+[42.585659] (-) TimerEvent: {}
+[42.686767] (-) TimerEvent: {}
+[42.788079] (-) TimerEvent: {}
+[42.889042] (-) TimerEvent: {}
+[42.890077] (amsagv_msgs) StdoutLine: {'line': b'[ 27%] Built target amsagv_msgs__rosidl_generator_c\n'}
+[42.982552] (amsagv_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[42.984236] (amsagv_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[42.989862] (-) TimerEvent: {}
+[42.991028] (amsagv_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[42.992497] (amsagv_msgs) StdoutLine: {'line': b'[ 30%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[43.090252] (-) TimerEvent: {}
+[43.197555] (-) TimerEvent: {}
+[43.298794] (-) TimerEvent: {}
+[43.405975] (-) TimerEvent: {}
+[43.507362] (-) TimerEvent: {}
+[43.609716] (-) TimerEvent: {}
+[43.714203] (-) TimerEvent: {}
+[43.818061] (-) TimerEvent: {}
+[43.919768] (-) TimerEvent: {}
+[44.027523] (-) TimerEvent: {}
+[44.128636] (-) TimerEvent: {}
+[44.229700] (-) TimerEvent: {}
+[44.330937] (-) TimerEvent: {}
+[44.432095] (-) TimerEvent: {}
+[44.538028] (-) TimerEvent: {}
+[44.639116] (-) TimerEvent: {}
+[44.740274] (-) TimerEvent: {}
+[44.841437] (-) TimerEvent: {}
+[44.945266] (-) TimerEvent: {}
+[45.046539] (-) TimerEvent: {}
+[45.149959] (-) TimerEvent: {}
+[45.251150] (-) TimerEvent: {}
+[45.353969] (-) TimerEvent: {}
+[45.455057] (-) TimerEvent: {}
+[45.558008] (-) TimerEvent: {}
+[45.662087] (-) TimerEvent: {}
+[45.763243] (-) TimerEvent: {}
+[45.864306] (-) TimerEvent: {}
+[45.969982] (-) TimerEvent: {}
+[46.071694] (-) TimerEvent: {}
+[46.177971] (-) TimerEvent: {}
+[46.279628] (-) TimerEvent: {}
+[46.381546] (-) TimerEvent: {}
+[46.486069] (-) TimerEvent: {}
+[46.587804] (-) TimerEvent: {}
+[46.693023] (-) TimerEvent: {}
+[46.798168] (-) TimerEvent: {}
+[46.899789] (-) TimerEvent: {}
+[47.005984] (-) TimerEvent: {}
+[47.107071] (-) TimerEvent: {}
+[47.210022] (-) TimerEvent: {}
+[47.314047] (-) TimerEvent: {}
+[47.418075] (-) TimerEvent: {}
+[47.519989] (-) TimerEvent: {}
+[47.626015] (-) TimerEvent: {}
+[47.627752] (amsagv_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amsagv_msgs/msg/action__type_support.cpp.o\x1b[0m\n'}
+[47.729648] (-) TimerEvent: {}
+[47.831017] (-) TimerEvent: {}
+[47.934155] (-) TimerEvent: {}
+[48.036773] (-) TimerEvent: {}
+[48.142236] (-) TimerEvent: {}
+[48.226048] (amsagv_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amsagv_msgs/msg/action_stamped__type_support.cpp.o\x1b[0m\n'}
+[48.242516] (-) TimerEvent: {}
+[48.343762] (-) TimerEvent: {}
+[48.445012] (-) TimerEvent: {}
+[48.549942] (-) TimerEvent: {}
+[48.651206] (-) TimerEvent: {}
+[48.683071] (amsagv_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amsagv_msgs/msg/actions__type_support.cpp.o\x1b[0m\n'}
+[48.753629] (-) TimerEvent: {}
+[48.854987] (-) TimerEvent: {}
+[48.957906] (-) TimerEvent: {}
+[49.062227] (-) TimerEvent: {}
+[49.140365] (amsagv_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amsagv_msgs/msg/actions_stamped__type_support.cpp.o\x1b[0m\n'}
+[49.165634] (-) TimerEvent: {}
+[49.266996] (-) TimerEvent: {}
+[49.357636] (amsagv_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amsagv_msgs/msg/detail/action__type_support.cpp.o\x1b[0m\n'}
+[49.367374] (-) TimerEvent: {}
+[49.469494] (-) TimerEvent: {}
+[49.576271] (-) TimerEvent: {}
+[49.594844] (amsagv_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amsagv_msgs/msg/line__type_support.cpp.o\x1b[0m\n'}
+[49.641867] (amsagv_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amsagv_msgs/msg/detail/action__type_support.c.o\x1b[0m\n'}
+[49.676526] (-) TimerEvent: {}
+[49.781644] (-) TimerEvent: {}
+[49.882810] (-) TimerEvent: {}
+[49.986438] (-) TimerEvent: {}
+[50.012942] (amsagv_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amsagv_msgs/msg/detail/action_stamped__type_support.c.o\x1b[0m\n'}
+[50.042031] (amsagv_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amsagv_msgs/msg/line_stamped__type_support.cpp.o\x1b[0m\n'}
+[50.087094] (-) TimerEvent: {}
+[50.194417] (-) TimerEvent: {}
+[50.296356] (-) TimerEvent: {}
+[50.391130] (amsagv_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amsagv_msgs/msg/detail/actions__type_support.c.o\x1b[0m\n'}
+[50.396685] (-) TimerEvent: {}
+[50.497846] (amsagv_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amsagv_msgs/msg/tag__type_support.cpp.o\x1b[0m\n'}
+[50.498987] (-) TimerEvent: {}
+[50.602170] (-) TimerEvent: {}
+[50.706047] (-) TimerEvent: {}
+[50.801849] (amsagv_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amsagv_msgs/msg/detail/actions_stamped__type_support.c.o\x1b[0m\n'}
+[50.809539] (-) TimerEvent: {}
+[50.910704] (-) TimerEvent: {}
+[50.956523] (amsagv_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amsagv_msgs/msg/tag_stamped__type_support.cpp.o\x1b[0m\n'}
+[51.013618] (-) TimerEvent: {}
+[51.115076] (-) TimerEvent: {}
+[51.218506] (-) TimerEvent: {}
+[51.245922] (amsagv_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amsagv_msgs/msg/detail/line__type_support.c.o\x1b[0m\n'}
+[51.321603] (-) TimerEvent: {}
+[51.422888] (-) TimerEvent: {}
+[51.444024] (amsagv_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amsagv_msgs/msg/tags__type_support.cpp.o\x1b[0m\n'}
+[51.525738] (-) TimerEvent: {}
+[51.627203] (-) TimerEvent: {}
+[51.689677] (amsagv_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amsagv_msgs/msg/detail/line_stamped__type_support.c.o\x1b[0m\n'}
+[51.727550] (-) TimerEvent: {}
+[51.830745] (-) TimerEvent: {}
+[51.930329] (amsagv_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amsagv_msgs/msg/tags_stamped__type_support.cpp.o\x1b[0m\n'}
+[51.931758] (-) TimerEvent: {}
+[52.032829] (-) TimerEvent: {}
+[52.093227] (amsagv_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amsagv_msgs/msg/detail/tag__type_support.c.o\x1b[0m\n'}
+[52.133265] (-) TimerEvent: {}
+[52.241639] (-) TimerEvent: {}
+[52.343103] (-) TimerEvent: {}
+[52.421715] (amsagv_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libamsagv_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[52.443587] (-) TimerEvent: {}
+[52.496012] (amsagv_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amsagv_msgs/msg/detail/tag_stamped__type_support.c.o\x1b[0m\n'}
+[52.543896] (-) TimerEvent: {}
+[52.649445] (-) TimerEvent: {}
+[52.754221] (-) TimerEvent: {}
+[52.857675] (-) TimerEvent: {}
+[52.885572] (amsagv_msgs) StdoutLine: {'line': b'[ 46%] Built target amsagv_msgs__rosidl_typesupport_c\n'}
+[52.920302] (amsagv_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amsagv_msgs/msg/detail/tags__type_support.c.o\x1b[0m\n'}
+[52.957995] (-) TimerEvent: {}
+[53.060099] (-) TimerEvent: {}
+[53.093175] (amsagv_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amsagv_msgs/msg/detail/action__type_support_c.cpp.o\x1b[0m\n'}
+[53.160397] (-) TimerEvent: {}
+[53.262456] (-) TimerEvent: {}
+[53.309799] (amsagv_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amsagv_msgs/msg/detail/tags_stamped__type_support.c.o\x1b[0m\n'}
+[53.362769] (-) TimerEvent: {}
+[53.463964] (-) TimerEvent: {}
+[53.565880] (-) TimerEvent: {}
+[53.667770] (-) TimerEvent: {}
+[53.700242] (amsagv_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32m\x1b[1mLinking C shared library libamsagv_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[53.768070] (-) TimerEvent: {}
+[53.869409] (-) TimerEvent: {}
+[53.970759] (-) TimerEvent: {}
+[53.974507] (amsagv_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amsagv_msgs/msg/detail/action_stamped__type_support.cpp.o\x1b[0m\n'}
+[54.041703] (amsagv_msgs) StdoutLine: {'line': b'[ 50%] Built target amsagv_msgs__rosidl_typesupport_introspection_c\n'}
+[54.071040] (-) TimerEvent: {}
+[54.172868] (-) TimerEvent: {}
+[54.275274] (-) TimerEvent: {}
+[54.376407] (-) TimerEvent: {}
+[54.477591] (-) TimerEvent: {}
+[54.578707] (-) TimerEvent: {}
+[54.679985] (-) TimerEvent: {}
+[54.784515] (-) TimerEvent: {}
+[54.886687] (-) TimerEvent: {}
+[54.988908] (-) TimerEvent: {}
+[55.091549] (-) TimerEvent: {}
+[55.194101] (-) TimerEvent: {}
+[55.298650] (-) TimerEvent: {}
+[55.384452] (amsagv_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amsagv_msgs/msg/detail/actions__type_support.cpp.o\x1b[0m\n'}
+[55.401622] (-) TimerEvent: {}
+[55.502926] (-) TimerEvent: {}
+[55.605417] (-) TimerEvent: {}
+[55.710231] (-) TimerEvent: {}
+[55.817779] (-) TimerEvent: {}
+[55.919499] (-) TimerEvent: {}
+[56.022444] (-) TimerEvent: {}
+[56.124540] (-) TimerEvent: {}
+[56.229648] (-) TimerEvent: {}
+[56.331452] (-) TimerEvent: {}
+[56.435099] (-) TimerEvent: {}
+[56.542012] (-) TimerEvent: {}
+[56.649694] (-) TimerEvent: {}
+[56.751292] (-) TimerEvent: {}
+[56.853494] (-) TimerEvent: {}
+[56.962147] (-) TimerEvent: {}
+[57.070447] (-) TimerEvent: {}
+[57.172385] (-) TimerEvent: {}
+[57.281682] (-) TimerEvent: {}
+[57.383347] (-) TimerEvent: {}
+[57.490330] (-) TimerEvent: {}
+[57.592685] (-) TimerEvent: {}
+[57.739945] (-) TimerEvent: {}
+[57.853613] (-) TimerEvent: {}
+[57.955044] (-) TimerEvent: {}
+[58.056751] (-) TimerEvent: {}
+[58.173708] (-) TimerEvent: {}
+[58.274997] (-) TimerEvent: {}
+[58.394936] (-) TimerEvent: {}
+[58.549644] (-) TimerEvent: {}
+[58.666001] (-) TimerEvent: {}
+[58.785637] (-) TimerEvent: {}
+[58.886842] (-) TimerEvent: {}
+[58.994475] (-) TimerEvent: {}
+[59.096160] (-) TimerEvent: {}
+[59.201233] (-) TimerEvent: {}
+[59.309598] (-) TimerEvent: {}
+[59.413607] (-) TimerEvent: {}
+[59.517647] (-) TimerEvent: {}
+[59.621626] (-) TimerEvent: {}
+[59.722894] (-) TimerEvent: {}
+[59.829660] (-) TimerEvent: {}
+[59.931249] (-) TimerEvent: {}
+[60.033277] (-) TimerEvent: {}
+[60.211836] (-) TimerEvent: {}
+[60.370635] (-) TimerEvent: {}
+[60.487677] (-) TimerEvent: {}
+[60.589512] (-) TimerEvent: {}
+[60.697606] (-) TimerEvent: {}
+[60.798952] (-) TimerEvent: {}
+[60.900956] (-) TimerEvent: {}
+[61.006207] (-) TimerEvent: {}
+[61.107671] (-) TimerEvent: {}
+[61.214179] (-) TimerEvent: {}
+[61.316142] (-) TimerEvent: {}
+[61.419876] (-) TimerEvent: {}
+[61.522268] (-) TimerEvent: {}
+[61.625236] (-) TimerEvent: {}
+[61.727562] (-) TimerEvent: {}
+[61.799952] (amsagv_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amsagv_msgs/msg/detail/action_stamped__type_support_c.cpp.o\x1b[0m\n'}
+[61.911827] (-) TimerEvent: {}
+[62.015400] (-) TimerEvent: {}
+[62.122083] (-) TimerEvent: {}
+[62.226298] (-) TimerEvent: {}
+[62.331105] (-) TimerEvent: {}
+[62.437714] (-) TimerEvent: {}
+[62.545987] (-) TimerEvent: {}
+[62.648097] (-) TimerEvent: {}
+[62.754501] (-) TimerEvent: {}
+[62.858864] (-) TimerEvent: {}
+[62.965641] (-) TimerEvent: {}
+[63.067783] (-) TimerEvent: {}
+[63.172887] (-) TimerEvent: {}
+[63.281692] (-) TimerEvent: {}
+[63.383288] (-) TimerEvent: {}
+[63.490588] (-) TimerEvent: {}
+[63.601645] (-) TimerEvent: {}
+[63.703200] (-) TimerEvent: {}
+[63.806275] (-) TimerEvent: {}
+[63.913659] (-) TimerEvent: {}
+[64.015163] (-) TimerEvent: {}
+[64.116772] (-) TimerEvent: {}
+[64.228678] (-) TimerEvent: {}
+[64.334924] (-) TimerEvent: {}
+[64.441627] (-) TimerEvent: {}
+[64.543260] (-) TimerEvent: {}
+[64.649595] (-) TimerEvent: {}
+[64.750912] (-) TimerEvent: {}
+[64.852903] (-) TimerEvent: {}
+[64.958151] (-) TimerEvent: {}
+[65.062229] (-) TimerEvent: {}
+[65.165575] (-) TimerEvent: {}
+[65.267084] (-) TimerEvent: {}
+[65.371311] (-) TimerEvent: {}
+[65.477988] (-) TimerEvent: {}
+[65.579599] (-) TimerEvent: {}
+[65.685958] (-) TimerEvent: {}
+[65.787307] (-) TimerEvent: {}
+[65.888715] (-) TimerEvent: {}
+[65.994161] (-) TimerEvent: {}
+[66.098435] (-) TimerEvent: {}
+[66.205727] (-) TimerEvent: {}
+[66.309698] (-) TimerEvent: {}
+[66.417697] (-) TimerEvent: {}
+[66.519404] (-) TimerEvent: {}
+[66.624260] (-) TimerEvent: {}
+[66.725978] (-) TimerEvent: {}
+[66.832717] (-) TimerEvent: {}
+[66.934618] (-) TimerEvent: {}
+[67.035880] (-) TimerEvent: {}
+[67.137151] (-) TimerEvent: {}
+[67.240133] (-) TimerEvent: {}
+[67.341728] (-) TimerEvent: {}
+[67.444296] (-) TimerEvent: {}
+[67.547216] (-) TimerEvent: {}
+[67.648516] (-) TimerEvent: {}
+[67.749974] (-) TimerEvent: {}
+[67.851256] (-) TimerEvent: {}
+[67.861904] (amsagv_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amsagv_msgs/msg/detail/actions__type_support_c.cpp.o\x1b[0m\n'}
+[67.951601] (-) TimerEvent: {}
+[68.052905] (-) TimerEvent: {}
+[68.154540] (-) TimerEvent: {}
+[68.256373] (-) TimerEvent: {}
+[68.362142] (-) TimerEvent: {}
+[68.463367] (-) TimerEvent: {}
+[68.565066] (-) TimerEvent: {}
+[68.641285] (amsagv_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amsagv_msgs/msg/detail/actions_stamped__type_support.cpp.o\x1b[0m\n'}
+[68.665577] (-) TimerEvent: {}
+[68.766820] (-) TimerEvent: {}
+[68.868366] (-) TimerEvent: {}
+[68.970106] (-) TimerEvent: {}
+[69.071783] (-) TimerEvent: {}
+[69.173574] (-) TimerEvent: {}
+[69.274864] (-) TimerEvent: {}
+[69.376018] (-) TimerEvent: {}
+[69.477570] (-) TimerEvent: {}
+[69.579457] (-) TimerEvent: {}
+[69.680695] (-) TimerEvent: {}
+[69.782946] (-) TimerEvent: {}
+[69.885047] (-) TimerEvent: {}
+[69.986595] (-) TimerEvent: {}
+[70.088709] (-) TimerEvent: {}
+[70.190772] (-) TimerEvent: {}
+[70.292782] (-) TimerEvent: {}
+[70.395049] (-) TimerEvent: {}
+[70.497175] (-) TimerEvent: {}
+[70.599384] (-) TimerEvent: {}
+[70.701530] (-) TimerEvent: {}
+[70.803792] (-) TimerEvent: {}
+[70.905964] (-) TimerEvent: {}
+[71.007357] (-) TimerEvent: {}
+[71.109536] (-) TimerEvent: {}
+[71.211292] (-) TimerEvent: {}
+[71.313068] (-) TimerEvent: {}
+[71.415090] (-) TimerEvent: {}
+[71.516951] (-) TimerEvent: {}
+[71.618467] (-) TimerEvent: {}
+[71.720330] (-) TimerEvent: {}
+[71.822205] (-) TimerEvent: {}
+[71.923978] (-) TimerEvent: {}
+[72.025539] (-) TimerEvent: {}
+[72.127462] (-) TimerEvent: {}
+[72.229653] (-) TimerEvent: {}
+[72.331771] (-) TimerEvent: {}
+[72.433897] (-) TimerEvent: {}
+[72.535316] (-) TimerEvent: {}
+[72.637612] (-) TimerEvent: {}
+[72.741969] (-) TimerEvent: {}
+[72.854406] (-) TimerEvent: {}
+[72.956193] (-) TimerEvent: {}
+[73.058618] (-) TimerEvent: {}
+[73.162005] (-) TimerEvent: {}
+[73.265604] (-) TimerEvent: {}
+[73.366956] (-) TimerEvent: {}
+[73.469115] (-) TimerEvent: {}
+[73.571388] (-) TimerEvent: {}
+[73.673520] (-) TimerEvent: {}
+[73.774960] (-) TimerEvent: {}
+[73.877193] (-) TimerEvent: {}
+[73.982238] (-) TimerEvent: {}
+[74.084276] (-) TimerEvent: {}
+[74.186414] (-) TimerEvent: {}
+[74.287856] (-) TimerEvent: {}
+[74.389063] (-) TimerEvent: {}
+[74.490718] (-) TimerEvent: {}
+[74.593011] (-) TimerEvent: {}
+[74.694426] (-) TimerEvent: {}
+[74.795656] (-) TimerEvent: {}
+[74.897177] (-) TimerEvent: {}
+[74.998466] (-) TimerEvent: {}
+[75.099820] (-) TimerEvent: {}
+[75.201019] (-) TimerEvent: {}
+[75.302368] (-) TimerEvent: {}
+[75.403647] (-) TimerEvent: {}
+[75.505052] (-) TimerEvent: {}
+[75.606426] (-) TimerEvent: {}
+[75.707505] (-) TimerEvent: {}
+[75.808505] (-) TimerEvent: {}
+[75.861507] (amsagv_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amsagv_msgs/msg/detail/actions_stamped__type_support_c.cpp.o\x1b[0m\n'}
+[75.908811] (-) TimerEvent: {}
+[76.010630] (-) TimerEvent: {}
+[76.112066] (-) TimerEvent: {}
+[76.213757] (-) TimerEvent: {}
+[76.315693] (-) TimerEvent: {}
+[76.421625] (-) TimerEvent: {}
+[76.522876] (-) TimerEvent: {}
+[76.624318] (-) TimerEvent: {}
+[76.729774] (-) TimerEvent: {}
+[76.777842] (amsagv_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amsagv_msgs/msg/detail/line__type_support.cpp.o\x1b[0m\n'}
+[76.830042] (-) TimerEvent: {}
+[76.931579] (-) TimerEvent: {}
+[77.033386] (-) TimerEvent: {}
+[77.034687] (amsagv_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amsagv_msgs/msg/detail/line__type_support_c.cpp.o\x1b[0m\n'}
+[77.133557] (-) TimerEvent: {}
+[77.235043] (-) TimerEvent: {}
+[77.337512] (-) TimerEvent: {}
+[77.438694] (-) TimerEvent: {}
+[77.539668] (-) TimerEvent: {}
+[77.640881] (-) TimerEvent: {}
+[77.742045] (-) TimerEvent: {}
+[77.843665] (-) TimerEvent: {}
+[77.949594] (-) TimerEvent: {}
+[78.050944] (-) TimerEvent: {}
+[78.152328] (-) TimerEvent: {}
+[78.254981] (-) TimerEvent: {}
+[78.356910] (-) TimerEvent: {}
+[78.459108] (-) TimerEvent: {}
+[78.561230] (-) TimerEvent: {}
+[78.663441] (-) TimerEvent: {}
+[78.765616] (-) TimerEvent: {}
+[78.867840] (-) TimerEvent: {}
+[78.970206] (-) TimerEvent: {}
+[79.072669] (-) TimerEvent: {}
+[79.177685] (-) TimerEvent: {}
+[79.286049] (-) TimerEvent: {}
+[79.388173] (-) TimerEvent: {}
+[79.489626] (-) TimerEvent: {}
+[79.591921] (-) TimerEvent: {}
+[79.693480] (-) TimerEvent: {}
+[79.795525] (-) TimerEvent: {}
+[79.896874] (-) TimerEvent: {}
+[79.998297] (-) TimerEvent: {}
+[80.100473] (-) TimerEvent: {}
+[80.203023] (-) TimerEvent: {}
+[80.304468] (-) TimerEvent: {}
+[80.406856] (-) TimerEvent: {}
+[80.514280] (-) TimerEvent: {}
+[80.616571] (-) TimerEvent: {}
+[80.722228] (-) TimerEvent: {}
+[80.826519] (-) TimerEvent: {}
+[80.933618] (-) TimerEvent: {}
+[81.035106] (-) TimerEvent: {}
+[81.137406] (-) TimerEvent: {}
+[81.242264] (-) TimerEvent: {}
+[81.349736] (-) TimerEvent: {}
+[81.451322] (-) TimerEvent: {}
+[81.554499] (-) TimerEvent: {}
+[81.658820] (-) TimerEvent: {}
+[81.762504] (-) TimerEvent: {}
+[81.866987] (-) TimerEvent: {}
+[81.970889] (-) TimerEvent: {}
+[82.074887] (-) TimerEvent: {}
+[82.178941] (-) TimerEvent: {}
+[82.285624] (-) TimerEvent: {}
+[82.387222] (-) TimerEvent: {}
+[82.493983] (-) TimerEvent: {}
+[82.595568] (-) TimerEvent: {}
+[82.697161] (-) TimerEvent: {}
+[82.802284] (-) TimerEvent: {}
+[82.909661] (-) TimerEvent: {}
+[83.011188] (-) TimerEvent: {}
+[83.114465] (-) TimerEvent: {}
+[83.218944] (-) TimerEvent: {}
+[83.325654] (-) TimerEvent: {}
+[83.427251] (-) TimerEvent: {}
+[83.533627] (-) TimerEvent: {}
+[83.635212] (-) TimerEvent: {}
+[83.737595] (-) TimerEvent: {}
+[83.845620] (-) TimerEvent: {}
+[83.947053] (-) TimerEvent: {}
+[84.049981] (-) TimerEvent: {}
+[84.154176] (-) TimerEvent: {}
+[84.261656] (-) TimerEvent: {}
+[84.363101] (-) TimerEvent: {}
+[84.464765] (-) TimerEvent: {}
+[84.570180] (-) TimerEvent: {}
+[84.672112] (-) TimerEvent: {}
+[84.778083] (-) TimerEvent: {}
+[84.879789] (-) TimerEvent: {}
+[84.986286] (-) TimerEvent: {}
+[85.089123] (-) TimerEvent: {}
+[85.194374] (-) TimerEvent: {}
+[85.304285] (-) TimerEvent: {}
+[85.410219] (-) TimerEvent: {}
+[85.511733] (-) TimerEvent: {}
+[85.613215] (-) TimerEvent: {}
+[85.718274] (-) TimerEvent: {}
+[85.842760] (-) TimerEvent: {}
+[85.944302] (-) TimerEvent: {}
+[86.049655] (-) TimerEvent: {}
+[86.151445] (-) TimerEvent: {}
+[86.253047] (-) TimerEvent: {}
+[86.358188] (-) TimerEvent: {}
+[86.465650] (-) TimerEvent: {}
+[86.567058] (-) TimerEvent: {}
+[86.668982] (-) TimerEvent: {}
+[86.774192] (-) TimerEvent: {}
+[86.877592] (-) TimerEvent: {}
+[86.978879] (-) TimerEvent: {}
+[87.082787] (-) TimerEvent: {}
+[87.196044] (-) TimerEvent: {}
+[87.297399] (-) TimerEvent: {}
+[87.401478] (-) TimerEvent: {}
+[87.504211] (-) TimerEvent: {}
+[87.610152] (-) TimerEvent: {}
+[87.713948] (-) TimerEvent: {}
+[87.822198] (-) TimerEvent: {}
+[87.925791] (-) TimerEvent: {}
+[88.035814] (-) TimerEvent: {}
+[88.136968] (-) TimerEvent: {}
+[88.238279] (-) TimerEvent: {}
+[88.339791] (-) TimerEvent: {}
+[88.441137] (-) TimerEvent: {}
+[88.543304] (-) TimerEvent: {}
+[88.644433] (-) TimerEvent: {}
+[88.748851] (-) TimerEvent: {}
+[88.854188] (-) TimerEvent: {}
+[88.958153] (-) TimerEvent: {}
+[89.060622] (-) TimerEvent: {}
+[89.166104] (-) TimerEvent: {}
+[89.268138] (-) TimerEvent: {}
+[89.369508] (-) TimerEvent: {}
+[89.470808] (-) TimerEvent: {}
+[89.572212] (-) TimerEvent: {}
+[89.677870] (-) TimerEvent: {}
+[89.781646] (-) TimerEvent: {}
+[89.882738] (-) TimerEvent: {}
+[89.990705] (-) TimerEvent: {}
+[90.092061] (-) TimerEvent: {}
+[90.193262] (-) TimerEvent: {}
+[90.294717] (-) TimerEvent: {}
+[90.416598] (-) TimerEvent: {}
+[90.540168] (-) TimerEvent: {}
+[90.681977] (-) TimerEvent: {}
+[90.783137] (-) TimerEvent: {}
+[90.865252] (amsagv_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amsagv_msgs/msg/detail/line_stamped__type_support.cpp.o\x1b[0m\n'}
+[90.970787] (-) TimerEvent: {}
+[90.971559] (amsagv_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amsagv_msgs/msg/detail/line_stamped__type_support_c.cpp.o\x1b[0m\n'}
+[91.071124] (-) TimerEvent: {}
+[91.172355] (-) TimerEvent: {}
+[91.273539] (-) TimerEvent: {}
+[91.374623] (-) TimerEvent: {}
+[91.475908] (-) TimerEvent: {}
+[91.577775] (-) TimerEvent: {}
+[91.679445] (-) TimerEvent: {}
+[91.781065] (-) TimerEvent: {}
+[91.882945] (-) TimerEvent: {}
+[91.984860] (-) TimerEvent: {}
+[92.086578] (-) TimerEvent: {}
+[92.188416] (-) TimerEvent: {}
+[92.294064] (-) TimerEvent: {}
+[92.395878] (-) TimerEvent: {}
+[92.497901] (-) TimerEvent: {}
+[92.600706] (-) TimerEvent: {}
+[92.714050] (-) TimerEvent: {}
+[92.822016] (-) TimerEvent: {}
+[92.923858] (-) TimerEvent: {}
+[93.025227] (-) TimerEvent: {}
+[93.130120] (-) TimerEvent: {}
+[93.234203] (-) TimerEvent: {}
+[93.341616] (-) TimerEvent: {}
+[93.443042] (-) TimerEvent: {}
+[93.545362] (-) TimerEvent: {}
+[93.650184] (-) TimerEvent: {}
+[93.752211] (-) TimerEvent: {}
+[93.854177] (-) TimerEvent: {}
+[93.955615] (-) TimerEvent: {}
+[94.056950] (-) TimerEvent: {}
+[94.159085] (-) TimerEvent: {}
+[94.260519] (-) TimerEvent: {}
+[94.362282] (-) TimerEvent: {}
+[94.463678] (-) TimerEvent: {}
+[94.564871] (-) TimerEvent: {}
+[94.666034] (-) TimerEvent: {}
+[94.767203] (-) TimerEvent: {}
+[94.868631] (-) TimerEvent: {}
+[94.970399] (-) TimerEvent: {}
+[95.099345] (amsagv_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amsagv_msgs/msg/detail/tag__type_support_c.cpp.o\x1b[0m\n'}
+[95.102153] (-) TimerEvent: {}
+[95.204868] (-) TimerEvent: {}
+[95.309087] (-) TimerEvent: {}
+[95.411001] (-) TimerEvent: {}
+[95.512139] (-) TimerEvent: {}
+[95.613251] (-) TimerEvent: {}
+[95.715416] (-) TimerEvent: {}
+[95.816543] (-) TimerEvent: {}
+[95.917936] (-) TimerEvent: {}
+[96.019418] (-) TimerEvent: {}
+[96.120684] (-) TimerEvent: {}
+[96.222388] (-) TimerEvent: {}
+[96.325717] (-) TimerEvent: {}
+[96.433752] (-) TimerEvent: {}
+[96.543631] (-) TimerEvent: {}
+[96.646054] (-) TimerEvent: {}
+[96.748130] (-) TimerEvent: {}
+[96.850903] (-) TimerEvent: {}
+[96.952165] (-) TimerEvent: {}
+[97.053538] (-) TimerEvent: {}
+[97.154781] (-) TimerEvent: {}
+[97.256123] (-) TimerEvent: {}
+[97.358328] (-) TimerEvent: {}
+[97.460510] (-) TimerEvent: {}
+[97.562793] (-) TimerEvent: {}
+[97.664963] (-) TimerEvent: {}
+[97.767385] (-) TimerEvent: {}
+[97.873866] (-) TimerEvent: {}
+[97.986782] (-) TimerEvent: {}
+[98.088406] (-) TimerEvent: {}
+[98.201635] (-) TimerEvent: {}
+[98.303225] (-) TimerEvent: {}
+[98.404729] (-) TimerEvent: {}
+[98.509998] (-) TimerEvent: {}
+[98.614207] (-) TimerEvent: {}
+[98.717630] (-) TimerEvent: {}
+[98.819209] (-) TimerEvent: {}
+[98.920744] (-) TimerEvent: {}
+[99.026250] (-) TimerEvent: {}
+[99.128580] (-) TimerEvent: {}
+[99.234169] (-) TimerEvent: {}
+[99.336429] (-) TimerEvent: {}
+[99.442211] (-) TimerEvent: {}
+[99.543881] (-) TimerEvent: {}
+[99.649614] (-) TimerEvent: {}
+[99.751109] (-) TimerEvent: {}
+[99.852645] (-) TimerEvent: {}
+[99.958013] (-) TimerEvent: {}
+[100.059478] (-) TimerEvent: {}
+[100.166034] (-) TimerEvent: {}
+[100.267559] (-) TimerEvent: {}
+[100.373661] (-) TimerEvent: {}
+[100.475315] (-) TimerEvent: {}
+[100.576972] (-) TimerEvent: {}
+[100.682304] (-) TimerEvent: {}
+[100.786597] (-) TimerEvent: {}
+[100.890945] (-) TimerEvent: {}
+[100.997639] (-) TimerEvent: {}
+[101.099231] (-) TimerEvent: {}
+[101.201248] (-) TimerEvent: {}
+[101.302554] (-) TimerEvent: {}
+[101.403624] (-) TimerEvent: {}
+[101.504744] (-) TimerEvent: {}
+[101.606607] (-) TimerEvent: {}
+[101.707626] (-) TimerEvent: {}
+[101.808735] (-) TimerEvent: {}
+[101.909944] (-) TimerEvent: {}
+[102.011209] (-) TimerEvent: {}
+[102.112192] (-) TimerEvent: {}
+[102.213168] (-) TimerEvent: {}
+[102.314370] (-) TimerEvent: {}
+[102.415417] (-) TimerEvent: {}
+[102.516473] (-) TimerEvent: {}
+[102.598935] (amsagv_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amsagv_msgs/msg/detail/tag_stamped__type_support_c.cpp.o\x1b[0m\n'}
+[102.608933] (amsagv_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amsagv_msgs/msg/detail/tag__type_support.cpp.o\x1b[0m\n'}
+[102.616761] (-) TimerEvent: {}
+[102.717884] (-) TimerEvent: {}
+[102.818911] (-) TimerEvent: {}
+[102.920978] (-) TimerEvent: {}
+[103.022263] (-) TimerEvent: {}
+[103.123324] (-) TimerEvent: {}
+[103.225066] (-) TimerEvent: {}
+[103.326287] (-) TimerEvent: {}
+[103.427474] (-) TimerEvent: {}
+[103.528793] (-) TimerEvent: {}
+[103.630079] (-) TimerEvent: {}
+[103.731112] (-) TimerEvent: {}
+[103.832264] (-) TimerEvent: {}
+[103.939091] (-) TimerEvent: {}
+[104.041665] (-) TimerEvent: {}
+[104.142951] (-) TimerEvent: {}
+[104.246495] (-) TimerEvent: {}
+[104.350211] (-) TimerEvent: {}
+[104.451476] (-) TimerEvent: {}
+[104.557943] (-) TimerEvent: {}
+[104.659428] (-) TimerEvent: {}
+[104.760765] (-) TimerEvent: {}
+[104.862732] (-) TimerEvent: {}
+[104.963890] (-) TimerEvent: {}
+[105.031556] (amsagv_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amsagv_msgs/msg/detail/tags__type_support_c.cpp.o\x1b[0m\n'}
+[105.064197] (-) TimerEvent: {}
+[105.165578] (-) TimerEvent: {}
+[105.267607] (-) TimerEvent: {}
+[105.369621] (-) TimerEvent: {}
+[105.471629] (-) TimerEvent: {}
+[105.573569] (-) TimerEvent: {}
+[105.675338] (-) TimerEvent: {}
+[105.777260] (-) TimerEvent: {}
+[105.879142] (-) TimerEvent: {}
+[105.981100] (-) TimerEvent: {}
+[106.082648] (-) TimerEvent: {}
+[106.183921] (-) TimerEvent: {}
+[106.285235] (-) TimerEvent: {}
+[106.386483] (-) TimerEvent: {}
+[106.487675] (-) TimerEvent: {}
+[106.588931] (-) TimerEvent: {}
+[106.691253] (-) TimerEvent: {}
+[106.792392] (-) TimerEvent: {}
+[106.893524] (-) TimerEvent: {}
+[106.997569] (-) TimerEvent: {}
+[107.098645] (-) TimerEvent: {}
+[107.199922] (-) TimerEvent: {}
+[107.306214] (-) TimerEvent: {}
+[107.407741] (-) TimerEvent: {}
+[107.509364] (-) TimerEvent: {}
+[107.614134] (-) TimerEvent: {}
+[107.715557] (-) TimerEvent: {}
+[107.821619] (-) TimerEvent: {}
+[107.923096] (-) TimerEvent: {}
+[108.024527] (-) TimerEvent: {}
+[108.129604] (-) TimerEvent: {}
+[108.230967] (-) TimerEvent: {}
+[108.332286] (-) TimerEvent: {}
+[108.434564] (-) TimerEvent: {}
+[108.537069] (-) TimerEvent: {}
+[108.641958] (-) TimerEvent: {}
+[108.743420] (-) TimerEvent: {}
+[108.844711] (-) TimerEvent: {}
+[108.949546] (-) TimerEvent: {}
+[109.050716] (-) TimerEvent: {}
+[109.161651] (-) TimerEvent: {}
+[109.263376] (-) TimerEvent: {}
+[109.365041] (-) TimerEvent: {}
+[109.470244] (-) TimerEvent: {}
+[109.577979] (-) TimerEvent: {}
+[109.679463] (-) TimerEvent: {}
+[109.780971] (-) TimerEvent: {}
+[109.885641] (-) TimerEvent: {}
+[109.987218] (-) TimerEvent: {}
+[110.093709] (-) TimerEvent: {}
+[110.195295] (-) TimerEvent: {}
+[110.301608] (-) TimerEvent: {}
+[110.403506] (-) TimerEvent: {}
+[110.509598] (-) TimerEvent: {}
+[110.610910] (-) TimerEvent: {}
+[110.712129] (-) TimerEvent: {}
+[110.814610] (-) TimerEvent: {}
+[110.915686] (-) TimerEvent: {}
+[111.016842] (-) TimerEvent: {}
+[111.118111] (-) TimerEvent: {}
+[111.219424] (-) TimerEvent: {}
+[111.320672] (-) TimerEvent: {}
+[111.422029] (-) TimerEvent: {}
+[111.523305] (-) TimerEvent: {}
+[111.624561] (-) TimerEvent: {}
+[111.729641] (-) TimerEvent: {}
+[111.830913] (-) TimerEvent: {}
+[111.932123] (-) TimerEvent: {}
+[111.982244] (amsagv_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amsagv_msgs/msg/detail/tag_stamped__type_support.cpp.o\x1b[0m\n'}
+[112.032467] (-) TimerEvent: {}
+[112.052820] (amsagv_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amsagv_msgs/msg/detail/tags__type_support.cpp.o\x1b[0m\n'}
+[112.132735] (-) TimerEvent: {}
+[112.233960] (-) TimerEvent: {}
+[112.335175] (-) TimerEvent: {}
+[112.436800] (-) TimerEvent: {}
+[112.538283] (-) TimerEvent: {}
+[112.640590] (-) TimerEvent: {}
+[112.743049] (-) TimerEvent: {}
+[112.844303] (-) TimerEvent: {}
+[112.945935] (-) TimerEvent: {}
+[113.047126] (-) TimerEvent: {}
+[113.148193] (-) TimerEvent: {}
+[113.249258] (-) TimerEvent: {}
+[113.350481] (-) TimerEvent: {}
+[113.451914] (-) TimerEvent: {}
+[113.553539] (-) TimerEvent: {}
+[113.654847] (-) TimerEvent: {}
+[113.756277] (-) TimerEvent: {}
+[113.858621] (-) TimerEvent: {}
+[113.960698] (-) TimerEvent: {}
+[114.062763] (-) TimerEvent: {}
+[114.164957] (-) TimerEvent: {}
+[114.266510] (-) TimerEvent: {}
+[114.368716] (-) TimerEvent: {}
+[114.471027] (-) TimerEvent: {}
+[114.545038] (amsagv_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amsagv_msgs/msg/detail/tags_stamped__type_support_c.cpp.o\x1b[0m\n'}
+[114.571365] (-) TimerEvent: {}
+[114.672722] (-) TimerEvent: {}
+[114.774544] (-) TimerEvent: {}
+[114.876262] (-) TimerEvent: {}
+[114.977942] (-) TimerEvent: {}
+[115.079476] (-) TimerEvent: {}
+[115.181114] (-) TimerEvent: {}
+[115.282875] (-) TimerEvent: {}
+[115.384407] (-) TimerEvent: {}
+[115.486031] (-) TimerEvent: {}
+[115.587696] (-) TimerEvent: {}
+[115.689030] (-) TimerEvent: {}
+[115.791051] (-) TimerEvent: {}
+[115.892908] (-) TimerEvent: {}
+[115.995200] (-) TimerEvent: {}
+[116.096484] (-) TimerEvent: {}
+[116.198502] (-) TimerEvent: {}
+[116.299855] (-) TimerEvent: {}
+[116.402108] (-) TimerEvent: {}
+[116.504299] (-) TimerEvent: {}
+[116.606564] (-) TimerEvent: {}
+[116.708670] (-) TimerEvent: {}
+[116.810862] (-) TimerEvent: {}
+[116.913059] (-) TimerEvent: {}
+[117.017649] (-) TimerEvent: {}
+[117.124797] (-) TimerEvent: {}
+[117.234367] (-) TimerEvent: {}
+[117.346041] (-) TimerEvent: {}
+[117.454127] (-) TimerEvent: {}
+[117.561989] (-) TimerEvent: {}
+[117.664219] (-) TimerEvent: {}
+[117.770195] (-) TimerEvent: {}
+[117.872526] (-) TimerEvent: {}
+[117.978176] (-) TimerEvent: {}
+[118.099698] (-) TimerEvent: {}
+[118.209639] (-) TimerEvent: {}
+[118.311519] (-) TimerEvent: {}
+[118.417003] (-) TimerEvent: {}
+[118.521651] (-) TimerEvent: {}
+[118.623192] (-) TimerEvent: {}
+[118.725173] (-) TimerEvent: {}
+[118.830209] (-) TimerEvent: {}
+[118.933648] (-) TimerEvent: {}
+[119.035081] (-) TimerEvent: {}
+[119.136556] (-) TimerEvent: {}
+[119.241656] (-) TimerEvent: {}
+[119.343150] (-) TimerEvent: {}
+[119.444660] (-) TimerEvent: {}
+[119.550254] (-) TimerEvent: {}
+[119.654559] (-) TimerEvent: {}
+[119.758180] (-) TimerEvent: {}
+[119.862532] (-) TimerEvent: {}
+[119.969655] (-) TimerEvent: {}
+[120.082428] (-) TimerEvent: {}
+[120.186230] (-) TimerEvent: {}
+[120.287340] (-) TimerEvent: {}
+[120.364764] (amsagv_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amsagv_msgs/msg/detail/tags_stamped__type_support.cpp.o\x1b[0m\n'}
+[120.387627] (-) TimerEvent: {}
+[120.488826] (-) TimerEvent: {}
+[120.589953] (-) TimerEvent: {}
+[120.699169] (-) TimerEvent: {}
+[120.807563] (-) TimerEvent: {}
+[120.908682] (-) TimerEvent: {}
+[121.009960] (-) TimerEvent: {}
+[121.111136] (-) TimerEvent: {}
+[121.212729] (-) TimerEvent: {}
+[121.314480] (-) TimerEvent: {}
+[121.415573] (-) TimerEvent: {}
+[121.516748] (-) TimerEvent: {}
+[121.617997] (-) TimerEvent: {}
+[121.719178] (-) TimerEvent: {}
+[121.820353] (-) TimerEvent: {}
+[121.921594] (-) TimerEvent: {}
+[122.022763] (-) TimerEvent: {}
+[122.123920] (-) TimerEvent: {}
+[122.225133] (-) TimerEvent: {}
+[122.326333] (-) TimerEvent: {}
+[122.427430] (-) TimerEvent: {}
+[122.528582] (-) TimerEvent: {}
+[122.629864] (-) TimerEvent: {}
+[122.731030] (-) TimerEvent: {}
+[122.832201] (-) TimerEvent: {}
+[122.933537] (-) TimerEvent: {}
+[123.034749] (-) TimerEvent: {}
+[123.135924] (-) TimerEvent: {}
+[123.237149] (-) TimerEvent: {}
+[123.338447] (-) TimerEvent: {}
+[123.439753] (-) TimerEvent: {}
+[123.489626] (amsagv_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libamsagv_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[123.540038] (-) TimerEvent: {}
+[123.641141] (-) TimerEvent: {}
+[123.742323] (-) TimerEvent: {}
+[123.843340] (-) TimerEvent: {}
+[123.944590] (-) TimerEvent: {}
+[124.045913] (-) TimerEvent: {}
+[124.147034] (-) TimerEvent: {}
+[124.248253] (-) TimerEvent: {}
+[124.349587] (-) TimerEvent: {}
+[124.450690] (-) TimerEvent: {}
+[124.551798] (-) TimerEvent: {}
+[124.652896] (-) TimerEvent: {}
+[124.754060] (-) TimerEvent: {}
+[124.800082] (amsagv_msgs) StdoutLine: {'line': b'[ 64%] Built target amsagv_msgs__rosidl_typesupport_fastrtps_c\n'}
+[124.854310] (-) TimerEvent: {}
+[124.955547] (-) TimerEvent: {}
+[124.957663] (amsagv_msgs) StdoutLine: {'line': b'[ 66%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[124.959271] (amsagv_msgs) StdoutLine: {'line': b'[ 66%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[125.055848] (-) TimerEvent: {}
+[125.157280] (-) TimerEvent: {}
+[125.258998] (-) TimerEvent: {}
+[125.360524] (-) TimerEvent: {}
+[125.462596] (-) TimerEvent: {}
+[125.564652] (-) TimerEvent: {}
+[125.665784] (-) TimerEvent: {}
+[125.767401] (-) TimerEvent: {}
+[125.869366] (-) TimerEvent: {}
+[125.970489] (-) TimerEvent: {}
+[126.071978] (-) TimerEvent: {}
+[126.177586] (-) TimerEvent: {}
+[126.278821] (-) TimerEvent: {}
+[126.381405] (-) TimerEvent: {}
+[126.486014] (-) TimerEvent: {}
+[126.587250] (-) TimerEvent: {}
+[126.688502] (-) TimerEvent: {}
+[126.794050] (-) TimerEvent: {}
+[126.895285] (-) TimerEvent: {}
+[126.996487] (-) TimerEvent: {}
+[127.098496] (-) TimerEvent: {}
+[127.200155] (-) TimerEvent: {}
+[127.301669] (-) TimerEvent: {}
+[127.403891] (-) TimerEvent: {}
+[127.505541] (-) TimerEvent: {}
+[127.573195] (amsagv_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libamsagv_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[127.605781] (-) TimerEvent: {}
+[127.706757] (-) TimerEvent: {}
+[127.808425] (-) TimerEvent: {}
+[127.910374] (-) TimerEvent: {}
+[128.012098] (-) TimerEvent: {}
+[128.113848] (-) TimerEvent: {}
+[128.215415] (-) TimerEvent: {}
+[128.317044] (-) TimerEvent: {}
+[128.418614] (-) TimerEvent: {}
+[128.520119] (-) TimerEvent: {}
+[128.562417] (amsagv_msgs) StdoutLine: {'line': b'[ 67%] Built target amsagv_msgs__rosidl_typesupport_introspection_cpp\n'}
+[128.620342] (-) TimerEvent: {}
+[128.721367] (-) TimerEvent: {}
+[128.822345] (-) TimerEvent: {}
+[128.923259] (-) TimerEvent: {}
+[129.024250] (-) TimerEvent: {}
+[129.125256] (-) TimerEvent: {}
+[129.226278] (-) TimerEvent: {}
+[129.327348] (-) TimerEvent: {}
+[129.428483] (-) TimerEvent: {}
+[129.534103] (-) TimerEvent: {}
+[129.636248] (-) TimerEvent: {}
+[129.737574] (-) TimerEvent: {}
+[129.841599] (-) TimerEvent: {}
+[129.877643] (amsagv_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/action_stamped__type_support.cpp.o\x1b[0m\n'}
+[129.879349] (amsagv_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/action__type_support.cpp.o\x1b[0m\n'}
+[129.880423] (amsagv_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/actions__type_support.cpp.o\x1b[0m\n'}
+[129.941908] (-) TimerEvent: {}
+[130.046150] (-) TimerEvent: {}
+[130.149784] (-) TimerEvent: {}
+[130.253959] (-) TimerEvent: {}
+[130.355335] (-) TimerEvent: {}
+[130.457950] (-) TimerEvent: {}
+[130.562068] (-) TimerEvent: {}
+[130.663993] (-) TimerEvent: {}
+[130.770793] (-) TimerEvent: {}
+[130.873837] (-) TimerEvent: {}
+[130.977984] (-) TimerEvent: {}
+[131.081620] (-) TimerEvent: {}
+[131.182921] (-) TimerEvent: {}
+[131.285909] (-) TimerEvent: {}
+[131.389618] (-) TimerEvent: {}
+[131.491016] (-) TimerEvent: {}
+[131.593977] (-) TimerEvent: {}
+[131.698166] (-) TimerEvent: {}
+[131.802110] (-) TimerEvent: {}
+[131.906199] (-) TimerEvent: {}
+[132.010590] (-) TimerEvent: {}
+[132.114428] (-) TimerEvent: {}
+[132.221586] (-) TimerEvent: {}
+[132.322863] (-) TimerEvent: {}
+[132.429577] (-) TimerEvent: {}
+[132.531175] (-) TimerEvent: {}
+[132.638076] (-) TimerEvent: {}
+[132.739677] (-) TimerEvent: {}
+[132.842086] (-) TimerEvent: {}
+[132.945635] (-) TimerEvent: {}
+[133.047046] (-) TimerEvent: {}
+[133.150012] (-) TimerEvent: {}
+[133.254267] (-) TimerEvent: {}
+[133.355795] (-) TimerEvent: {}
+[133.469643] (-) TimerEvent: {}
+[133.570963] (-) TimerEvent: {}
+[133.674179] (-) TimerEvent: {}
+[133.778289] (-) TimerEvent: {}
+[133.879664] (-) TimerEvent: {}
+[133.990061] (-) TimerEvent: {}
+[134.102345] (-) TimerEvent: {}
+[134.204033] (-) TimerEvent: {}
+[134.321628] (-) TimerEvent: {}
+[134.441687] (-) TimerEvent: {}
+[134.553986] (-) TimerEvent: {}
+[134.657673] (-) TimerEvent: {}
+[134.761658] (-) TimerEvent: {}
+[134.865667] (-) TimerEvent: {}
+[134.969650] (-) TimerEvent: {}
+[135.073667] (-) TimerEvent: {}
+[135.177632] (-) TimerEvent: {}
+[135.281633] (-) TimerEvent: {}
+[135.385658] (-) TimerEvent: {}
+[135.489642] (-) TimerEvent: {}
+[135.593635] (-) TimerEvent: {}
+[135.697675] (-) TimerEvent: {}
+[135.801687] (-) TimerEvent: {}
+[135.905645] (-) TimerEvent: {}
+[135.977706] (amsagv_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amsagv_msgs/msg/detail/dds_fastrtps/action__type_support.cpp.o\x1b[0m\n'}
+[136.005994] (-) TimerEvent: {}
+[136.108256] (-) TimerEvent: {}
+[136.217675] (-) TimerEvent: {}
+[136.319249] (-) TimerEvent: {}
+[136.426226] (-) TimerEvent: {}
+[136.528496] (-) TimerEvent: {}
+[136.633608] (-) TimerEvent: {}
+[136.735742] (-) TimerEvent: {}
+[136.837721] (-) TimerEvent: {}
+[136.942225] (-) TimerEvent: {}
+[137.049609] (-) TimerEvent: {}
+[137.153651] (-) TimerEvent: {}
+[137.255195] (-) TimerEvent: {}
+[137.361607] (-) TimerEvent: {}
+[137.463059] (-) TimerEvent: {}
+[137.570268] (-) TimerEvent: {}
+[137.672194] (-) TimerEvent: {}
+[137.780044] (-) TimerEvent: {}
+[137.881544] (-) TimerEvent: {}
+[137.986680] (-) TimerEvent: {}
+[138.094276] (-) TimerEvent: {}
+[138.201642] (-) TimerEvent: {}
+[138.304187] (-) TimerEvent: {}
+[138.411744] (-) TimerEvent: {}
+[138.514217] (-) TimerEvent: {}
+[138.618762] (-) TimerEvent: {}
+[138.722710] (-) TimerEvent: {}
+[138.828114] (-) TimerEvent: {}
+[138.933229] (-) TimerEvent: {}
+[139.036497] (-) TimerEvent: {}
+[139.141606] (-) TimerEvent: {}
+[139.243596] (-) TimerEvent: {}
+[139.345933] (-) TimerEvent: {}
+[139.447179] (-) TimerEvent: {}
+[139.548105] (-) TimerEvent: {}
+[139.649044] (-) TimerEvent: {}
+[139.750198] (-) TimerEvent: {}
+[139.851840] (-) TimerEvent: {}
+[139.952969] (-) TimerEvent: {}
+[140.053992] (-) TimerEvent: {}
+[140.155311] (-) TimerEvent: {}
+[140.225429] (amsagv_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amsagv_msgs/msg/detail/dds_fastrtps/action_stamped__type_support.cpp.o\x1b[0m\n'}
+[140.227654] (amsagv_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/actions_stamped__type_support.cpp.o\x1b[0m\n'}
+[140.255593] (-) TimerEvent: {}
+[140.333698] (amsagv_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/line__type_support.cpp.o\x1b[0m\n'}
+[140.355922] (-) TimerEvent: {}
+[140.457479] (-) TimerEvent: {}
+[140.562086] (-) TimerEvent: {}
+[140.663277] (-) TimerEvent: {}
+[140.764722] (-) TimerEvent: {}
+[140.870063] (-) TimerEvent: {}
+[140.971788] (-) TimerEvent: {}
+[141.077687] (-) TimerEvent: {}
+[141.182109] (-) TimerEvent: {}
+[141.286143] (-) TimerEvent: {}
+[141.390117] (-) TimerEvent: {}
+[141.491978] (-) TimerEvent: {}
+[141.597982] (-) TimerEvent: {}
+[141.702563] (-) TimerEvent: {}
+[141.804710] (-) TimerEvent: {}
+[141.910203] (-) TimerEvent: {}
+[142.014218] (-) TimerEvent: {}
+[142.121665] (-) TimerEvent: {}
+[142.224251] (-) TimerEvent: {}
+[142.330238] (-) TimerEvent: {}
+[142.432639] (-) TimerEvent: {}
+[142.539307] (-) TimerEvent: {}
+[142.645642] (-) TimerEvent: {}
+[142.747331] (-) TimerEvent: {}
+[142.849198] (-) TimerEvent: {}
+[142.954480] (-) TimerEvent: {}
+[143.058582] (-) TimerEvent: {}
+[143.161857] (-) TimerEvent: {}
+[143.266205] (-) TimerEvent: {}
+[143.367646] (-) TimerEvent: {}
+[143.473667] (-) TimerEvent: {}
+[143.575326] (-) TimerEvent: {}
+[143.676853] (-) TimerEvent: {}
+[143.778917] (-) TimerEvent: {}
+[143.880765] (-) TimerEvent: {}
+[143.986219] (-) TimerEvent: {}
+[144.093650] (-) TimerEvent: {}
+[144.195143] (-) TimerEvent: {}
+[144.301690] (-) TimerEvent: {}
+[144.421662] (-) TimerEvent: {}
+[144.525660] (-) TimerEvent: {}
+[144.629647] (-) TimerEvent: {}
+[144.733667] (-) TimerEvent: {}
+[144.837692] (-) TimerEvent: {}
+[144.941647] (-) TimerEvent: {}
+[145.045636] (-) TimerEvent: {}
+[145.149706] (-) TimerEvent: {}
+[145.253649] (-) TimerEvent: {}
+[145.356567] (-) TimerEvent: {}
+[145.465624] (-) TimerEvent: {}
+[145.567210] (-) TimerEvent: {}
+[145.668834] (-) TimerEvent: {}
+[145.774196] (-) TimerEvent: {}
+[145.881631] (-) TimerEvent: {}
+[145.983229] (-) TimerEvent: {}
+[146.090208] (-) TimerEvent: {}
+[146.192381] (-) TimerEvent: {}
+[146.298173] (-) TimerEvent: {}
+[146.402635] (-) TimerEvent: {}
+[146.506477] (-) TimerEvent: {}
+[146.610495] (-) TimerEvent: {}
+[146.718163] (-) TimerEvent: {}
+[146.820155] (-) TimerEvent: {}
+[146.926126] (-) TimerEvent: {}
+[147.028445] (-) TimerEvent: {}
+[147.134127] (-) TimerEvent: {}
+[147.241626] (-) TimerEvent: {}
+[147.343160] (-) TimerEvent: {}
+[147.449673] (-) TimerEvent: {}
+[147.551215] (-) TimerEvent: {}
+[147.665630] (-) TimerEvent: {}
+[147.767196] (-) TimerEvent: {}
+[147.869566] (-) TimerEvent: {}
+[147.977665] (-) TimerEvent: {}
+[148.081658] (-) TimerEvent: {}
+[148.189992] (-) TimerEvent: {}
+[148.292015] (-) TimerEvent: {}
+[148.401667] (-) TimerEvent: {}
+[148.505610] (-) TimerEvent: {}
+[148.609647] (-) TimerEvent: {}
+[148.717590] (-) TimerEvent: {}
+[148.821637] (-) TimerEvent: {}
+[148.923432] (-) TimerEvent: {}
+[149.034464] (-) TimerEvent: {}
+[149.141617] (-) TimerEvent: {}
+[149.243084] (-) TimerEvent: {}
+[149.344959] (-) TimerEvent: {}
+[149.450116] (-) TimerEvent: {}
+[149.553909] (-) TimerEvent: {}
+[149.657962] (-) TimerEvent: {}
+[149.762094] (-) TimerEvent: {}
+[149.863392] (-) TimerEvent: {}
+[149.969596] (-) TimerEvent: {}
+[150.073602] (-) TimerEvent: {}
+[150.181589] (-) TimerEvent: {}
+[150.283026] (-) TimerEvent: {}
+[150.384384] (-) TimerEvent: {}
+[150.489911] (-) TimerEvent: {}
+[150.594412] (-) TimerEvent: {}
+[150.697665] (-) TimerEvent: {}
+[150.886190] (-) TimerEvent: {}
+[150.988660] (-) TimerEvent: {}
+[151.094003] (-) TimerEvent: {}
+[151.197638] (-) TimerEvent: {}
+[151.300050] (-) TimerEvent: {}
+[151.406213] (-) TimerEvent: {}
+[151.509646] (-) TimerEvent: {}
+[151.632475] (-) TimerEvent: {}
+[151.752649] (-) TimerEvent: {}
+[151.861614] (-) TimerEvent: {}
+[151.963001] (-) TimerEvent: {}
+[152.066113] (-) TimerEvent: {}
+[152.173747] (-) TimerEvent: {}
+[152.275477] (-) TimerEvent: {}
+[152.377116] (-) TimerEvent: {}
+[152.481627] (-) TimerEvent: {}
+[152.585627] (-) TimerEvent: {}
+[152.689600] (-) TimerEvent: {}
+[152.805739] (-) TimerEvent: {}
+[152.910151] (-) TimerEvent: {}
+[153.013708] (-) TimerEvent: {}
+[153.120555] (-) TimerEvent: {}
+[153.225655] (-) TimerEvent: {}
+[153.329843] (-) TimerEvent: {}
+[153.432537] (-) TimerEvent: {}
+[153.542329] (-) TimerEvent: {}
+[153.644533] (-) TimerEvent: {}
+[153.746315] (-) TimerEvent: {}
+[153.849857] (-) TimerEvent: {}
+[153.951824] (-) TimerEvent: {}
+[154.057596] (-) TimerEvent: {}
+[154.158892] (-) TimerEvent: {}
+[154.260029] (-) TimerEvent: {}
+[154.369630] (-) TimerEvent: {}
+[154.472029] (-) TimerEvent: {}
+[154.578260] (-) TimerEvent: {}
+[154.681662] (-) TimerEvent: {}
+[154.786786] (-) TimerEvent: {}
+[154.888896] (-) TimerEvent: {}
+[154.991134] (-) TimerEvent: {}
+[155.093021] (-) TimerEvent: {}
+[155.194342] (-) TimerEvent: {}
+[155.295488] (-) TimerEvent: {}
+[155.396681] (-) TimerEvent: {}
+[155.504448] (-) TimerEvent: {}
+[155.606317] (-) TimerEvent: {}
+[155.707708] (-) TimerEvent: {}
+[155.810268] (-) TimerEvent: {}
+[155.912338] (-) TimerEvent: {}
+[156.013797] (-) TimerEvent: {}
+[156.115661] (-) TimerEvent: {}
+[156.216826] (-) TimerEvent: {}
+[156.318071] (-) TimerEvent: {}
+[156.419216] (-) TimerEvent: {}
+[156.520308] (-) TimerEvent: {}
+[156.663940] (-) TimerEvent: {}
+[156.747429] (amsagv_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amsagv_msgs/msg/detail/dds_fastrtps/actions__type_support.cpp.o\x1b[0m\n'}
+[156.883956] (-) TimerEvent: {}
+[156.884827] (amsagv_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/tag__type_support.cpp.o\x1b[0m\n'}
+[156.886110] (amsagv_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/line_stamped__type_support.cpp.o\x1b[0m\n'}
+[156.984210] (-) TimerEvent: {}
+[157.085557] (-) TimerEvent: {}
+[157.187014] (-) TimerEvent: {}
+[157.293771] (-) TimerEvent: {}
+[157.396643] (-) TimerEvent: {}
+[157.501621] (-) TimerEvent: {}
+[157.602822] (-) TimerEvent: {}
+[157.683542] (amsagv_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amsagv_msgs/msg/detail/dds_fastrtps/actions_stamped__type_support.cpp.o\x1b[0m\n'}
+[157.703270] (-) TimerEvent: {}
+[157.804465] (-) TimerEvent: {}
+[157.906409] (-) TimerEvent: {}
+[158.007512] (-) TimerEvent: {}
+[158.108613] (-) TimerEvent: {}
+[158.209637] (-) TimerEvent: {}
+[158.311567] (-) TimerEvent: {}
+[158.412932] (-) TimerEvent: {}
+[158.517702] (-) TimerEvent: {}
+[158.619342] (-) TimerEvent: {}
+[158.722112] (-) TimerEvent: {}
+[158.826079] (-) TimerEvent: {}
+[158.928128] (-) TimerEvent: {}
+[159.034208] (-) TimerEvent: {}
+[159.138427] (-) TimerEvent: {}
+[159.240655] (-) TimerEvent: {}
+[159.346186] (-) TimerEvent: {}
+[159.450239] (-) TimerEvent: {}
+[159.554827] (-) TimerEvent: {}
+[159.658554] (-) TimerEvent: {}
+[159.765659] (-) TimerEvent: {}
+[159.867313] (-) TimerEvent: {}
+[159.973649] (-) TimerEvent: {}
+[160.075093] (-) TimerEvent: {}
+[160.176548] (-) TimerEvent: {}
+[160.282278] (-) TimerEvent: {}
+[160.389529] (-) TimerEvent: {}
+[160.493793] (-) TimerEvent: {}
+[160.602224] (-) TimerEvent: {}
+[160.703867] (-) TimerEvent: {}
+[160.809566] (-) TimerEvent: {}
+[160.913563] (-) TimerEvent: {}
+[161.014918] (-) TimerEvent: {}
+[161.121640] (-) TimerEvent: {}
+[161.223247] (-) TimerEvent: {}
+[161.329542] (-) TimerEvent: {}
+[161.430974] (-) TimerEvent: {}
+[161.537627] (-) TimerEvent: {}
+[161.639201] (-) TimerEvent: {}
+[161.740675] (-) TimerEvent: {}
+[161.846316] (-) TimerEvent: {}
+[161.953664] (-) TimerEvent: {}
+[162.057621] (-) TimerEvent: {}
+[162.161663] (-) TimerEvent: {}
+[162.266071] (-) TimerEvent: {}
+[162.370933] (-) TimerEvent: {}
+[162.477650] (-) TimerEvent: {}
+[162.579239] (-) TimerEvent: {}
+[162.685629] (-) TimerEvent: {}
+[162.787261] (-) TimerEvent: {}
+[162.893934] (-) TimerEvent: {}
+[162.996411] (-) TimerEvent: {}
+[163.101848] (-) TimerEvent: {}
+[163.206355] (-) TimerEvent: {}
+[163.310232] (-) TimerEvent: {}
+[163.417672] (-) TimerEvent: {}
+[163.527986] (-) TimerEvent: {}
+[163.629637] (-) TimerEvent: {}
+[163.737618] (-) TimerEvent: {}
+[163.839060] (-) TimerEvent: {}
+[163.944573] (-) TimerEvent: {}
+[164.049620] (-) TimerEvent: {}
+[164.151060] (-) TimerEvent: {}
+[164.253159] (-) TimerEvent: {}
+[164.357632] (-) TimerEvent: {}
+[164.459160] (-) TimerEvent: {}
+[164.562160] (-) TimerEvent: {}
+[164.669620] (-) TimerEvent: {}
+[164.771182] (-) TimerEvent: {}
+[164.877647] (-) TimerEvent: {}
+[164.981641] (-) TimerEvent: {}
+[165.085656] (-) TimerEvent: {}
+[165.187220] (-) TimerEvent: {}
+[165.294452] (-) TimerEvent: {}
+[165.401982] (-) TimerEvent: {}
+[165.505652] (-) TimerEvent: {}
+[165.607137] (-) TimerEvent: {}
+[165.713637] (-) TimerEvent: {}
+[165.815169] (-) TimerEvent: {}
+[165.921656] (-) TimerEvent: {}
+[166.024042] (-) TimerEvent: {}
+[166.130802] (-) TimerEvent: {}
+[166.237656] (-) TimerEvent: {}
+[166.341677] (-) TimerEvent: {}
+[166.443973] (-) TimerEvent: {}
+[166.550645] (-) TimerEvent: {}
+[166.652867] (-) TimerEvent: {}
+[166.789951] (-) TimerEvent: {}
+[166.901675] (-) TimerEvent: {}
+[167.003314] (-) TimerEvent: {}
+[167.109672] (-) TimerEvent: {}
+[167.211216] (-) TimerEvent: {}
+[167.314017] (-) TimerEvent: {}
+[167.425616] (-) TimerEvent: {}
+[167.526930] (-) TimerEvent: {}
+[167.628342] (-) TimerEvent: {}
+[167.734171] (-) TimerEvent: {}
+[167.839034] (-) TimerEvent: {}
+[167.946515] (-) TimerEvent: {}
+[168.048459] (-) TimerEvent: {}
+[168.153658] (-) TimerEvent: {}
+[168.257619] (-) TimerEvent: {}
+[168.359093] (-) TimerEvent: {}
+[168.477667] (-) TimerEvent: {}
+[168.581627] (-) TimerEvent: {}
+[168.683546] (-) TimerEvent: {}
+[168.784798] (-) TimerEvent: {}
+[168.893600] (-) TimerEvent: {}
+[168.997608] (-) TimerEvent: {}
+[169.100206] (-) TimerEvent: {}
+[169.205973] (-) TimerEvent: {}
+[169.307823] (-) TimerEvent: {}
+[169.417674] (-) TimerEvent: {}
+[169.519817] (-) TimerEvent: {}
+[169.630032] (-) TimerEvent: {}
+[169.749781] (-) TimerEvent: {}
+[169.851522] (-) TimerEvent: {}
+[169.956463] (-) TimerEvent: {}
+[170.058601] (-) TimerEvent: {}
+[170.159777] (-) TimerEvent: {}
+[170.260920] (-) TimerEvent: {}
+[170.362145] (-) TimerEvent: {}
+[170.463872] (-) TimerEvent: {}
+[170.571513] (-) TimerEvent: {}
+[170.675679] (-) TimerEvent: {}
+[170.776870] (-) TimerEvent: {}
+[170.878014] (-) TimerEvent: {}
+[170.979543] (-) TimerEvent: {}
+[171.080698] (-) TimerEvent: {}
+[171.181970] (-) TimerEvent: {}
+[171.283261] (-) TimerEvent: {}
+[171.384636] (-) TimerEvent: {}
+[171.485802] (-) TimerEvent: {}
+[171.587084] (-) TimerEvent: {}
+[171.688389] (-) TimerEvent: {}
+[171.789675] (-) TimerEvent: {}
+[171.890910] (-) TimerEvent: {}
+[171.992180] (-) TimerEvent: {}
+[172.093607] (-) TimerEvent: {}
+[172.194782] (-) TimerEvent: {}
+[172.295862] (-) TimerEvent: {}
+[172.396889] (-) TimerEvent: {}
+[172.548992] (-) TimerEvent: {}
+[172.652546] (amsagv_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/tag_stamped__type_support.cpp.o\x1b[0m\n'}
+[172.835642] (-) TimerEvent: {}
+[172.836743] (amsagv_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amsagv_msgs/msg/detail/dds_fastrtps/line__type_support.cpp.o\x1b[0m\n'}
+[172.936068] (-) TimerEvent: {}
+[173.041620] (-) TimerEvent: {}
+[173.143067] (-) TimerEvent: {}
+[173.245593] (-) TimerEvent: {}
+[173.347484] (-) TimerEvent: {}
+[173.453698] (-) TimerEvent: {}
+[173.555861] (-) TimerEvent: {}
+[173.657133] (-) TimerEvent: {}
+[173.758515] (-) TimerEvent: {}
+[173.770254] (amsagv_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/tags__type_support.cpp.o\x1b[0m\n'}
+[173.858803] (-) TimerEvent: {}
+[173.960179] (-) TimerEvent: {}
+[174.063187] (-) TimerEvent: {}
+[174.164639] (-) TimerEvent: {}
+[174.266243] (-) TimerEvent: {}
+[174.367770] (-) TimerEvent: {}
+[174.470382] (-) TimerEvent: {}
+[174.571713] (-) TimerEvent: {}
+[174.674582] (-) TimerEvent: {}
+[174.775636] (-) TimerEvent: {}
+[174.817845] (amsagv_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amsagv_msgs/msg/detail/dds_fastrtps/line_stamped__type_support.cpp.o\x1b[0m\n'}
+[174.875945] (-) TimerEvent: {}
+[174.977412] (-) TimerEvent: {}
+[175.080930] (-) TimerEvent: {}
+[175.183232] (-) TimerEvent: {}
+[175.289769] (-) TimerEvent: {}
+[175.391603] (-) TimerEvent: {}
+[175.492996] (-) TimerEvent: {}
+[175.598260] (-) TimerEvent: {}
+[175.702407] (-) TimerEvent: {}
+[175.806169] (-) TimerEvent: {}
+[175.910301] (-) TimerEvent: {}
+[176.014824] (-) TimerEvent: {}
+[176.118088] (-) TimerEvent: {}
+[176.221695] (-) TimerEvent: {}
+[176.323182] (-) TimerEvent: {}
+[176.424555] (-) TimerEvent: {}
+[176.529679] (-) TimerEvent: {}
+[176.631173] (-) TimerEvent: {}
+[176.732653] (-) TimerEvent: {}
+[176.838339] (-) TimerEvent: {}
+[176.946550] (-) TimerEvent: {}
+[177.051731] (-) TimerEvent: {}
+[177.153047] (-) TimerEvent: {}
+[177.258190] (-) TimerEvent: {}
+[177.360086] (-) TimerEvent: {}
+[177.465141] (-) TimerEvent: {}
+[177.569582] (-) TimerEvent: {}
+[177.670937] (-) TimerEvent: {}
+[177.773877] (-) TimerEvent: {}
+[177.878638] (-) TimerEvent: {}
+[177.985588] (-) TimerEvent: {}
+[178.087076] (-) TimerEvent: {}
+[178.188821] (-) TimerEvent: {}
+[178.294528] (-) TimerEvent: {}
+[178.396193] (-) TimerEvent: {}
+[178.502213] (-) TimerEvent: {}
+[178.603900] (-) TimerEvent: {}
+[178.706344] (-) TimerEvent: {}
+[178.808814] (-) TimerEvent: {}
+[178.914235] (-) TimerEvent: {}
+[179.018573] (-) TimerEvent: {}
+[179.125635] (-) TimerEvent: {}
+[179.227290] (-) TimerEvent: {}
+[179.333638] (-) TimerEvent: {}
+[179.435271] (-) TimerEvent: {}
+[179.536834] (-) TimerEvent: {}
+[179.642194] (-) TimerEvent: {}
+[179.746419] (-) TimerEvent: {}
+[179.850249] (-) TimerEvent: {}
+[179.954132] (-) TimerEvent: {}
+[180.058225] (-) TimerEvent: {}
+[180.162969] (-) TimerEvent: {}
+[180.269611] (-) TimerEvent: {}
+[180.371383] (-) TimerEvent: {}
+[180.478186] (-) TimerEvent: {}
+[180.582197] (-) TimerEvent: {}
+[180.689652] (-) TimerEvent: {}
+[180.791281] (-) TimerEvent: {}
+[180.896825] (-) TimerEvent: {}
+[181.015394] (-) TimerEvent: {}
+[181.158663] (-) TimerEvent: {}
+[181.260372] (-) TimerEvent: {}
+[181.366255] (-) TimerEvent: {}
+[181.467876] (-) TimerEvent: {}
+[181.574260] (-) TimerEvent: {}
+[181.675821] (-) TimerEvent: {}
+[181.781469] (-) TimerEvent: {}
+[181.886405] (-) TimerEvent: {}
+[181.994028] (-) TimerEvent: {}
+[182.095824] (-) TimerEvent: {}
+[182.197852] (-) TimerEvent: {}
+[182.309650] (-) TimerEvent: {}
+[182.413640] (-) TimerEvent: {}
+[182.515253] (-) TimerEvent: {}
+[182.621663] (-) TimerEvent: {}
+[182.723266] (-) TimerEvent: {}
+[182.829924] (-) TimerEvent: {}
+[182.961637] (-) TimerEvent: {}
+[183.063166] (-) TimerEvent: {}
+[183.169654] (-) TimerEvent: {}
+[183.277643] (-) TimerEvent: {}
+[183.381683] (-) TimerEvent: {}
+[183.483472] (-) TimerEvent: {}
+[183.589675] (-) TimerEvent: {}
+[183.694339] (-) TimerEvent: {}
+[183.798769] (-) TimerEvent: {}
+[183.902892] (-) TimerEvent: {}
+[184.008330] (-) TimerEvent: {}
+[184.113972] (-) TimerEvent: {}
+[184.215156] (-) TimerEvent: {}
+[184.316727] (-) TimerEvent: {}
+[184.422140] (-) TimerEvent: {}
+[184.523422] (-) TimerEvent: {}
+[184.626277] (-) TimerEvent: {}
+[184.730091] (-) TimerEvent: {}
+[184.833611] (-) TimerEvent: {}
+[184.945609] (-) TimerEvent: {}
+[185.049597] (-) TimerEvent: {}
+[185.153607] (-) TimerEvent: {}
+[185.255061] (-) TimerEvent: {}
+[185.357878] (-) TimerEvent: {}
+[185.462136] (-) TimerEvent: {}
+[185.564143] (-) TimerEvent: {}
+[185.666318] (-) TimerEvent: {}
+[185.767981] (-) TimerEvent: {}
+[185.869209] (-) TimerEvent: {}
+[185.970523] (-) TimerEvent: {}
+[186.071859] (-) TimerEvent: {}
+[186.173741] (-) TimerEvent: {}
+[186.275444] (-) TimerEvent: {}
+[186.376699] (-) TimerEvent: {}
+[186.481610] (-) TimerEvent: {}
+[186.585725] (-) TimerEvent: {}
+[186.687446] (-) TimerEvent: {}
+[186.790243] (-) TimerEvent: {}
+[186.892827] (-) TimerEvent: {}
+[186.998820] (-) TimerEvent: {}
+[187.100757] (-) TimerEvent: {}
+[187.244697] (-) TimerEvent: {}
+[187.285539] (amsagv_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amsagv_msgs/msg/detail/dds_fastrtps/tag__type_support.cpp.o\x1b[0m\n'}
+[187.431847] (-) TimerEvent: {}
+[187.432874] (amsagv_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/tags_stamped__type_support.cpp.o\x1b[0m\n'}
+[187.532142] (-) TimerEvent: {}
+[187.633521] (-) TimerEvent: {}
+[187.737634] (-) TimerEvent: {}
+[187.839247] (-) TimerEvent: {}
+[187.940661] (-) TimerEvent: {}
+[188.042873] (-) TimerEvent: {}
+[188.144267] (-) TimerEvent: {}
+[188.245656] (-) TimerEvent: {}
+[188.347008] (-) TimerEvent: {}
+[188.449112] (-) TimerEvent: {}
+[188.554156] (-) TimerEvent: {}
+[188.655562] (-) TimerEvent: {}
+[188.761650] (-) TimerEvent: {}
+[188.863408] (-) TimerEvent: {}
+[188.967872] (-) TimerEvent: {}
+[189.074094] (-) TimerEvent: {}
+[189.175290] (-) TimerEvent: {}
+[189.281868] (-) TimerEvent: {}
+[189.383960] (-) TimerEvent: {}
+[189.485801] (-) TimerEvent: {}
+[189.589580] (-) TimerEvent: {}
+[189.690842] (-) TimerEvent: {}
+[189.792468] (-) TimerEvent: {}
+[189.893657] (-) TimerEvent: {}
+[189.994766] (-) TimerEvent: {}
+[190.095881] (-) TimerEvent: {}
+[190.197397] (-) TimerEvent: {}
+[190.301665] (-) TimerEvent: {}
+[190.403645] (-) TimerEvent: {}
+[190.505220] (-) TimerEvent: {}
+[190.606621] (-) TimerEvent: {}
+[190.707834] (-) TimerEvent: {}
+[190.808973] (-) TimerEvent: {}
+[190.910450] (-) TimerEvent: {}
+[190.981255] (amsagv_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amsagv_msgs/msg/detail/dds_fastrtps/tag_stamped__type_support.cpp.o\x1b[0m\n'}
+[191.063901] (-) TimerEvent: {}
+[191.165120] (-) TimerEvent: {}
+[191.270202] (-) TimerEvent: {}
+[191.374223] (-) TimerEvent: {}
+[191.478642] (-) TimerEvent: {}
+[191.583557] (-) TimerEvent: {}
+[191.693638] (-) TimerEvent: {}
+[191.795960] (-) TimerEvent: {}
+[191.906152] (-) TimerEvent: {}
+[192.007895] (-) TimerEvent: {}
+[192.110983] (-) TimerEvent: {}
+[192.215550] (-) TimerEvent: {}
+[192.320175] (-) TimerEvent: {}
+[192.426117] (-) TimerEvent: {}
+[192.527531] (-) TimerEvent: {}
+[192.628802] (-) TimerEvent: {}
+[192.731354] (-) TimerEvent: {}
+[192.833606] (-) TimerEvent: {}
+[192.937606] (-) TimerEvent: {}
+[193.039035] (-) TimerEvent: {}
+[193.141636] (-) TimerEvent: {}
+[193.246291] (-) TimerEvent: {}
+[193.350745] (-) TimerEvent: {}
+[193.454113] (-) TimerEvent: {}
+[193.558674] (-) TimerEvent: {}
+[193.662683] (-) TimerEvent: {}
+[193.766518] (-) TimerEvent: {}
+[193.869917] (-) TimerEvent: {}
+[193.974163] (-) TimerEvent: {}
+[194.076248] (-) TimerEvent: {}
+[194.178249] (-) TimerEvent: {}
+[194.280380] (-) TimerEvent: {}
+[194.386155] (-) TimerEvent: {}
+[194.493542] (-) TimerEvent: {}
+[194.608104] (-) TimerEvent: {}
+[194.653809] (amsagv_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amsagv_msgs/msg/detail/dds_fastrtps/tags__type_support.cpp.o\x1b[0m\n'}
+[194.731356] (-) TimerEvent: {}
+[194.837674] (-) TimerEvent: {}
+[194.939338] (-) TimerEvent: {}
+[195.049117] (-) TimerEvent: {}
+[195.151034] (-) TimerEvent: {}
+[195.253626] (-) TimerEvent: {}
+[195.361631] (-) TimerEvent: {}
+[195.463164] (-) TimerEvent: {}
+[195.564807] (-) TimerEvent: {}
+[195.670996] (-) TimerEvent: {}
+[195.772552] (-) TimerEvent: {}
+[195.881637] (-) TimerEvent: {}
+[195.989653] (-) TimerEvent: {}
+[196.093637] (-) TimerEvent: {}
+[196.195810] (-) TimerEvent: {}
+[196.305630] (-) TimerEvent: {}
+[196.413636] (-) TimerEvent: {}
+[196.517634] (-) TimerEvent: {}
+[196.619553] (-) TimerEvent: {}
+[196.724244] (-) TimerEvent: {}
+[196.828326] (-) TimerEvent: {}
+[196.933570] (-) TimerEvent: {}
+[197.034930] (-) TimerEvent: {}
+[197.138766] (-) TimerEvent: {}
+[197.242819] (-) TimerEvent: {}
+[197.349678] (-) TimerEvent: {}
+[197.453642] (-) TimerEvent: {}
+[197.560064] (-) TimerEvent: {}
+[197.661643] (-) TimerEvent: {}
+[197.769628] (-) TimerEvent: {}
+[197.873633] (-) TimerEvent: {}
+[197.981684] (-) TimerEvent: {}
+[198.085641] (-) TimerEvent: {}
+[198.187131] (-) TimerEvent: {}
+[198.294292] (-) TimerEvent: {}
+[198.398330] (-) TimerEvent: {}
+[198.425756] (amsagv_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX shared library libamsagv_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[198.501638] (-) TimerEvent: {}
+[198.602973] (-) TimerEvent: {}
+[198.708486] (-) TimerEvent: {}
+[198.812726] (-) TimerEvent: {}
+[198.918168] (-) TimerEvent: {}
+[199.020645] (-) TimerEvent: {}
+[199.129649] (-) TimerEvent: {}
+[199.233530] (-) TimerEvent: {}
+[199.335966] (-) TimerEvent: {}
+[199.441475] (-) TimerEvent: {}
+[199.545674] (-) TimerEvent: {}
+[199.592356] (amsagv_msgs) StdoutLine: {'line': b'[ 83%] Built target amsagv_msgs__rosidl_typesupport_cpp\n'}
+[199.649632] (-) TimerEvent: {}
+[199.751089] (-) TimerEvent: {}
+[199.852540] (-) TimerEvent: {}
+[199.957584] (-) TimerEvent: {}
+[200.058840] (-) TimerEvent: {}
+[200.160734] (-) TimerEvent: {}
+[200.265592] (-) TimerEvent: {}
+[200.366916] (-) TimerEvent: {}
+[200.469681] (-) TimerEvent: {}
+[200.578690] (-) TimerEvent: {}
+[200.690517] (-) TimerEvent: {}
+[200.798543] (-) TimerEvent: {}
+[200.908745] (-) TimerEvent: {}
+[201.025650] (-) TimerEvent: {}
+[201.134001] (-) TimerEvent: {}
+[201.241475] (-) TimerEvent: {}
+[201.343064] (-) TimerEvent: {}
+[201.446278] (-) TimerEvent: {}
+[201.551463] (-) TimerEvent: {}
+[201.657367] (-) TimerEvent: {}
+[201.765665] (-) TimerEvent: {}
+[201.867478] (-) TimerEvent: {}
+[201.971316] (-) TimerEvent: {}
+[202.075477] (-) TimerEvent: {}
+[202.179170] (-) TimerEvent: {}
+[202.285620] (-) TimerEvent: {}
+[202.386987] (-) TimerEvent: {}
+[202.489208] (-) TimerEvent: {}
+[202.595454] (-) TimerEvent: {}
+[202.697938] (-) TimerEvent: {}
+[202.802149] (-) TimerEvent: {}
+[202.903414] (-) TimerEvent: {}
+[203.004792] (-) TimerEvent: {}
+[203.106778] (-) TimerEvent: {}
+[203.208148] (-) TimerEvent: {}
+[203.309990] (-) TimerEvent: {}
+[203.411124] (-) TimerEvent: {}
+[203.512246] (-) TimerEvent: {}
+[203.613456] (-) TimerEvent: {}
+[203.714710] (-) TimerEvent: {}
+[203.815981] (-) TimerEvent: {}
+[203.917241] (-) TimerEvent: {}
+[204.018531] (-) TimerEvent: {}
+[204.133107] (-) TimerEvent: {}
+[204.207249] (amsagv_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amsagv_msgs/msg/detail/dds_fastrtps/tags_stamped__type_support.cpp.o\x1b[0m\n'}
+[204.331562] (-) TimerEvent: {}
+[204.434314] (-) TimerEvent: {}
+[204.537434] (-) TimerEvent: {}
+[204.641604] (-) TimerEvent: {}
+[204.745672] (-) TimerEvent: {}
+[204.849628] (-) TimerEvent: {}
+[204.951005] (-) TimerEvent: {}
+[205.053581] (-) TimerEvent: {}
+[205.157648] (-) TimerEvent: {}
+[205.258896] (-) TimerEvent: {}
+[205.359964] (-) TimerEvent: {}
+[205.460977] (-) TimerEvent: {}
+[205.562088] (-) TimerEvent: {}
+[205.663068] (-) TimerEvent: {}
+[205.764074] (-) TimerEvent: {}
+[205.865094] (-) TimerEvent: {}
+[205.966347] (-) TimerEvent: {}
+[206.067360] (-) TimerEvent: {}
+[206.168403] (-) TimerEvent: {}
+[206.269638] (-) TimerEvent: {}
+[206.370842] (-) TimerEvent: {}
+[206.472018] (-) TimerEvent: {}
+[206.573226] (-) TimerEvent: {}
+[206.674608] (-) TimerEvent: {}
+[206.776379] (-) TimerEvent: {}
+[206.877587] (-) TimerEvent: {}
+[206.979265] (-) TimerEvent: {}
+[207.080427] (-) TimerEvent: {}
+[207.181580] (-) TimerEvent: {}
+[207.283443] (-) TimerEvent: {}
+[207.385417] (-) TimerEvent: {}
+[207.486811] (-) TimerEvent: {}
+[207.587775] (-) TimerEvent: {}
+[207.688778] (-) TimerEvent: {}
+[207.790003] (-) TimerEvent: {}
+[207.891042] (-) TimerEvent: {}
+[207.992089] (-) TimerEvent: {}
+[208.093143] (-) TimerEvent: {}
+[208.194328] (-) TimerEvent: {}
+[208.295369] (-) TimerEvent: {}
+[208.396399] (-) TimerEvent: {}
+[208.497456] (-) TimerEvent: {}
+[208.598487] (-) TimerEvent: {}
+[208.699510] (-) TimerEvent: {}
+[208.800547] (-) TimerEvent: {}
+[208.901554] (-) TimerEvent: {}
+[209.002588] (-) TimerEvent: {}
+[209.103649] (-) TimerEvent: {}
+[209.204689] (-) TimerEvent: {}
+[209.305828] (-) TimerEvent: {}
+[209.406860] (-) TimerEvent: {}
+[209.507895] (-) TimerEvent: {}
+[209.608913] (-) TimerEvent: {}
+[209.710023] (-) TimerEvent: {}
+[209.811023] (-) TimerEvent: {}
+[209.912040] (-) TimerEvent: {}
+[210.013065] (-) TimerEvent: {}
+[210.114171] (-) TimerEvent: {}
+[210.215182] (-) TimerEvent: {}
+[210.316199] (-) TimerEvent: {}
+[210.417219] (-) TimerEvent: {}
+[210.518325] (-) TimerEvent: {}
+[210.619366] (-) TimerEvent: {}
+[210.720413] (-) TimerEvent: {}
+[210.821511] (-) TimerEvent: {}
+[210.922552] (-) TimerEvent: {}
+[211.023595] (-) TimerEvent: {}
+[211.124673] (-) TimerEvent: {}
+[211.235280] (-) TimerEvent: {}
+[211.339994] (-) TimerEvent: {}
+[211.440956] (-) TimerEvent: {}
+[211.542091] (-) TimerEvent: {}
+[211.643141] (-) TimerEvent: {}
+[211.744176] (-) TimerEvent: {}
+[211.845195] (-) TimerEvent: {}
+[211.946318] (-) TimerEvent: {}
+[212.047384] (-) TimerEvent: {}
+[212.148427] (-) TimerEvent: {}
+[212.249522] (-) TimerEvent: {}
+[212.350505] (-) TimerEvent: {}
+[212.451475] (-) TimerEvent: {}
+[212.552508] (-) TimerEvent: {}
+[212.653525] (-) TimerEvent: {}
+[212.754521] (-) TimerEvent: {}
+[212.855570] (-) TimerEvent: {}
+[212.956703] (-) TimerEvent: {}
+[213.057865] (-) TimerEvent: {}
+[213.158941] (-) TimerEvent: {}
+[213.240199] (amsagv_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX shared library libamsagv_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[213.259242] (-) TimerEvent: {}
+[213.360225] (-) TimerEvent: {}
+[213.461136] (-) TimerEvent: {}
+[213.562133] (-) TimerEvent: {}
+[213.663079] (-) TimerEvent: {}
+[213.764318] (-) TimerEvent: {}
+[213.865592] (-) TimerEvent: {}
+[213.966998] (-) TimerEvent: {}
+[214.068316] (-) TimerEvent: {}
+[214.169497] (-) TimerEvent: {}
+[214.270459] (-) TimerEvent: {}
+[214.371423] (-) TimerEvent: {}
+[214.472383] (-) TimerEvent: {}
+[214.513821] (amsagv_msgs) StdoutLine: {'line': b'[ 85%] Built target amsagv_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[214.572625] (-) TimerEvent: {}
+[214.673668] (-) TimerEvent: {}
+[214.766757] (amsagv_msgs) StdoutLine: {'line': b'[ 85%] Built target amsagv_msgs\n'}
+[214.773886] (-) TimerEvent: {}
+[214.874852] (-) TimerEvent: {}
+[214.958245] (amsagv_msgs) StdoutLine: {'line': b'[ 86%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[214.975088] (-) TimerEvent: {}
+[215.076043] (-) TimerEvent: {}
+[215.177088] (-) TimerEvent: {}
+[215.278116] (-) TimerEvent: {}
+[215.379002] (-) TimerEvent: {}
+[215.479886] (-) TimerEvent: {}
+[215.580731] (-) TimerEvent: {}
+[215.681708] (-) TimerEvent: {}
+[215.782676] (-) TimerEvent: {}
+[215.883595] (-) TimerEvent: {}
+[215.984512] (-) TimerEvent: {}
+[216.085501] (-) TimerEvent: {}
+[216.186425] (-) TimerEvent: {}
+[216.287416] (-) TimerEvent: {}
+[216.388392] (-) TimerEvent: {}
+[216.489345] (-) TimerEvent: {}
+[216.590250] (-) TimerEvent: {}
+[216.691172] (-) TimerEvent: {}
+[216.792059] (-) TimerEvent: {}
+[216.892978] (-) TimerEvent: {}
+[216.993977] (-) TimerEvent: {}
+[217.094922] (-) TimerEvent: {}
+[217.195847] (-) TimerEvent: {}
+[217.296813] (-) TimerEvent: {}
+[217.397996] (-) TimerEvent: {}
+[217.498841] (-) TimerEvent: {}
+[217.599708] (-) TimerEvent: {}
+[217.700631] (-) TimerEvent: {}
+[217.801626] (-) TimerEvent: {}
+[217.902551] (-) TimerEvent: {}
+[218.003478] (-) TimerEvent: {}
+[218.104501] (-) TimerEvent: {}
+[218.205463] (-) TimerEvent: {}
+[218.306388] (-) TimerEvent: {}
+[218.407293] (-) TimerEvent: {}
+[218.508257] (-) TimerEvent: {}
+[218.609155] (-) TimerEvent: {}
+[218.710163] (-) TimerEvent: {}
+[218.811102] (-) TimerEvent: {}
+[218.912025] (-) TimerEvent: {}
+[219.012911] (-) TimerEvent: {}
+[219.113872] (-) TimerEvent: {}
+[219.214791] (-) TimerEvent: {}
+[219.315679] (-) TimerEvent: {}
+[219.416573] (-) TimerEvent: {}
+[219.517497] (-) TimerEvent: {}
+[219.618364] (-) TimerEvent: {}
+[219.719265] (-) TimerEvent: {}
+[219.820124] (-) TimerEvent: {}
+[219.921015] (-) TimerEvent: {}
+[220.022025] (-) TimerEvent: {}
+[220.122973] (-) TimerEvent: {}
+[220.223846] (-) TimerEvent: {}
+[220.324767] (-) TimerEvent: {}
+[220.425784] (-) TimerEvent: {}
+[220.526668] (-) TimerEvent: {}
+[220.627575] (-) TimerEvent: {}
+[220.728539] (-) TimerEvent: {}
+[220.829471] (-) TimerEvent: {}
+[220.930347] (-) TimerEvent: {}
+[221.031220] (-) TimerEvent: {}
+[221.132148] (-) TimerEvent: {}
+[221.233014] (-) TimerEvent: {}
+[221.334011] (-) TimerEvent: {}
+[221.434868] (-) TimerEvent: {}
+[221.535749] (-) TimerEvent: {}
+[221.636594] (-) TimerEvent: {}
+[221.737463] (-) TimerEvent: {}
+[221.838321] (-) TimerEvent: {}
+[221.939229] (-) TimerEvent: {}
+[222.040125] (-) TimerEvent: {}
+[222.141014] (-) TimerEvent: {}
+[222.242046] (-) TimerEvent: {}
+[222.343140] (-) TimerEvent: {}
+[222.444076] (-) TimerEvent: {}
+[222.545004] (-) TimerEvent: {}
+[222.646041] (-) TimerEvent: {}
+[222.746955] (-) TimerEvent: {}
+[222.847901] (-) TimerEvent: {}
+[222.948821] (-) TimerEvent: {}
+[223.049832] (-) TimerEvent: {}
+[223.150759] (-) TimerEvent: {}
+[223.251733] (-) TimerEvent: {}
+[223.352649] (-) TimerEvent: {}
+[223.453611] (-) TimerEvent: {}
+[223.554492] (-) TimerEvent: {}
+[223.655426] (-) TimerEvent: {}
+[223.756333] (-) TimerEvent: {}
+[223.857252] (-) TimerEvent: {}
+[223.958212] (-) TimerEvent: {}
+[224.059097] (-) TimerEvent: {}
+[224.160012] (-) TimerEvent: {}
+[224.260940] (-) TimerEvent: {}
+[224.361948] (-) TimerEvent: {}
+[224.462819] (-) TimerEvent: {}
+[224.563744] (-) TimerEvent: {}
+[224.664668] (-) TimerEvent: {}
+[224.765650] (-) TimerEvent: {}
+[224.866552] (-) TimerEvent: {}
+[224.967416] (-) TimerEvent: {}
+[225.068293] (-) TimerEvent: {}
+[225.169233] (-) TimerEvent: {}
+[225.270335] (-) TimerEvent: {}
+[225.373600] (-) TimerEvent: {}
+[225.474763] (-) TimerEvent: {}
+[225.576794] (-) TimerEvent: {}
+[225.681639] (-) TimerEvent: {}
+[225.783320] (-) TimerEvent: {}
+[225.883667] (amsagv_msgs) StdoutLine: {'line': b'[ 86%] Built target amsagv_msgs__py\n'}
+[225.884724] (-) TimerEvent: {}
+[225.985714] (-) TimerEvent: {}
+[226.059349] (amsagv_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_py.dir/rosidl_generator_py/amsagv_msgs/msg/_action_stamped_s.c.o\x1b[0m\n'}
+[226.060754] (amsagv_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_py.dir/rosidl_generator_py/amsagv_msgs/msg/_actions_s.c.o\x1b[0m\n'}
+[226.062017] (amsagv_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_py.dir/rosidl_generator_py/amsagv_msgs/msg/_action_s.c.o\x1b[0m\n'}
+[226.085937] (-) TimerEvent: {}
+[226.186875] (-) TimerEvent: {}
+[226.224725] (amsagv_msgs) StdoutLine: {'line': b'[ 88%] Built target ament_cmake_python_sync_amsagv_msgs\n'}
+[226.287139] (-) TimerEvent: {}
+[226.294988] (amsagv_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_py.dir/rosidl_generator_py/amsagv_msgs/msg/_actions_stamped_s.c.o\x1b[0m\n'}
+[226.387369] (-) TimerEvent: {}
+[226.488321] (-) TimerEvent: {}
+[226.589276] (-) TimerEvent: {}
+[226.690304] (-) TimerEvent: {}
+[226.791225] (-) TimerEvent: {}
+[226.893737] (-) TimerEvent: {}
+[226.994721] (-) TimerEvent: {}
+[227.095746] (-) TimerEvent: {}
+[227.200263] (-) TimerEvent: {}
+[227.301613] (-) TimerEvent: {}
+[227.404501] (-) TimerEvent: {}
+[227.513619] (-) TimerEvent: {}
+[227.614952] (-) TimerEvent: {}
+[227.716492] (-) TimerEvent: {}
+[227.821653] (-) TimerEvent: {}
+[227.923025] (-) TimerEvent: {}
+[228.026736] (-) TimerEvent: {}
+[228.128178] (-) TimerEvent: {}
+[228.229233] (-) TimerEvent: {}
+[228.334093] (-) TimerEvent: {}
+[228.435278] (-) TimerEvent: {}
+[228.536501] (-) TimerEvent: {}
+[228.642189] (-) TimerEvent: {}
+[228.743519] (-) TimerEvent: {}
+[228.774116] (amsagv_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_py.dir/rosidl_generator_py/amsagv_msgs/msg/_line_s.c.o\x1b[0m\n'}
+[228.775391] (amsagv_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_py.dir/rosidl_generator_py/amsagv_msgs/msg/_line_stamped_s.c.o\x1b[0m\n'}
+[228.843813] (-) TimerEvent: {}
+[228.855973] (amsagv_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_py.dir/rosidl_generator_py/amsagv_msgs/msg/_tag_s.c.o\x1b[0m\n'}
+[228.944215] (-) TimerEvent: {}
+[229.045952] (-) TimerEvent: {}
+[229.150062] (-) TimerEvent: {}
+[229.254142] (-) TimerEvent: {}
+[229.358118] (-) TimerEvent: {}
+[229.462259] (-) TimerEvent: {}
+[229.566518] (-) TimerEvent: {}
+[229.670101] (-) TimerEvent: {}
+[229.774206] (-) TimerEvent: {}
+[229.877904] (-) TimerEvent: {}
+[229.981635] (-) TimerEvent: {}
+[230.082895] (-) TimerEvent: {}
+[230.101215] (amsagv_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_py.dir/rosidl_generator_py/amsagv_msgs/msg/_tag_stamped_s.c.o\x1b[0m\n'}
+[230.183197] (-) TimerEvent: {}
+[230.285016] (-) TimerEvent: {}
+[230.389991] (-) TimerEvent: {}
+[230.433730] (amsagv_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_py.dir/rosidl_generator_py/amsagv_msgs/msg/_tags_s.c.o\x1b[0m\n'}
+[230.435529] (amsagv_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_py.dir/rosidl_generator_py/amsagv_msgs/msg/_tags_stamped_s.c.o\x1b[0m\n'}
+[230.493585] (-) TimerEvent: {}
+[230.594658] (-) TimerEvent: {}
+[230.695832] (-) TimerEvent: {}
+[230.797087] (-) TimerEvent: {}
+[230.901791] (-) TimerEvent: {}
+[231.003403] (-) TimerEvent: {}
+[231.104865] (-) TimerEvent: {}
+[231.210743] (-) TimerEvent: {}
+[231.311946] (-) TimerEvent: {}
+[231.414674] (-) TimerEvent: {}
+[231.516949] (-) TimerEvent: {}
+[231.618269] (-) TimerEvent: {}
+[231.721163] (-) TimerEvent: {}
+[231.800907] (amsagv_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library libamsagv_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[231.821549] (-) TimerEvent: {}
+[231.922576] (-) TimerEvent: {}
+[232.023600] (-) TimerEvent: {}
+[232.124893] (-) TimerEvent: {}
+[232.226336] (-) TimerEvent: {}
+[232.327308] (-) TimerEvent: {}
+[232.358986] (amsagv_msgs) StdoutLine: {'line': b'[ 95%] Built target amsagv_msgs__rosidl_generator_py\n'}
+[232.429494] (-) TimerEvent: {}
+[232.534064] (-) TimerEvent: {}
+[232.552422] (amsagv_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/amsagv_msgs/_amsagv_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[232.556364] (amsagv_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/amsagv_msgs/_amsagv_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[232.591046] (amsagv_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding C object CMakeFiles/amsagv_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/amsagv_msgs/_amsagv_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[232.637645] (-) TimerEvent: {}
+[232.738879] (-) TimerEvent: {}
+[232.840425] (-) TimerEvent: {}
+[232.946104] (-) TimerEvent: {}
+[233.047330] (-) TimerEvent: {}
+[233.148696] (-) TimerEvent: {}
+[233.250070] (-) TimerEvent: {}
+[233.354136] (-) TimerEvent: {}
+[233.455399] (-) TimerEvent: {}
+[233.559233] (-) TimerEvent: {}
+[233.662025] (-) TimerEvent: {}
+[233.766169] (-) TimerEvent: {}
+[233.867640] (-) TimerEvent: {}
+[233.970252] (-) TimerEvent: {}
+[233.985895] (amsagv_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/amsagv_msgs/amsagv_msgs_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[233.987317] (amsagv_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/amsagv_msgs/amsagv_msgs_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[234.037562] (amsagv_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/amsagv_msgs/amsagv_msgs_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[234.073579] (-) TimerEvent: {}
+[234.175036] (-) TimerEvent: {}
+[234.278313] (-) TimerEvent: {}
+[234.316651] (amsagv_msgs) StdoutLine: {'line': b'[100%] Built target amsagv_msgs_s__rosidl_typesupport_introspection_c\n'}
+[234.324870] (amsagv_msgs) StdoutLine: {'line': b'[100%] Built target amsagv_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[234.378580] (-) TimerEvent: {}
+[234.380686] (amsagv_msgs) StdoutLine: {'line': b'[100%] Built target amsagv_msgs_s__rosidl_typesupport_c\n'}
+[234.478815] (-) TimerEvent: {}
+[234.579701] (-) TimerEvent: {}
+[234.680594] (-) TimerEvent: {}
+[234.781481] (-) TimerEvent: {}
+[234.854770] (amsagv_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[234.881681] (-) TimerEvent: {}
+[234.982567] (-) TimerEvent: {}
+[235.083475] (-) TimerEvent: {}
+[235.177919] (amsagv_msgs) StdoutLine: {'line': b'creating amsagv_msgs.egg-info\n'}
+[235.179034] (amsagv_msgs) StdoutLine: {'line': b'writing amsagv_msgs.egg-info/PKG-INFO\n'}
+[235.181253] (amsagv_msgs) StdoutLine: {'line': b'writing dependency_links to amsagv_msgs.egg-info/dependency_links.txt\n'}
+[235.183152] (amsagv_msgs) StdoutLine: {'line': b'writing top-level names to amsagv_msgs.egg-info/top_level.txt\n'}
+[235.184105] (-) TimerEvent: {}
+[235.184872] (amsagv_msgs) StdoutLine: {'line': b"writing manifest file 'amsagv_msgs.egg-info/SOURCES.txt'\n"}
+[235.284344] (-) TimerEvent: {}
+[235.385247] (-) TimerEvent: {}
+[235.486203] (-) TimerEvent: {}
+[235.587104] (-) TimerEvent: {}
+[235.688015] (-) TimerEvent: {}
+[235.788917] (-) TimerEvent: {}
+[235.889940] (-) TimerEvent: {}
+[235.990861] (-) TimerEvent: {}
+[236.091765] (-) TimerEvent: {}
+[236.150770] (amsagv_msgs) StdoutLine: {'line': b"reading manifest file 'amsagv_msgs.egg-info/SOURCES.txt'\n"}
+[236.156863] (amsagv_msgs) StdoutLine: {'line': b"writing manifest file 'amsagv_msgs.egg-info/SOURCES.txt'\n"}
+[236.192061] (-) TimerEvent: {}
+[236.293172] (-) TimerEvent: {}
+[236.394340] (-) TimerEvent: {}
+[236.483298] (amsagv_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_amsagv_msgs_egg\n'}
+[236.494594] (-) TimerEvent: {}
+[236.595586] (-) TimerEvent: {}
+[236.642351] (amsagv_msgs) CommandEnded: {'returncode': 0}
+[236.686967] (amsagv_msgs) JobProgress: {'identifier': 'amsagv_msgs', 'progress': 'install'}
+[236.695825] (-) TimerEvent: {}
+[236.777793] (amsagv_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pia/ros/build/amsagv_msgs'], 'cwd': '/home/pia/ros/build/amsagv_msgs', 'env': OrderedDict({'USER': 'pia', 'SSH_CLIENT': '10.8.134.103 53486 22', 'ROS_NAMESPACE': '/moi', 'TEXTDOMAIN': 'pam_chksshpwd', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/lyrical/opt/zenoh_cpp_vendor/lib:/opt/ros/lyrical/opt/gz_math_vendor/lib:/opt/ros/lyrical/opt/gz_utils_vendor/lib:/opt/ros/lyrical/opt/rviz_ogre_vendor/lib:/opt/ros/lyrical/opt/mimick_vendor/lib:/opt/ros/lyrical/opt/gz_cmake_vendor/lib:/opt/ros/lyrical/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pia', 'OLDPWD': '/home/pia', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DPKG_DEB_THREADS_MAX': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLCON_PREFIX_PATH': '/opt/ros/lyrical', 'ROS_DISTRO': 'lyrical', 'LOGNAME': 'pia', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/opt/ros/lyrical/lib/aarch64-linux-gnu/pkgconfig:/opt/ros/lyrical/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '39', 'PATH': '/opt/ros/lyrical/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'en_GB.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.7z=01;31:*.ace=01;31:*.alz=01;31:*.apk=01;31:*.arc=01;31:*.arj=01;31:*.bz=01;31:*.bz2=01;31:*.cab=01;31:*.cpio=01;31:*.crate=01;31:*.deb=01;31:*.drpm=01;31:*.dwm=01;31:*.dz=01;31:*.ear=01;31:*.egg=01;31:*.esd=01;31:*.gz=01;31:*.jar=01;31:*.lha=01;31:*.lrz=01;31:*.lz=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.lzo=01;31:*.pyz=01;31:*.rar=01;31:*.rpm=01;31:*.rz=01;31:*.sar=01;31:*.swm=01;31:*.t7z=01;31:*.tar=01;31:*.taz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tgz=01;31:*.tlz=01;31:*.txz=01;31:*.tz=01;31:*.tzo=01;31:*.tzst=01;31:*.udeb=01;31:*.war=01;31:*.whl=01;31:*.wim=01;31:*.xz=01;31:*.z=01;31:*.zip=01;31:*.zoo=01;31:*.zst=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.jxl=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '26', 'AMENT_PREFIX_PATH': '/opt/ros/lyrical', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/pia/ros/build/amsagv_msgs', 'SSH_CONNECTION': '10.8.134.103 53486 10.8.134.126 22', 'PYTHONPATH': '/opt/ros/lyrical/opt/gz_math_vendor/lib/python:/opt/ros/lyrical/lib/python3.13/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/lyrical/opt/gz_math_vendor:/opt/ros/lyrical/opt/gz_utils_vendor:/opt/ros/lyrical/opt/gz_cmake_vendor:/opt/ros/lyrical'}), 'shell': False}
+[236.798396] (-) TimerEvent: {}
+[236.870940] (amsagv_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[236.877489] (amsagv_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[236.888092] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/ament_index/resource_index/rosidl_interfaces/amsagv_msgs\n'}
+[236.898640] (-) TimerEvent: {}
+[236.962057] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Action.json\n'}
+[236.998862] (-) TimerEvent: {}
+[237.036645] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/ActionStamped.json\n'}
+[237.099125] (-) TimerEvent: {}
+[237.108092] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Actions.json\n'}
+[237.179770] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/ActionsStamped.json\n'}
+[237.199390] (-) TimerEvent: {}
+[237.252390] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Line.json\n'}
+[237.299631] (-) TimerEvent: {}
+[237.324378] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/LineStamped.json\n'}
+[237.397218] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Tag.json\n'}
+[237.399830] (-) TimerEvent: {}
+[237.469105] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/TagStamped.json\n'}
+[237.500078] (-) TimerEvent: {}
+[237.542882] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Tags.json\n'}
+[237.600337] (-) TimerEvent: {}
+[237.614135] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/TagsStamped.json\n'}
+[237.700613] (-) TimerEvent: {}
+[237.701637] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/action.h\n'}
+[237.768781] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/action_stamped.h\n'}
+[237.800851] (-) TimerEvent: {}
+[237.836975] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/actions.h\n'}
+[237.901129] (-) TimerEvent: {}
+[237.906537] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/actions_stamped.h\n'}
+[237.974912] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action__functions.h\n'}
+[238.001418] (-) TimerEvent: {}
+[238.043329] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action__struct.h\n'}
+[238.101685] (-) TimerEvent: {}
+[238.112983] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action__type_support.h\n'}
+[238.180593] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action_stamped__functions.h\n'}
+[238.201908] (-) TimerEvent: {}
+[238.249166] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action_stamped__struct.h\n'}
+[238.302168] (-) TimerEvent: {}
+[238.317388] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action_stamped__type_support.h\n'}
+[238.385988] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions__functions.h\n'}
+[238.402435] (-) TimerEvent: {}
+[238.453870] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions__struct.h\n'}
+[238.502665] (-) TimerEvent: {}
+[238.523317] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions__type_support.h\n'}
+[238.602890] (-) TimerEvent: {}
+[238.608135] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions_stamped__functions.h\n'}
+[238.676396] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions_stamped__struct.h\n'}
+[238.703101] (-) TimerEvent: {}
+[238.745755] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions_stamped__type_support.h\n'}
+[238.803333] (-) TimerEvent: {}
+[238.814089] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line__functions.h\n'}
+[238.881976] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line__struct.h\n'}
+[238.903575] (-) TimerEvent: {}
+[238.950450] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line__type_support.h\n'}
+[239.003808] (-) TimerEvent: {}
+[239.018102] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line_stamped__functions.h\n'}
+[239.086257] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line_stamped__struct.h\n'}
+[239.104071] (-) TimerEvent: {}
+[239.155065] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line_stamped__type_support.h\n'}
+[239.204298] (-) TimerEvent: {}
+[239.223862] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag__functions.h\n'}
+[239.291059] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag__struct.h\n'}
+[239.304557] (-) TimerEvent: {}
+[239.360033] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag__type_support.h\n'}
+[239.404788] (-) TimerEvent: {}
+[239.428358] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag_stamped__functions.h\n'}
+[239.496753] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag_stamped__struct.h\n'}
+[239.505051] (-) TimerEvent: {}
+[239.564829] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag_stamped__type_support.h\n'}
+[239.605332] (-) TimerEvent: {}
+[239.633534] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags__functions.h\n'}
+[239.700519] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags__struct.h\n'}
+[239.705556] (-) TimerEvent: {}
+[239.768264] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags__type_support.h\n'}
+[239.805885] (-) TimerEvent: {}
+[239.836324] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags_stamped__functions.h\n'}
+[239.904335] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags_stamped__struct.h\n'}
+[239.906035] (-) TimerEvent: {}
+[239.974214] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags_stamped__type_support.h\n'}
+[240.006299] (-) TimerEvent: {}
+[240.042495] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/line.h\n'}
+[240.106574] (-) TimerEvent: {}
+[240.110266] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/line_stamped.h\n'}
+[240.177838] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[240.206804] (-) TimerEvent: {}
+[240.245931] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/tag.h\n'}
+[240.307052] (-) TimerEvent: {}
+[240.315240] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/tag_stamped.h\n'}
+[240.382825] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/tags.h\n'}
+[240.407283] (-) TimerEvent: {}
+[240.451188] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/tags_stamped.h\n'}
+[240.507528] (-) TimerEvent: {}
+[240.525742] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/environment/library_path.sh\n'}
+[240.598332] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/environment/library_path.dsv\n'}
+[240.607774] (-) TimerEvent: {}
+[240.673733] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action__rosidl_typesupport_fastrtps_c.h\n'}
+[240.708035] (-) TimerEvent: {}
+[240.742150] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action_stamped__rosidl_typesupport_fastrtps_c.h\n'}
+[240.808314] (-) TimerEvent: {}
+[240.809908] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions__rosidl_typesupport_fastrtps_c.h\n'}
+[240.878071] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions_stamped__rosidl_typesupport_fastrtps_c.h\n'}
+[240.908536] (-) TimerEvent: {}
+[240.946145] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line__rosidl_typesupport_fastrtps_c.h\n'}
+[241.008803] (-) TimerEvent: {}
+[241.014035] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line_stamped__rosidl_typesupport_fastrtps_c.h\n'}
+[241.081596] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag__rosidl_typesupport_fastrtps_c.h\n'}
+[241.109023] (-) TimerEvent: {}
+[241.149791] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag_stamped__rosidl_typesupport_fastrtps_c.h\n'}
+[241.209356] (-) TimerEvent: {}
+[241.218213] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags__rosidl_typesupport_fastrtps_c.h\n'}
+[241.286449] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags_stamped__rosidl_typesupport_fastrtps_c.h\n'}
+[241.309533] (-) TimerEvent: {}
+[241.354564] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[241.409756] (-) TimerEvent: {}
+[241.432607] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/action.hpp\n'}
+[241.500516] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/action_stamped.hpp\n'}
+[241.510001] (-) TimerEvent: {}
+[241.568825] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/actions.hpp\n'}
+[241.610241] (-) TimerEvent: {}
+[241.637372] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/actions_stamped.hpp\n'}
+[241.704538] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action__builder.hpp\n'}
+[241.710461] (-) TimerEvent: {}
+[241.772163] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action__struct.hpp\n'}
+[241.810696] (-) TimerEvent: {}
+[241.840883] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action__traits.hpp\n'}
+[241.909955] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action__type_support.hpp\n'}
+[241.911019] (-) TimerEvent: {}
+[241.980501] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action_stamped__builder.hpp\n'}
+[242.011270] (-) TimerEvent: {}
+[242.049356] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action_stamped__struct.hpp\n'}
+[242.111543] (-) TimerEvent: {}
+[242.117479] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action_stamped__traits.hpp\n'}
+[242.185092] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action_stamped__type_support.hpp\n'}
+[242.211751] (-) TimerEvent: {}
+[242.252477] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions__builder.hpp\n'}
+[242.312023] (-) TimerEvent: {}
+[242.320680] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions__struct.hpp\n'}
+[242.396690] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions__traits.hpp\n'}
+[242.412300] (-) TimerEvent: {}
+[242.482480] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions__type_support.hpp\n'}
+[242.512520] (-) TimerEvent: {}
+[242.550611] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions_stamped__builder.hpp\n'}
+[242.612777] (-) TimerEvent: {}
+[242.618338] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions_stamped__struct.hpp\n'}
+[242.686975] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions_stamped__traits.hpp\n'}
+[242.713012] (-) TimerEvent: {}
+[242.755384] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions_stamped__type_support.hpp\n'}
+[242.813280] (-) TimerEvent: {}
+[242.823350] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line__builder.hpp\n'}
+[242.891508] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line__struct.hpp\n'}
+[242.913549] (-) TimerEvent: {}
+[242.959225] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line__traits.hpp\n'}
+[243.013764] (-) TimerEvent: {}
+[243.027684] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line__type_support.hpp\n'}
+[243.095480] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line_stamped__builder.hpp\n'}
+[243.114047] (-) TimerEvent: {}
+[243.164249] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line_stamped__struct.hpp\n'}
+[243.214423] (-) TimerEvent: {}
+[243.232917] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line_stamped__traits.hpp\n'}
+[243.301784] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line_stamped__type_support.hpp\n'}
+[243.314720] (-) TimerEvent: {}
+[243.371302] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag__builder.hpp\n'}
+[243.414914] (-) TimerEvent: {}
+[243.439260] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag__struct.hpp\n'}
+[243.506658] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag__traits.hpp\n'}
+[243.515160] (-) TimerEvent: {}
+[243.575445] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag__type_support.hpp\n'}
+[243.615383] (-) TimerEvent: {}
+[243.651223] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag_stamped__builder.hpp\n'}
+[243.715651] (-) TimerEvent: {}
+[243.719627] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag_stamped__struct.hpp\n'}
+[243.787427] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag_stamped__traits.hpp\n'}
+[243.815856] (-) TimerEvent: {}
+[243.855178] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag_stamped__type_support.hpp\n'}
+[243.916116] (-) TimerEvent: {}
+[243.923561] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags__builder.hpp\n'}
+[243.990946] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags__struct.hpp\n'}
+[244.016339] (-) TimerEvent: {}
+[244.059107] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags__traits.hpp\n'}
+[244.116600] (-) TimerEvent: {}
+[244.127031] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags__type_support.hpp\n'}
+[244.195396] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags_stamped__builder.hpp\n'}
+[244.216851] (-) TimerEvent: {}
+[244.263807] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags_stamped__struct.hpp\n'}
+[244.317132] (-) TimerEvent: {}
+[244.331840] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags_stamped__traits.hpp\n'}
+[244.400263] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags_stamped__type_support.hpp\n'}
+[244.417445] (-) TimerEvent: {}
+[244.468989] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/line.hpp\n'}
+[244.517666] (-) TimerEvent: {}
+[244.537409] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/line_stamped.hpp\n'}
+[244.605026] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[244.617911] (-) TimerEvent: {}
+[244.673257] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/tag.hpp\n'}
+[244.718140] (-) TimerEvent: {}
+[244.741399] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/tag_stamped.hpp\n'}
+[244.809202] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/tags.hpp\n'}
+[244.818380] (-) TimerEvent: {}
+[244.877217] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/tags_stamped.hpp\n'}
+[244.918612] (-) TimerEvent: {}
+[244.954176] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[245.018879] (-) TimerEvent: {}
+[245.022293] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action_stamped__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[245.090042] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[245.119090] (-) TimerEvent: {}
+[245.160409] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions_stamped__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[245.219345] (-) TimerEvent: {}
+[245.229516] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[245.297180] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line_stamped__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[245.319569] (-) TimerEvent: {}
+[245.365780] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[245.419810] (-) TimerEvent: {}
+[245.434121] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag_stamped__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[245.503166] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[245.520062] (-) TimerEvent: {}
+[245.570372] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags_stamped__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[245.620307] (-) TimerEvent: {}
+[245.638305] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[245.712528] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action__rosidl_typesupport_introspection_c.h\n'}
+[245.720556] (-) TimerEvent: {}
+[245.780893] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action_stamped__rosidl_typesupport_introspection_c.h\n'}
+[245.820783] (-) TimerEvent: {}
+[245.849578] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions__rosidl_typesupport_introspection_c.h\n'}
+[245.918467] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions_stamped__rosidl_typesupport_introspection_c.h\n'}
+[245.920980] (-) TimerEvent: {}
+[245.986757] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line__rosidl_typesupport_introspection_c.h\n'}
+[246.021225] (-) TimerEvent: {}
+[246.055545] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line_stamped__rosidl_typesupport_introspection_c.h\n'}
+[246.121555] (-) TimerEvent: {}
+[246.123386] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag__rosidl_typesupport_introspection_c.h\n'}
+[246.193091] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag_stamped__rosidl_typesupport_introspection_c.h\n'}
+[246.221758] (-) TimerEvent: {}
+[246.261784] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags__rosidl_typesupport_introspection_c.h\n'}
+[246.322002] (-) TimerEvent: {}
+[246.329115] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags_stamped__rosidl_typesupport_introspection_c.h\n'}
+[246.397211] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[246.422235] (-) TimerEvent: {}
+[246.475864] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action__rosidl_typesupport_introspection_cpp.hpp\n'}
+[246.522465] (-) TimerEvent: {}
+[246.544943] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action_stamped__rosidl_typesupport_introspection_cpp.hpp\n'}
+[246.612857] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions__rosidl_typesupport_introspection_cpp.hpp\n'}
+[246.622710] (-) TimerEvent: {}
+[246.681708] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions_stamped__rosidl_typesupport_introspection_cpp.hpp\n'}
+[246.722946] (-) TimerEvent: {}
+[246.752832] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line__rosidl_typesupport_introspection_cpp.hpp\n'}
+[246.821893] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line_stamped__rosidl_typesupport_introspection_cpp.hpp\n'}
+[246.822951] (-) TimerEvent: {}
+[246.890242] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag__rosidl_typesupport_introspection_cpp.hpp\n'}
+[246.923191] (-) TimerEvent: {}
+[246.958645] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag_stamped__rosidl_typesupport_introspection_cpp.hpp\n'}
+[247.023479] (-) TimerEvent: {}
+[247.027117] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags__rosidl_typesupport_introspection_cpp.hpp\n'}
+[247.096960] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags_stamped__rosidl_typesupport_introspection_cpp.hpp\n'}
+[247.123699] (-) TimerEvent: {}
+[247.169834] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/environment/pythonpath.sh\n'}
+[247.223952] (-) TimerEvent: {}
+[247.240982] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/environment/pythonpath.dsv\n'}
+[247.314322] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/amsagv_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[247.324194] (-) TimerEvent: {}
+[247.386997] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/amsagv_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[247.424414] (-) TimerEvent: {}
+[247.458925] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/amsagv_msgs_s__rosidl_typesupport_c.so\n'}
+[247.524718] (-) TimerEvent: {}
+[247.531738] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/ament_index/resource_index/rust_packages/amsagv_msgs\n'}
+[247.606946] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/rust/Cargo.toml\n'}
+[247.624999] (-) TimerEvent: {}
+[247.675856] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/rust/build.rs\n'}
+[247.725258] (-) TimerEvent: {}
+[247.746330] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/rust/src/lib.rs\n'}
+[247.815561] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/rust/src/msg.rs\n'}
+[247.825545] (-) TimerEvent: {}
+[247.884662] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/rust/src/msg/rmw.rs\n'}
+[247.925762] (-) TimerEvent: {}
+[247.957694] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Action.idl\n'}
+[248.025980] (-) TimerEvent: {}
+[248.029987] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/ActionStamped.idl\n'}
+[248.101061] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Actions.idl\n'}
+[248.126207] (-) TimerEvent: {}
+[248.172982] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/ActionsStamped.idl\n'}
+[248.226454] (-) TimerEvent: {}
+[248.244437] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Line.idl\n'}
+[248.315503] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/LineStamped.idl\n'}
+[248.326689] (-) TimerEvent: {}
+[248.386719] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Tag.idl\n'}
+[248.426921] (-) TimerEvent: {}
+[248.458481] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/TagStamped.idl\n'}
+[248.527135] (-) TimerEvent: {}
+[248.530933] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Tags.idl\n'}
+[248.602660] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/TagsStamped.idl\n'}
+[248.627365] (-) TimerEvent: {}
+[248.707418] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Action.msg\n'}
+[248.727621] (-) TimerEvent: {}
+[248.780348] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/ActionStamped.msg\n'}
+[248.827869] (-) TimerEvent: {}
+[248.851937] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Actions.msg\n'}
+[248.923431] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/ActionsStamped.msg\n'}
+[248.928109] (-) TimerEvent: {}
+[248.994611] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Line.msg\n'}
+[249.028324] (-) TimerEvent: {}
+[249.067240] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/LineStamped.msg\n'}
+[249.128587] (-) TimerEvent: {}
+[249.138730] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Tag.msg\n'}
+[249.209586] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/TagStamped.msg\n'}
+[249.228874] (-) TimerEvent: {}
+[249.281538] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Tags.msg\n'}
+[249.329107] (-) TimerEvent: {}
+[249.352803] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/TagsStamped.msg\n'}
+[249.424384] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/ament_index/resource_index/package_run_dependencies/amsagv_msgs\n'}
+[249.429422] (-) TimerEvent: {}
+[249.496769] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/ament_index/resource_index/parent_prefix_path/amsagv_msgs\n'}
+[249.529576] (-) TimerEvent: {}
+[249.571629] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/environment/ament_prefix_path.sh\n'}
+[249.629848] (-) TimerEvent: {}
+[249.642949] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/environment/ament_prefix_path.dsv\n'}
+[249.716320] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/environment/path.sh\n'}
+[249.730074] (-) TimerEvent: {}
+[249.787138] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/environment/path.dsv\n'}
+[249.830303] (-) TimerEvent: {}
+[249.858501] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/local_setup.bash\n'}
+[249.930524] (-) TimerEvent: {}
+[249.931520] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/local_setup.fish\n'}
+[250.002888] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/local_setup.sh\n'}
+[250.030737] (-) TimerEvent: {}
+[250.075468] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/local_setup.zsh\n'}
+[250.130988] (-) TimerEvent: {}
+[250.147858] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/local_setup.dsv\n'}
+[250.220656] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/package.dsv\n'}
+[250.231228] (-) TimerEvent: {}
+[250.293340] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/ament_index/resource_index/packages/amsagv_msgs\n'}
+[250.331462] (-) TimerEvent: {}
+[250.364057] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs-1.0.0-py3.13.egg-info/PKG-INFO\n'}
+[250.431691] (-) TimerEvent: {}
+[250.432667] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs-1.0.0-py3.13.egg-info/SOURCES.txt\n'}
+[250.500409] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs-1.0.0-py3.13.egg-info/dependency_links.txt\n'}
+[250.531920] (-) TimerEvent: {}
+[250.569462] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs-1.0.0-py3.13.egg-info/top_level.txt\n'}
+[250.632189] (-) TimerEvent: {}
+[250.642461] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/__init__.py\n'}
+[250.710266] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/_amsagv_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[250.732424] (-) TimerEvent: {}
+[250.779727] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/_amsagv_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[250.832678] (-) TimerEvent: {}
+[250.848866] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/_amsagv_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[250.916723] (amsagv_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/amsagv_msgs_s__rosidl_typesupport_c.so\n'}
+[250.918092] (amsagv_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/amsagv_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[250.919270] (amsagv_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/amsagv_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[250.920425] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/__init__.py\n'}
+[250.932921] (-) TimerEvent: {}
+[250.988117] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_action.py\n'}
+[251.033171] (-) TimerEvent: {}
+[251.056079] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_action_s.c\n'}
+[251.124258] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_action_stamped.py\n'}
+[251.133538] (-) TimerEvent: {}
+[251.192449] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_action_stamped_s.c\n'}
+[251.233795] (-) TimerEvent: {}
+[251.260470] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_actions.py\n'}
+[251.327922] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_actions_s.c\n'}
+[251.334003] (-) TimerEvent: {}
+[251.395847] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_actions_stamped.py\n'}
+[251.434237] (-) TimerEvent: {}
+[251.464213] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_actions_stamped_s.c\n'}
+[251.531529] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_line.py\n'}
+[251.534450] (-) TimerEvent: {}
+[251.599884] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_line_s.c\n'}
+[251.634683] (-) TimerEvent: {}
+[251.670346] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_line_stamped.py\n'}
+[251.734941] (-) TimerEvent: {}
+[251.738298] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_line_stamped_s.c\n'}
+[251.805909] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_tag.py\n'}
+[251.835162] (-) TimerEvent: {}
+[251.874556] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_tag_s.c\n'}
+[251.935434] (-) TimerEvent: {}
+[251.942916] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_tag_stamped.py\n'}
+[252.011038] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_tag_stamped_s.c\n'}
+[252.035654] (-) TimerEvent: {}
+[252.079339] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_tags.py\n'}
+[252.135916] (-) TimerEvent: {}
+[252.147110] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_tags_s.c\n'}
+[252.214819] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_tags_stamped.py\n'}
+[252.236133] (-) TimerEvent: {}
+[252.283682] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_tags_stamped_s.c\n'}
+[252.336375] (-) TimerEvent: {}
+[252.352259] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/py.typed\n'}
+[252.425998] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[252.436638] (-) TimerEvent: {}
+[252.510540] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[252.536927] (-) TimerEvent: {}
+[252.598910] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[252.637154] (-) TimerEvent: {}
+[252.671709] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[252.737520] (-) TimerEvent: {}
+[252.744095] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[252.815570] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[252.837796] (-) TimerEvent: {}
+[252.888593] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[252.938030] (-) TimerEvent: {}
+[252.962704] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake\n'}
+[253.036320] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/amsagv_msgsConfig.cmake\n'}
+[253.038189] (-) TimerEvent: {}
+[253.105278] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/amsagv_msgsConfig-version.cmake\n'}
+[253.138408] (-) TimerEvent: {}
+[253.177387] (amsagv_msgs) StdoutLine: {'line': b'-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/package.xml\n'}
+[253.238651] (-) TimerEvent: {}
+[253.250568] (amsagv_msgs) StdoutLine: {'line': b'-- Installing: /home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_generator_c.so\n'}
+[253.256244] (amsagv_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_generator_c.so" to ""\n'}
+[253.257710] (amsagv_msgs) StdoutLine: {'line': b'-- Installing: /home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[253.269493] (amsagv_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[253.270818] (amsagv_msgs) StdoutLine: {'line': b'-- Installing: /home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[253.274817] (amsagv_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[253.276077] (amsagv_msgs) StdoutLine: {'line': b'-- Installing: /home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_typesupport_introspection_c.so\n'}
+[253.281041] (amsagv_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[253.282432] (amsagv_msgs) StdoutLine: {'line': b'-- Installing: /home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_typesupport_c.so\n'}
+[253.284965] (amsagv_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_typesupport_c.so" to ""\n'}
+[253.286511] (amsagv_msgs) StdoutLine: {'line': b'-- Installing: /home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[253.306809] (amsagv_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[253.308217] (amsagv_msgs) StdoutLine: {'line': b'-- Installing: /home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_typesupport_cpp.so\n'}
+[253.309876] (amsagv_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[253.311121] (amsagv_msgs) StdoutLine: {'line': b'-- Installing: /home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_generator_py.so\n'}
+[253.313534] (amsagv_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_generator_py.so" to ""\n'}
+[253.315636] (amsagv_msgs) StdoutLine: {'line': b'-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/export_amsagv_msgs__rosidl_generator_cExport.cmake\n'}
+[253.317883] (amsagv_msgs) StdoutLine: {'line': b'-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/export_amsagv_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[253.319798] (amsagv_msgs) StdoutLine: {'line': b'-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/export_amsagv_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[253.321927] (amsagv_msgs) StdoutLine: {'line': b'-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/export_amsagv_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[253.324178] (amsagv_msgs) StdoutLine: {'line': b'-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/export_amsagv_msgs__rosidl_generator_cppExport.cmake\n'}
+[253.326365] (amsagv_msgs) StdoutLine: {'line': b'-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/export_amsagv_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[253.328393] (amsagv_msgs) StdoutLine: {'line': b'-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/export_amsagv_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[253.330306] (amsagv_msgs) StdoutLine: {'line': b'-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/amsagv_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[253.332295] (amsagv_msgs) StdoutLine: {'line': b'-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/amsagv_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[253.334187] (amsagv_msgs) StdoutLine: {'line': b'-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/amsagv_msgs__rosidl_typesupport_cExport.cmake\n'}
+[253.336239] (amsagv_msgs) StdoutLine: {'line': b'-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/amsagv_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[253.338220] (amsagv_msgs) StdoutLine: {'line': b'-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/amsagv_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[253.339329] (-) TimerEvent: {}
+[253.340380] (amsagv_msgs) StdoutLine: {'line': b'-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/amsagv_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[253.342422] (amsagv_msgs) StdoutLine: {'line': b'-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/amsagv_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[253.344666] (amsagv_msgs) StdoutLine: {'line': b'-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/amsagv_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[253.346663] (amsagv_msgs) StdoutLine: {'line': b'-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/export_amsagv_msgs__rosidl_generator_pyExport.cmake\n'}
+[253.348760] (amsagv_msgs) StdoutLine: {'line': b'-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/export_amsagv_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[253.439573] (-) TimerEvent: {}
+[253.540501] (-) TimerEvent: {}
+[253.641548] (-) TimerEvent: {}
+[253.742613] (-) TimerEvent: {}
+[253.759751] (amsagv_msgs) StdoutLine: {'line': b"Listing '/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs'...\n"}
+[253.760891] (amsagv_msgs) StdoutLine: {'line': b"Compiling '/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/__init__.py'...\n"}
+[253.761895] (amsagv_msgs) StdoutLine: {'line': b"Listing '/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg'...\n"}
+[253.762790] (amsagv_msgs) StdoutLine: {'line': b"Compiling '/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/__init__.py'...\n"}
+[253.763552] (amsagv_msgs) StdoutLine: {'line': b"Compiling '/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_action.py'...\n"}
+[253.764269] (amsagv_msgs) StdoutLine: {'line': b"Compiling '/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_action_stamped.py'...\n"}
+[253.764990] (amsagv_msgs) StdoutLine: {'line': b"Compiling '/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_actions.py'...\n"}
+[253.765871] (amsagv_msgs) StdoutLine: {'line': b"Compiling '/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_actions_stamped.py'...\n"}
+[253.766648] (amsagv_msgs) StdoutLine: {'line': b"Compiling '/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_line.py'...\n"}
+[253.767388] (amsagv_msgs) StdoutLine: {'line': b"Compiling '/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_line_stamped.py'...\n"}
+[253.768094] (amsagv_msgs) StdoutLine: {'line': b"Compiling '/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_tag.py'...\n"}
+[253.768792] (amsagv_msgs) StdoutLine: {'line': b"Compiling '/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_tag_stamped.py'...\n"}
+[253.769642] (amsagv_msgs) StdoutLine: {'line': b"Compiling '/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_tags.py'...\n"}
+[253.770436] (amsagv_msgs) StdoutLine: {'line': b"Compiling '/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_tags_stamped.py'...\n"}
+[253.843767] (amsagv_msgs) CommandEnded: {'returncode': 0}
+[253.861565] (-) TimerEvent: {}
+[253.967571] (-) TimerEvent: {}
+[254.075698] (-) TimerEvent: {}
+[254.176946] (-) TimerEvent: {}
+[254.219570] (amsagv_msgs) JobEnded: {'identifier': 'amsagv_msgs', 'rc': 0}
+[254.228960] (amsagv) JobStarted: {'identifier': 'amsagv'}
+[254.282449] (-) TimerEvent: {}
+[254.386066] (-) TimerEvent: {}
+[254.487285] (-) TimerEvent: {}
+[254.588213] (-) TimerEvent: {}
+[254.689195] (-) TimerEvent: {}
+[254.790269] (-) TimerEvent: {}
+[254.891269] (-) TimerEvent: {}
+[254.992258] (-) TimerEvent: {}
+[255.093167] (-) TimerEvent: {}
+[255.194221] (-) TimerEvent: {}
+[255.295129] (-) TimerEvent: {}
+[255.396031] (-) TimerEvent: {}
+[255.496921] (-) TimerEvent: {}
+[255.597903] (-) TimerEvent: {}
+[255.698798] (-) TimerEvent: {}
+[255.799681] (-) TimerEvent: {}
+[255.900563] (-) TimerEvent: {}
+[256.001465] (-) TimerEvent: {}
+[256.102369] (-) TimerEvent: {}
+[256.203254] (-) TimerEvent: {}
+[256.304135] (-) TimerEvent: {}
+[256.405013] (-) TimerEvent: {}
+[256.505994] (-) TimerEvent: {}
+[256.606876] (-) TimerEvent: {}
+[256.707757] (-) TimerEvent: {}
+[256.808707] (-) TimerEvent: {}
+[256.909884] (-) TimerEvent: {}
+[257.010936] (-) TimerEvent: {}
+[257.112017] (-) TimerEvent: {}
+[257.213540] (-) TimerEvent: {}
+[257.314502] (-) TimerEvent: {}
+[257.415416] (-) TimerEvent: {}
+[257.516348] (-) TimerEvent: {}
+[257.617242] (-) TimerEvent: {}
+[257.718207] (-) TimerEvent: {}
+[257.819110] (-) TimerEvent: {}
+[257.920009] (-) TimerEvent: {}
+[258.020937] (-) TimerEvent: {}
+[258.122007] (-) TimerEvent: {}
+[258.222890] (-) TimerEvent: {}
+[258.323769] (-) TimerEvent: {}
+[258.424743] (-) TimerEvent: {}
+[258.525806] (-) TimerEvent: {}
+[258.626692] (-) TimerEvent: {}
+[258.727585] (-) TimerEvent: {}
+[258.828597] (-) TimerEvent: {}
+[258.929506] (-) TimerEvent: {}
+[259.030393] (-) TimerEvent: {}
+[259.131345] (-) TimerEvent: {}
+[259.232236] (-) TimerEvent: {}
+[259.333123] (-) TimerEvent: {}
+[259.434112] (-) TimerEvent: {}
+[259.534999] (-) TimerEvent: {}
+[259.635865] (-) TimerEvent: {}
+[259.736756] (-) TimerEvent: {}
+[259.837749] (-) TimerEvent: {}
+[259.938673] (-) TimerEvent: {}
+[260.039508] (-) TimerEvent: {}
+[260.140381] (-) TimerEvent: {}
+[260.241340] (-) TimerEvent: {}
+[260.342275] (-) TimerEvent: {}
+[260.443182] (-) TimerEvent: {}
+[260.544034] (-) TimerEvent: {}
+[260.644915] (-) TimerEvent: {}
+[260.745902] (-) TimerEvent: {}
+[260.846776] (-) TimerEvent: {}
+[260.947644] (-) TimerEvent: {}
+[261.048650] (-) TimerEvent: {}
+[261.149594] (-) TimerEvent: {}
+[261.250478] (-) TimerEvent: {}
+[261.351338] (-) TimerEvent: {}
+[261.452239] (-) TimerEvent: {}
+[261.553123] (-) TimerEvent: {}
+[261.654101] (-) TimerEvent: {}
+[261.754969] (-) TimerEvent: {}
+[261.855866] (-) TimerEvent: {}
+[261.956750] (-) TimerEvent: {}
+[262.057757] (-) TimerEvent: {}
+[262.158657] (-) TimerEvent: {}
+[262.259557] (-) TimerEvent: {}
+[262.360441] (-) TimerEvent: {}
+[262.461396] (-) TimerEvent: {}
+[262.562287] (-) TimerEvent: {}
+[262.663145] (-) TimerEvent: {}
+[262.764024] (-) TimerEvent: {}
+[262.864939] (-) TimerEvent: {}
+[262.965898] (-) TimerEvent: {}
+[263.066794] (-) TimerEvent: {}
+[263.167702] (-) TimerEvent: {}
+[263.268589] (-) TimerEvent: {}
+[263.369477] (-) TimerEvent: {}
+[263.470391] (-) TimerEvent: {}
+[263.571403] (-) TimerEvent: {}
+[263.672297] (-) TimerEvent: {}
+[263.773230] (-) TimerEvent: {}
+[263.874294] (-) TimerEvent: {}
+[263.975348] (-) TimerEvent: {}
+[264.076321] (-) TimerEvent: {}
+[264.177416] (-) TimerEvent: {}
+[264.278420] (-) TimerEvent: {}
+[264.379431] (-) TimerEvent: {}
+[264.480363] (-) TimerEvent: {}
+[264.581282] (-) TimerEvent: {}
+[264.682267] (-) TimerEvent: {}
+[264.783196] (-) TimerEvent: {}
+[264.884104] (-) TimerEvent: {}
+[264.985045] (-) TimerEvent: {}
+[265.086079] (-) TimerEvent: {}
+[265.187071] (-) TimerEvent: {}
+[265.287970] (-) TimerEvent: {}
+[265.388864] (-) TimerEvent: {}
+[265.489816] (-) TimerEvent: {}
+[265.590709] (-) TimerEvent: {}
+[265.691604] (-) TimerEvent: {}
+[265.792484] (-) TimerEvent: {}
+[265.893439] (-) TimerEvent: {}
+[265.994325] (-) TimerEvent: {}
+[266.095216] (-) TimerEvent: {}
+[266.196093] (-) TimerEvent: {}
+[266.296967] (-) TimerEvent: {}
+[266.397943] (-) TimerEvent: {}
+[266.498826] (-) TimerEvent: {}
+[266.599714] (-) TimerEvent: {}
+[266.700566] (-) TimerEvent: {}
+[266.801460] (-) TimerEvent: {}
+[266.902350] (-) TimerEvent: {}
+[267.003271] (-) TimerEvent: {}
+[267.104268] (-) TimerEvent: {}
+[267.205168] (-) TimerEvent: {}
+[267.306238] (-) TimerEvent: {}
+[267.407136] (-) TimerEvent: {}
+[267.508021] (-) TimerEvent: {}
+[267.608869] (-) TimerEvent: {}
+[267.709827] (-) TimerEvent: {}
+[267.810709] (-) TimerEvent: {}
+[267.911576] (-) TimerEvent: {}
+[268.012593] (-) TimerEvent: {}
+[268.113863] (-) TimerEvent: {}
+[268.214902] (-) TimerEvent: {}
+[268.257877] (amsagv) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/pia/ros/build/amsagv/build', '--no-deps', 'symlink_data'], 'cwd': '/home/pia/ros/build/amsagv', 'env': {'USER': 'pia', 'SSH_CLIENT': '10.8.134.103 53486 22', 'ROS_NAMESPACE': '/moi', 'TEXTDOMAIN': 'pam_chksshpwd', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pia/ros/install/amsagv_msgs/lib:/opt/ros/lyrical/opt/zenoh_cpp_vendor/lib:/opt/ros/lyrical/opt/gz_math_vendor/lib:/opt/ros/lyrical/opt/gz_utils_vendor/lib:/opt/ros/lyrical/opt/rviz_ogre_vendor/lib:/opt/ros/lyrical/opt/mimick_vendor/lib:/opt/ros/lyrical/opt/gz_cmake_vendor/lib:/opt/ros/lyrical/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pia', 'OLDPWD': '/home/pia', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DPKG_DEB_THREADS_MAX': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLCON_PREFIX_PATH': '/opt/ros/lyrical', 'ROS_DISTRO': 'lyrical', 'LOGNAME': 'pia', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/opt/ros/lyrical/lib/aarch64-linux-gnu/pkgconfig:/opt/ros/lyrical/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '39', 'PATH': '/opt/ros/lyrical/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'en_GB.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.7z=01;31:*.ace=01;31:*.alz=01;31:*.apk=01;31:*.arc=01;31:*.arj=01;31:*.bz=01;31:*.bz2=01;31:*.cab=01;31:*.cpio=01;31:*.crate=01;31:*.deb=01;31:*.drpm=01;31:*.dwm=01;31:*.dz=01;31:*.ear=01;31:*.egg=01;31:*.esd=01;31:*.gz=01;31:*.jar=01;31:*.lha=01;31:*.lrz=01;31:*.lz=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.lzo=01;31:*.pyz=01;31:*.rar=01;31:*.rpm=01;31:*.rz=01;31:*.sar=01;31:*.swm=01;31:*.t7z=01;31:*.tar=01;31:*.taz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tgz=01;31:*.tlz=01;31:*.txz=01;31:*.tz=01;31:*.tzo=01;31:*.tzst=01;31:*.udeb=01;31:*.war=01;31:*.whl=01;31:*.wim=01;31:*.xz=01;31:*.z=01;31:*.zip=01;31:*.zoo=01;31:*.zst=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.jxl=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '26', 'AMENT_PREFIX_PATH': '/home/pia/ros/install/amsagv_msgs:/opt/ros/lyrical', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/pia/ros/build/amsagv', 'SSH_CONNECTION': '10.8.134.103 53486 10.8.134.126 22', 'PYTHONPATH': '/home/pia/ros/build/amsagv/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pia/ros/install/amsagv/lib/python3.13/site-packages:/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages:/opt/ros/lyrical/opt/gz_math_vendor/lib/python:/opt/ros/lyrical/lib/python3.13/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/pia/ros/install/amsagv_msgs:/opt/ros/lyrical/opt/gz_math_vendor:/opt/ros/lyrical/opt/gz_utils_vendor:/opt/ros/lyrical/opt/gz_cmake_vendor:/opt/ros/lyrical'}, 'shell': False}
+[268.315100] (-) TimerEvent: {}
+[268.416038] (-) TimerEvent: {}
+[268.517079] (-) TimerEvent: {}
+[268.618125] (-) TimerEvent: {}
+[268.719142] (-) TimerEvent: {}
+[268.820111] (-) TimerEvent: {}
+[268.921041] (-) TimerEvent: {}
+[269.022108] (-) TimerEvent: {}
+[269.123219] (-) TimerEvent: {}
+[269.224130] (-) TimerEvent: {}
+[269.324999] (-) TimerEvent: {}
+[269.425976] (-) TimerEvent: {}
+[269.526846] (-) TimerEvent: {}
+[269.627739] (-) TimerEvent: {}
+[269.728599] (-) TimerEvent: {}
+[269.829481] (-) TimerEvent: {}
+[269.930346] (-) TimerEvent: {}
+[270.031207] (-) TimerEvent: {}
+[270.132083] (-) TimerEvent: {}
+[270.232971] (-) TimerEvent: {}
+[270.333936] (-) TimerEvent: {}
+[270.434817] (-) TimerEvent: {}
+[270.535690] (-) TimerEvent: {}
+[270.636572] (-) TimerEvent: {}
+[270.737463] (-) TimerEvent: {}
+[270.838335] (-) TimerEvent: {}
+[270.939219] (-) TimerEvent: {}
+[271.040108] (-) TimerEvent: {}
+[271.140999] (-) TimerEvent: {}
+[271.241975] (-) TimerEvent: {}
+[271.342869] (-) TimerEvent: {}
+[271.443740] (-) TimerEvent: {}
+[271.544659] (-) TimerEvent: {}
+[271.645592] (-) TimerEvent: {}
+[271.746514] (-) TimerEvent: {}
+[271.847475] (-) TimerEvent: {}
+[271.948361] (-) TimerEvent: {}
+[272.049249] (-) TimerEvent: {}
+[272.113421] (amsagv) StdoutLine: {'line': b'running develop\n'}
+[272.149467] (-) TimerEvent: {}
+[272.250330] (-) TimerEvent: {}
+[272.351190] (-) TimerEvent: {}
+[272.452062] (-) TimerEvent: {}
+[272.552927] (-) TimerEvent: {}
+[272.653892] (-) TimerEvent: {}
+[272.754782] (-) TimerEvent: {}
+[272.855716] (-) TimerEvent: {}
+[272.956584] (-) TimerEvent: {}
+[273.057471] (-) TimerEvent: {}
+[273.158344] (-) TimerEvent: {}
+[273.259206] (-) TimerEvent: {}
+[273.360081] (-) TimerEvent: {}
+[273.460954] (-) TimerEvent: {}
+[273.561895] (-) TimerEvent: {}
+[273.662761] (-) TimerEvent: {}
+[273.763627] (-) TimerEvent: {}
+[273.864485] (-) TimerEvent: {}
+[273.965417] (-) TimerEvent: {}
+[274.066304] (-) TimerEvent: {}
+[274.167204] (-) TimerEvent: {}
+[274.268195] (-) TimerEvent: {}
+[274.369101] (-) TimerEvent: {}
+[274.470066] (-) TimerEvent: {}
+[274.570937] (-) TimerEvent: {}
+[274.671796] (-) TimerEvent: {}
+[274.772662] (-) TimerEvent: {}
+[274.873583] (-) TimerEvent: {}
+[274.958405] (amsagv) StdoutLine: {'line': b'running egg_info\n'}
+[274.973782] (-) TimerEvent: {}
+[275.074664] (-) TimerEvent: {}
+[275.175531] (-) TimerEvent: {}
+[275.272084] (amsagv) StdoutLine: {'line': b'creating amsagv.egg-info\n'}
+[275.273177] (amsagv) StdoutLine: {'line': b'writing amsagv.egg-info/PKG-INFO\n'}
+[275.275749] (-) TimerEvent: {}
+[275.277396] (amsagv) StdoutLine: {'line': b'writing dependency_links to amsagv.egg-info/dependency_links.txt\n'}
+[275.280020] (amsagv) StdoutLine: {'line': b'writing entry points to amsagv.egg-info/entry_points.txt\n'}
+[275.282133] (amsagv) StdoutLine: {'line': b'writing requirements to amsagv.egg-info/requires.txt\n'}
+[275.283237] (amsagv) StdoutLine: {'line': b'writing top-level names to amsagv.egg-info/top_level.txt\n'}
+[275.284282] (amsagv) StdoutLine: {'line': b"writing manifest file 'amsagv.egg-info/SOURCES.txt'\n"}
+[275.375957] (-) TimerEvent: {}
+[275.476822] (-) TimerEvent: {}
+[275.577777] (-) TimerEvent: {}
+[275.678646] (-) TimerEvent: {}
+[275.779507] (-) TimerEvent: {}
+[275.880380] (-) TimerEvent: {}
+[275.921069] (amsagv) StdoutLine: {'line': b"reading manifest file 'amsagv.egg-info/SOURCES.txt'\n"}
+[275.928868] (amsagv) StdoutLine: {'line': b"writing manifest file 'amsagv.egg-info/SOURCES.txt'\n"}
+[275.980589] (-) TimerEvent: {}
+[276.081457] (-) TimerEvent: {}
+[276.182334] (-) TimerEvent: {}
+[276.248764] (amsagv) StdoutLine: {'line': b'running build_ext\n'}
+[276.250028] (amsagv) StdoutLine: {'line': b'Creating /home/pia/ros/install/amsagv/lib/python3.13/site-packages/amsagv.egg-link (link to .)\n'}
+[276.255599] (amsagv) StdoutLine: {'line': b'Installing agv script to /home/pia/ros/install/amsagv/lib/amsagv\n'}
+[276.257068] (amsagv) StdoutLine: {'line': b'Installing control_line script to /home/pia/ros/install/amsagv/lib/amsagv\n'}
+[276.258386] (amsagv) StdoutLine: {'line': b'Installing control_point script to /home/pia/ros/install/amsagv/lib/amsagv\n'}
+[276.259573] (amsagv) StdoutLine: {'line': b'Installing control_point_odom script to /home/pia/ros/install/amsagv/lib/amsagv\n'}
+[276.260764] (amsagv) StdoutLine: {'line': b'Installing display script to /home/pia/ros/install/amsagv/lib/amsagv\n'}
+[276.262056] (amsagv) StdoutLine: {'line': b'Installing front script to /home/pia/ros/install/amsagv/lib/amsagv\n'}
+[276.263256] (amsagv) StdoutLine: {'line': b'Installing localisation script to /home/pia/ros/install/amsagv/lib/amsagv\n'}
+[276.264439] (amsagv) StdoutLine: {'line': b'Installing localisation_gps script to /home/pia/ros/install/amsagv/lib/amsagv\n'}
+[276.265706] (amsagv) StdoutLine: {'line': b'Installing path_converter script to /home/pia/ros/install/amsagv/lib/amsagv\n'}
+[276.266905] (amsagv) StdoutLine: {'line': b'Installing path_planning script to /home/pia/ros/install/amsagv/lib/amsagv\n'}
+[276.268104] (amsagv) StdoutLine: {'line': b'Installing set_odom_frame script to /home/pia/ros/install/amsagv/lib/amsagv\n'}
+[276.269285] (amsagv) StdoutLine: {'line': b'Installing tag_beep script to /home/pia/ros/install/amsagv/lib/amsagv\n'}
+[276.270585] (amsagv) StdoutLine: {'line': b'Installing tag_converter script to /home/pia/ros/install/amsagv/lib/amsagv\n'}
+[276.271764] (amsagv) StdoutLine: {'line': b'Installing tag_reader script to /home/pia/ros/install/amsagv/lib/amsagv\n'}
+[276.272946] (amsagv) StdoutLine: {'line': b'Installing tags_converters script to /home/pia/ros/install/amsagv/lib/amsagv\n'}
+[276.274967] (amsagv) StdoutLine: {'line': b'\n'}
+[276.276049] (amsagv) StdoutLine: {'line': b'Installed /home/pia/ros/build/amsagv\n'}
+[276.276783] (amsagv) StdoutLine: {'line': b'running symlink_data\n'}
+[276.277829] (amsagv) StdoutLine: {'line': b'creating /home/pia/ros/install/amsagv/share/ament_index/resource_index/packages\n'}
+[276.279022] (amsagv) StdoutLine: {'line': b'symbolically linking /home/pia/ros/build/amsagv/resource/amsagv -> /home/pia/ros/install/amsagv/share/ament_index/resource_index/packages\n'}
+[276.280587] (amsagv) StdoutLine: {'line': b'symbolically linking /home/pia/ros/build/amsagv/package.xml -> /home/pia/ros/install/amsagv/share/amsagv\n'}
+[276.281702] (amsagv) StdoutLine: {'line': b'creating /home/pia/ros/install/amsagv/share/amsagv/launch\n'}
+[276.282576] (-) TimerEvent: {}
+[276.283614] (amsagv) StdoutLine: {'line': b'symbolically linking /home/pia/ros/build/amsagv/launch/rviz.launch.xml -> /home/pia/ros/install/amsagv/share/amsagv/launch\n'}
+[276.284643] (amsagv) StdoutLine: {'line': b'symbolically linking /home/pia/ros/build/amsagv/launch/agv.launch.xml -> /home/pia/ros/install/amsagv/share/amsagv/launch\n'}
+[276.285796] (amsagv) StdoutLine: {'line': b'creating /home/pia/ros/install/amsagv/share/amsagv/urdf\n'}
+[276.286801] (amsagv) StdoutLine: {'line': b'symbolically linking /home/pia/ros/build/amsagv/urdf/world.urdf.xacro -> /home/pia/ros/install/amsagv/share/amsagv/urdf\n'}
+[276.287886] (amsagv) StdoutLine: {'line': b'creating /home/pia/ros/install/amsagv/share/amsagv/meshes\n'}
+[276.288950] (amsagv) StdoutLine: {'line': b'symbolically linking /home/pia/ros/build/amsagv/meshes/agv1.dae -> /home/pia/ros/install/amsagv/share/amsagv/meshes\n'}
+[276.290046] (amsagv) StdoutLine: {'line': b'symbolically linking /home/pia/ros/build/amsagv/meshes/ground.dae -> /home/pia/ros/install/amsagv/share/amsagv/meshes\n'}
+[276.291190] (amsagv) StdoutLine: {'line': b'symbolically linking /home/pia/ros/build/amsagv/meshes/agv.dae -> /home/pia/ros/install/amsagv/share/amsagv/meshes\n'}
+[276.292208] (amsagv) StdoutLine: {'line': b'symbolically linking /home/pia/ros/build/amsagv/meshes/agv3.dae -> /home/pia/ros/install/amsagv/share/amsagv/meshes\n'}
+[276.293234] (amsagv) StdoutLine: {'line': b'symbolically linking /home/pia/ros/build/amsagv/meshes/agv2.dae -> /home/pia/ros/install/amsagv/share/amsagv/meshes\n'}
+[276.294351] (amsagv) StdoutLine: {'line': b'symbolically linking /home/pia/ros/build/amsagv/meshes/agv4.dae -> /home/pia/ros/install/amsagv/share/amsagv/meshes\n'}
+[276.295352] (amsagv) StdoutLine: {'line': b'symbolically linking /home/pia/ros/build/amsagv/meshes/agv5.dae -> /home/pia/ros/install/amsagv/share/amsagv/meshes\n'}
+[276.296389] (amsagv) StdoutLine: {'line': b'symbolically linking /home/pia/ros/build/amsagv/meshes/agv0.dae -> /home/pia/ros/install/amsagv/share/amsagv/meshes\n'}
+[276.297443] (amsagv) StdoutLine: {'line': b'symbolically linking /home/pia/ros/build/amsagv/meshes/ground.png -> /home/pia/ros/install/amsagv/share/amsagv/meshes\n'}
+[276.298570] (amsagv) StdoutLine: {'line': b'creating /home/pia/ros/install/amsagv/share/amsagv/rviz\n'}
+[276.299447] (amsagv) StdoutLine: {'line': b'symbolically linking /home/pia/ros/build/amsagv/rviz/world.rviz -> /home/pia/ros/install/amsagv/share/amsagv/rviz\n'}
+[276.300867] (amsagv) StdoutLine: {'line': b'creating /home/pia/ros/install/amsagv/share/amsagv/data\n'}
+[276.301912] (amsagv) StdoutLine: {'line': b'symbolically linking /home/pia/ros/build/amsagv/data/complete.oga -> /home/pia/ros/install/amsagv/share/amsagv/data\n'}
+[276.382964] (-) TimerEvent: {}
+[276.484208] (-) TimerEvent: {}
+[276.585480] (-) TimerEvent: {}
+[276.673551] (amsagv) CommandEnded: {'returncode': 0}
+[276.685869] (-) TimerEvent: {}
+[276.743310] (amsagv) JobEnded: {'identifier': 'amsagv', 'rc': 0}
+[276.750359] (-) EventReactorShutdown: {}

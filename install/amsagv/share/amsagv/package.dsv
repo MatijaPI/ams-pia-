@@ -1,0 +1,9 @@
+source;share/amsagv/hook/pythonpath.ps1
+source;share/amsagv/hook/pythonpath.dsv
+source;share/amsagv/hook/pythonpath.sh
+source;share/amsagv/hook/ament_prefix_path.ps1
+source;share/amsagv/hook/ament_prefix_path.dsv
+source;share/amsagv/hook/ament_prefix_path.sh
+source;../../build/amsagv/share/amsagv/hook/pythonpath_develop.ps1
+source;../../build/amsagv/share/amsagv/hook/pythonpath_develop.dsv
+source;../../build/amsagv/share/amsagv/hook/pythonpath_develop.sh

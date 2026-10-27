@@ -1,0 +1,15 @@
+{
+  "package_name": "amsagv_msgs",
+  "non_idl_tuples": [
+    "/home/pia/ros/src/amsagv_msgs:msg/Action.msg",
+    "/home/pia/ros/src/amsagv_msgs:msg/ActionStamped.msg",
+    "/home/pia/ros/src/amsagv_msgs:msg/Actions.msg",
+    "/home/pia/ros/src/amsagv_msgs:msg/ActionsStamped.msg",
+    "/home/pia/ros/src/amsagv_msgs:msg/Line.msg",
+    "/home/pia/ros/src/amsagv_msgs:msg/LineStamped.msg",
+    "/home/pia/ros/src/amsagv_msgs:msg/Tag.msg",
+    "/home/pia/ros/src/amsagv_msgs:msg/TagStamped.msg",
+    "/home/pia/ros/src/amsagv_msgs:msg/Tags.msg",
+    "/home/pia/ros/src/amsagv_msgs:msg/TagsStamped.msg"
+  ]
+}

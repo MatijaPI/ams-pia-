@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from amsagv_msgs/msg/ActionsStamped.msg
+// generated code does not contain a copyright notice
+
+#include "amsagv_msgs/msg/ActionStamped.idl"
+
+module amsagv_msgs {
+  module msg {
+    struct ActionsStamped {
+      sequence<amsagv_msgs::msg::ActionStamped> actions;
+    };
+  };
+};

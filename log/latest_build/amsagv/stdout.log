@@ -1,0 +1,53 @@
+running develop
+running egg_info
+creating amsagv.egg-info
+writing amsagv.egg-info/PKG-INFO
+writing dependency_links to amsagv.egg-info/dependency_links.txt
+writing entry points to amsagv.egg-info/entry_points.txt
+writing requirements to amsagv.egg-info/requires.txt
+writing top-level names to amsagv.egg-info/top_level.txt
+writing manifest file 'amsagv.egg-info/SOURCES.txt'
+reading manifest file 'amsagv.egg-info/SOURCES.txt'
+writing manifest file 'amsagv.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/pia/ros/install/amsagv/lib/python3.13/site-packages/amsagv.egg-link (link to .)
+Installing agv script to /home/pia/ros/install/amsagv/lib/amsagv
+Installing control_line script to /home/pia/ros/install/amsagv/lib/amsagv
+Installing control_point script to /home/pia/ros/install/amsagv/lib/amsagv
+Installing control_point_odom script to /home/pia/ros/install/amsagv/lib/amsagv
+Installing display script to /home/pia/ros/install/amsagv/lib/amsagv
+Installing front script to /home/pia/ros/install/amsagv/lib/amsagv
+Installing localisation script to /home/pia/ros/install/amsagv/lib/amsagv
+Installing localisation_gps script to /home/pia/ros/install/amsagv/lib/amsagv
+Installing path_converter script to /home/pia/ros/install/amsagv/lib/amsagv
+Installing path_planning script to /home/pia/ros/install/amsagv/lib/amsagv
+Installing set_odom_frame script to /home/pia/ros/install/amsagv/lib/amsagv
+Installing tag_beep script to /home/pia/ros/install/amsagv/lib/amsagv
+Installing tag_converter script to /home/pia/ros/install/amsagv/lib/amsagv
+Installing tag_reader script to /home/pia/ros/install/amsagv/lib/amsagv
+Installing tags_converters script to /home/pia/ros/install/amsagv/lib/amsagv
+
+Installed /home/pia/ros/build/amsagv
+running symlink_data
+creating /home/pia/ros/install/amsagv/share/ament_index/resource_index/packages
+symbolically linking /home/pia/ros/build/amsagv/resource/amsagv -> /home/pia/ros/install/amsagv/share/ament_index/resource_index/packages
+symbolically linking /home/pia/ros/build/amsagv/package.xml -> /home/pia/ros/install/amsagv/share/amsagv
+creating /home/pia/ros/install/amsagv/share/amsagv/launch
+symbolically linking /home/pia/ros/build/amsagv/launch/rviz.launch.xml -> /home/pia/ros/install/amsagv/share/amsagv/launch
+symbolically linking /home/pia/ros/build/amsagv/launch/agv.launch.xml -> /home/pia/ros/install/amsagv/share/amsagv/launch
+creating /home/pia/ros/install/amsagv/share/amsagv/urdf
+symbolically linking /home/pia/ros/build/amsagv/urdf/world.urdf.xacro -> /home/pia/ros/install/amsagv/share/amsagv/urdf
+creating /home/pia/ros/install/amsagv/share/amsagv/meshes
+symbolically linking /home/pia/ros/build/amsagv/meshes/agv1.dae -> /home/pia/ros/install/amsagv/share/amsagv/meshes
+symbolically linking /home/pia/ros/build/amsagv/meshes/ground.dae -> /home/pia/ros/install/amsagv/share/amsagv/meshes
+symbolically linking /home/pia/ros/build/amsagv/meshes/agv.dae -> /home/pia/ros/install/amsagv/share/amsagv/meshes
+symbolically linking /home/pia/ros/build/amsagv/meshes/agv3.dae -> /home/pia/ros/install/amsagv/share/amsagv/meshes
+symbolically linking /home/pia/ros/build/amsagv/meshes/agv2.dae -> /home/pia/ros/install/amsagv/share/amsagv/meshes
+symbolically linking /home/pia/ros/build/amsagv/meshes/agv4.dae -> /home/pia/ros/install/amsagv/share/amsagv/meshes
+symbolically linking /home/pia/ros/build/amsagv/meshes/agv5.dae -> /home/pia/ros/install/amsagv/share/amsagv/meshes
+symbolically linking /home/pia/ros/build/amsagv/meshes/agv0.dae -> /home/pia/ros/install/amsagv/share/amsagv/meshes
+symbolically linking /home/pia/ros/build/amsagv/meshes/ground.png -> /home/pia/ros/install/amsagv/share/amsagv/meshes
+creating /home/pia/ros/install/amsagv/share/amsagv/rviz
+symbolically linking /home/pia/ros/build/amsagv/rviz/world.rviz -> /home/pia/ros/install/amsagv/share/amsagv/rviz
+creating /home/pia/ros/install/amsagv/share/amsagv/data
+symbolically linking /home/pia/ros/build/amsagv/data/complete.oga -> /home/pia/ros/install/amsagv/share/amsagv/data

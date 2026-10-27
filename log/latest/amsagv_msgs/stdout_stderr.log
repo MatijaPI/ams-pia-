@@ -1,0 +1,468 @@
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.8.8 (/opt/ros/lyrical/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found std_msgs: 5.9.3 (/opt/ros/lyrical/share/std_msgs/cmake)
+-- Found rosidl_generator_c: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rosidl_default_generators: 1.8.1 (/opt/ros/lyrical/share/rosidl_default_generators/cmake)
+-- Found rosidl_adapter: 5.2.1 (/opt/ros/lyrical/share/rosidl_adapter/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.13.5") found components: Interpreter
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found Python3: /usr/bin/python3 (found version "3.13.5") found components: Interpreter Development NumPy Development.Module Development.Embed
+-- Found Python3: /usr/bin/python3 (found version "3.13.5") found components: Interpreter
+-- Found ament_lint_auto: 0.20.6 (/opt/ros/lyrical/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (25.1s)
+-- Generating done (0.5s)
+-- Build files have been written to: /home/pia/ros/build/amsagv_msgs
+[  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[  1%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[  1%] Built target amsagv_msgs__rosidl_generator_type_description
+[  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  2%] Built target amsagv_msgs__rs
+[  2%] Built target amsagv_msgs__cpp
+[  4%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/action__description.c.o[0m
+[  4%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/action__functions.c.o[0m
+[  4%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/action__type_support.c.o[0m
+[  5%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/action_stamped__description.c.o[0m
+[  6%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/action_stamped__functions.c.o[0m
+[  7%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/action_stamped__type_support.c.o[0m
+[  8%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/actions__functions.c.o[0m
+[  8%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/actions__description.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/actions__type_support.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/actions_stamped__description.c.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/actions_stamped__functions.c.o[0m
+[ 12%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/actions_stamped__type_support.c.o[0m
+[ 12%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/line__description.c.o[0m
+[ 13%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/line__functions.c.o[0m
+[ 14%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/line__type_support.c.o[0m
+[ 15%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/line_stamped__functions.c.o[0m
+[ 16%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/line_stamped__description.c.o[0m
+[ 16%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/line_stamped__type_support.c.o[0m
+[ 17%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/tag__description.c.o[0m
+[ 18%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/tag__functions.c.o[0m
+[ 19%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/tag__type_support.c.o[0m
+[ 20%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/tag_stamped__description.c.o[0m
+[ 20%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/tag_stamped__functions.c.o[0m
+[ 21%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/tag_stamped__type_support.c.o[0m
+[ 22%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/tags__description.c.o[0m
+[ 23%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/tags__functions.c.o[0m
+[ 24%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/tags__type_support.c.o[0m
+[ 24%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/tags_stamped__description.c.o[0m
+[ 25%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/tags_stamped__functions.c.o[0m
+[ 26%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_c.dir/rosidl_generator_c/amsagv_msgs/msg/detail/tags_stamped__type_support.c.o[0m
+[ 27%] [32m[1mLinking C shared library libamsagv_msgs__rosidl_generator_c.so[0m
+[ 27%] Built target amsagv_msgs__rosidl_generator_c
+[ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 29%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 29%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 30%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amsagv_msgs/msg/action__type_support.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amsagv_msgs/msg/action_stamped__type_support.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amsagv_msgs/msg/actions__type_support.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amsagv_msgs/msg/actions_stamped__type_support.cpp.o[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amsagv_msgs/msg/detail/action__type_support.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amsagv_msgs/msg/line__type_support.cpp.o[0m
+[ 35%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amsagv_msgs/msg/detail/action__type_support.c.o[0m
+[ 36%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amsagv_msgs/msg/detail/action_stamped__type_support.c.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amsagv_msgs/msg/line_stamped__type_support.cpp.o[0m
+[ 38%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amsagv_msgs/msg/detail/actions__type_support.c.o[0m
+[ 39%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amsagv_msgs/msg/tag__type_support.cpp.o[0m
+[ 40%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amsagv_msgs/msg/detail/actions_stamped__type_support.c.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amsagv_msgs/msg/tag_stamped__type_support.cpp.o[0m
+[ 42%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amsagv_msgs/msg/detail/line__type_support.c.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amsagv_msgs/msg/tags__type_support.cpp.o[0m
+[ 42%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amsagv_msgs/msg/detail/line_stamped__type_support.c.o[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amsagv_msgs/msg/tags_stamped__type_support.cpp.o[0m
+[ 44%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amsagv_msgs/msg/detail/tag__type_support.c.o[0m
+[ 45%] [32m[1mLinking CXX shared library libamsagv_msgs__rosidl_typesupport_c.so[0m
+[ 46%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amsagv_msgs/msg/detail/tag_stamped__type_support.c.o[0m
+[ 46%] Built target amsagv_msgs__rosidl_typesupport_c
+[ 47%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amsagv_msgs/msg/detail/tags__type_support.c.o[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amsagv_msgs/msg/detail/action__type_support_c.cpp.o[0m
+[ 49%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amsagv_msgs/msg/detail/tags_stamped__type_support.c.o[0m
+[ 49%] [32m[1mLinking C shared library libamsagv_msgs__rosidl_typesupport_introspection_c.so[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amsagv_msgs/msg/detail/action_stamped__type_support.cpp.o[0m
+[ 50%] Built target amsagv_msgs__rosidl_typesupport_introspection_c
+[ 51%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amsagv_msgs/msg/detail/actions__type_support.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amsagv_msgs/msg/detail/action_stamped__type_support_c.cpp.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amsagv_msgs/msg/detail/actions__type_support_c.cpp.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amsagv_msgs/msg/detail/actions_stamped__type_support.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amsagv_msgs/msg/detail/actions_stamped__type_support_c.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amsagv_msgs/msg/detail/line__type_support.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amsagv_msgs/msg/detail/line__type_support_c.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amsagv_msgs/msg/detail/line_stamped__type_support.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amsagv_msgs/msg/detail/line_stamped__type_support_c.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amsagv_msgs/msg/detail/tag__type_support_c.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amsagv_msgs/msg/detail/tag_stamped__type_support_c.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amsagv_msgs/msg/detail/tag__type_support.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amsagv_msgs/msg/detail/tags__type_support_c.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amsagv_msgs/msg/detail/tag_stamped__type_support.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amsagv_msgs/msg/detail/tags__type_support.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amsagv_msgs/msg/detail/tags_stamped__type_support_c.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amsagv_msgs/msg/detail/tags_stamped__type_support.cpp.o[0m
+[ 64%] [32m[1mLinking CXX shared library libamsagv_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[ 64%] Built target amsagv_msgs__rosidl_typesupport_fastrtps_c
+[ 66%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 66%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 67%] [32m[1mLinking CXX shared library libamsagv_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[ 67%] Built target amsagv_msgs__rosidl_typesupport_introspection_cpp
+[ 68%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/action_stamped__type_support.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/action__type_support.cpp.o[0m
+[ 69%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/actions__type_support.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amsagv_msgs/msg/detail/dds_fastrtps/action__type_support.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amsagv_msgs/msg/detail/dds_fastrtps/action_stamped__type_support.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/actions_stamped__type_support.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/line__type_support.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amsagv_msgs/msg/detail/dds_fastrtps/actions__type_support.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/tag__type_support.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/line_stamped__type_support.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amsagv_msgs/msg/detail/dds_fastrtps/actions_stamped__type_support.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/tag_stamped__type_support.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amsagv_msgs/msg/detail/dds_fastrtps/line__type_support.cpp.o[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/tags__type_support.cpp.o[0m
+[ 79%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amsagv_msgs/msg/detail/dds_fastrtps/line_stamped__type_support.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amsagv_msgs/msg/detail/dds_fastrtps/tag__type_support.cpp.o[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/tags_stamped__type_support.cpp.o[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amsagv_msgs/msg/detail/dds_fastrtps/tag_stamped__type_support.cpp.o[0m
+[ 82%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amsagv_msgs/msg/detail/dds_fastrtps/tags__type_support.cpp.o[0m
+[ 83%] [32m[1mLinking CXX shared library libamsagv_msgs__rosidl_typesupport_cpp.so[0m
+[ 83%] Built target amsagv_msgs__rosidl_typesupport_cpp
+[ 84%] [32mBuilding CXX object CMakeFiles/amsagv_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amsagv_msgs/msg/detail/dds_fastrtps/tags_stamped__type_support.cpp.o[0m
+[ 85%] [32m[1mLinking CXX shared library libamsagv_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 85%] Built target amsagv_msgs__rosidl_typesupport_fastrtps_cpp
+[ 85%] Built target amsagv_msgs
+[ 86%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 86%] Built target amsagv_msgs__py
+[ 88%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_py.dir/rosidl_generator_py/amsagv_msgs/msg/_action_stamped_s.c.o[0m
+[ 88%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_py.dir/rosidl_generator_py/amsagv_msgs/msg/_actions_s.c.o[0m
+[ 88%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_py.dir/rosidl_generator_py/amsagv_msgs/msg/_action_s.c.o[0m
+[ 88%] Built target ament_cmake_python_sync_amsagv_msgs
+[ 89%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_py.dir/rosidl_generator_py/amsagv_msgs/msg/_actions_stamped_s.c.o[0m
+[ 90%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_py.dir/rosidl_generator_py/amsagv_msgs/msg/_line_s.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_py.dir/rosidl_generator_py/amsagv_msgs/msg/_line_stamped_s.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_py.dir/rosidl_generator_py/amsagv_msgs/msg/_tag_s.c.o[0m
+[ 92%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_py.dir/rosidl_generator_py/amsagv_msgs/msg/_tag_stamped_s.c.o[0m
+[ 93%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_py.dir/rosidl_generator_py/amsagv_msgs/msg/_tags_s.c.o[0m
+[ 94%] [32mBuilding C object CMakeFiles/amsagv_msgs__rosidl_generator_py.dir/rosidl_generator_py/amsagv_msgs/msg/_tags_stamped_s.c.o[0m
+[ 95%] [32m[1mLinking C shared library libamsagv_msgs__rosidl_generator_py.so[0m
+[ 95%] Built target amsagv_msgs__rosidl_generator_py
+[ 97%] [32mBuilding C object CMakeFiles/amsagv_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/amsagv_msgs/_amsagv_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 97%] [32mBuilding C object CMakeFiles/amsagv_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/amsagv_msgs/_amsagv_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 98%] [32mBuilding C object CMakeFiles/amsagv_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/amsagv_msgs/_amsagv_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[100%] [32m[1mLinking C shared module rosidl_generator_py/amsagv_msgs/amsagv_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[100%] [32m[1mLinking C shared module rosidl_generator_py/amsagv_msgs/amsagv_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[100%] [32m[1mLinking C shared module rosidl_generator_py/amsagv_msgs/amsagv_msgs_s__rosidl_typesupport_c.so[0m
+[100%] Built target amsagv_msgs_s__rosidl_typesupport_introspection_c
+[100%] Built target amsagv_msgs_s__rosidl_typesupport_fastrtps_c
+[100%] Built target amsagv_msgs_s__rosidl_typesupport_c
+running egg_info
+creating amsagv_msgs.egg-info
+writing amsagv_msgs.egg-info/PKG-INFO
+writing dependency_links to amsagv_msgs.egg-info/dependency_links.txt
+writing top-level names to amsagv_msgs.egg-info/top_level.txt
+writing manifest file 'amsagv_msgs.egg-info/SOURCES.txt'
+reading manifest file 'amsagv_msgs.egg-info/SOURCES.txt'
+writing manifest file 'amsagv_msgs.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_amsagv_msgs_egg
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/ament_index/resource_index/rosidl_interfaces/amsagv_msgs
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Action.json
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/ActionStamped.json
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Actions.json
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/ActionsStamped.json
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Line.json
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/LineStamped.json
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Tag.json
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/TagStamped.json
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Tags.json
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/TagsStamped.json
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/action.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/action_stamped.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/actions.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/actions_stamped.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action__functions.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action__struct.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action__type_support.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action_stamped__functions.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action_stamped__struct.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action_stamped__type_support.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions__functions.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions__struct.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions__type_support.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions_stamped__functions.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions_stamped__struct.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions_stamped__type_support.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line__functions.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line__struct.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line__type_support.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line_stamped__functions.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line_stamped__struct.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line_stamped__type_support.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag__functions.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag__struct.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag__type_support.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag_stamped__functions.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag_stamped__struct.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag_stamped__type_support.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags__functions.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags__struct.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags__type_support.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags_stamped__functions.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags_stamped__struct.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags_stamped__type_support.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/line.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/line_stamped.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/rosidl_generator_c__visibility_control.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/tag.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/tag_stamped.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/tags.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/tags_stamped.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/environment/library_path.sh
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/environment/library_path.dsv
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action_stamped__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions_stamped__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line_stamped__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag_stamped__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags_stamped__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/action.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/action_stamped.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/actions.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/actions_stamped.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action__builder.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action__struct.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action__traits.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action__type_support.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action_stamped__builder.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action_stamped__struct.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action_stamped__traits.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action_stamped__type_support.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions__builder.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions__struct.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions__traits.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions__type_support.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions_stamped__builder.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions_stamped__struct.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions_stamped__traits.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions_stamped__type_support.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line__builder.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line__struct.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line__traits.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line__type_support.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line_stamped__builder.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line_stamped__struct.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line_stamped__traits.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line_stamped__type_support.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag__builder.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag__struct.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag__traits.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag__type_support.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag_stamped__builder.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag_stamped__struct.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag_stamped__traits.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag_stamped__type_support.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags__builder.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags__struct.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags__traits.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags__type_support.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags_stamped__builder.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags_stamped__struct.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags_stamped__traits.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags_stamped__type_support.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/line.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/line_stamped.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/tag.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/tag_stamped.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/tags.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/tags_stamped.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action_stamped__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions_stamped__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line_stamped__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag_stamped__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags_stamped__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/action_stamped__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/actions_stamped__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/line_stamped__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tag_stamped__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/include/amsagv_msgs/amsagv_msgs/msg/detail/tags_stamped__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/environment/pythonpath.sh
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/environment/pythonpath.dsv
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/amsagv_msgs_s__rosidl_typesupport_fastrtps_c.so
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/amsagv_msgs_s__rosidl_typesupport_introspection_c.so
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/amsagv_msgs_s__rosidl_typesupport_c.so
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/ament_index/resource_index/rust_packages/amsagv_msgs
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/rust/Cargo.toml
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/rust/build.rs
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/rust/src/lib.rs
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/rust/src/msg.rs
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/rust/src/msg/rmw.rs
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Action.idl
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/ActionStamped.idl
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Actions.idl
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/ActionsStamped.idl
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Line.idl
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/LineStamped.idl
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Tag.idl
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/TagStamped.idl
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Tags.idl
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/TagsStamped.idl
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Action.msg
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/ActionStamped.msg
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Actions.msg
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/ActionsStamped.msg
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Line.msg
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/LineStamped.msg
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Tag.msg
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/TagStamped.msg
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/Tags.msg
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/msg/TagsStamped.msg
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/ament_index/resource_index/package_run_dependencies/amsagv_msgs
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/ament_index/resource_index/parent_prefix_path/amsagv_msgs
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/environment/ament_prefix_path.sh
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/environment/ament_prefix_path.dsv
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/environment/path.sh
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/environment/path.dsv
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/local_setup.bash
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/local_setup.fish
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/local_setup.sh
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/local_setup.zsh
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/local_setup.dsv
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/package.dsv
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/ament_index/resource_index/packages/amsagv_msgs
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs-1.0.0-py3.13.egg-info/PKG-INFO
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs-1.0.0-py3.13.egg-info/SOURCES.txt
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs-1.0.0-py3.13.egg-info/dependency_links.txt
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs-1.0.0-py3.13.egg-info/top_level.txt
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/__init__.py
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/_amsagv_msgs_s.ep.rosidl_typesupport_c.c
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/_amsagv_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/_amsagv_msgs_s.ep.rosidl_typesupport_introspection_c.c
+-- Up-to-date symlink: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/amsagv_msgs_s__rosidl_typesupport_c.so
+-- Up-to-date symlink: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/amsagv_msgs_s__rosidl_typesupport_fastrtps_c.so
+-- Up-to-date symlink: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/amsagv_msgs_s__rosidl_typesupport_introspection_c.so
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/__init__.py
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_action.py
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_action_s.c
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_action_stamped.py
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_action_stamped_s.c
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_actions.py
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_actions_s.c
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_actions_stamped.py
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_actions_stamped_s.c
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_line.py
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_line_s.c
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_line_stamped.py
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_line_stamped_s.c
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_tag.py
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_tag_s.c
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_tag_stamped.py
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_tag_stamped_s.c
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_tags.py
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_tags_s.c
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_tags_stamped.py
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_tags_stamped_s.c
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/py.typed
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/rosidl_cmake-extras.cmake
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/ament_cmake_export_targets-extras.cmake
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/amsagv_msgsConfig.cmake
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/amsagv_msgsConfig-version.cmake
+-- Symlinking: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/package.xml
+-- Installing: /home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_generator_c.so
+-- Set non-toolchain portion of runtime path of "/home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_generator_c.so" to ""
+-- Installing: /home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_typesupport_fastrtps_c.so
+-- Set non-toolchain portion of runtime path of "/home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+-- Installing: /home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_typesupport_fastrtps_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Installing: /home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_typesupport_introspection_c.so
+-- Set non-toolchain portion of runtime path of "/home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_typesupport_c.so
+-- Set non-toolchain portion of runtime path of "/home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_typesupport_c.so" to ""
+-- Installing: /home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_typesupport_introspection_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_typesupport_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_typesupport_cpp.so" to ""
+-- Installing: /home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_generator_py.so
+-- Set non-toolchain portion of runtime path of "/home/pia/ros/install/amsagv_msgs/lib/libamsagv_msgs__rosidl_generator_py.so" to ""
+-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/export_amsagv_msgs__rosidl_generator_cExport.cmake
+-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/export_amsagv_msgs__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/export_amsagv_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/export_amsagv_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/export_amsagv_msgs__rosidl_generator_cppExport.cmake
+-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/export_amsagv_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/export_amsagv_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/amsagv_msgs__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/amsagv_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/amsagv_msgs__rosidl_typesupport_cExport.cmake
+-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/amsagv_msgs__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/amsagv_msgs__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/amsagv_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/amsagv_msgs__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/amsagv_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/export_amsagv_msgs__rosidl_generator_pyExport.cmake
+-- Installing: /home/pia/ros/install/amsagv_msgs/share/amsagv_msgs/cmake/export_amsagv_msgs__rosidl_generator_pyExport-noconfig.cmake
+Listing '/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs'...
+Compiling '/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/__init__.py'...
+Listing '/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg'...
+Compiling '/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/__init__.py'...
+Compiling '/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_action.py'...
+Compiling '/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_action_stamped.py'...
+Compiling '/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_actions.py'...
+Compiling '/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_actions_stamped.py'...
+Compiling '/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_line.py'...
+Compiling '/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_line_stamped.py'...
+Compiling '/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_tag.py'...
+Compiling '/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_tag_stamped.py'...
+Compiling '/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_tags.py'...
+Compiling '/home/pia/ros/install/amsagv_msgs/lib/python3.13/site-packages/amsagv_msgs/msg/_tags_stamped.py'...

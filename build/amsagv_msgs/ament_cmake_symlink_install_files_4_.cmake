@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/pia/ros/src/amsagv_msgs" FILES "/home/pia/ros/build/amsagv_msgs/rosidl_generator_type_description/amsagv_msgs/msg/ActionsStamped.json" "DESTINATION" "share/amsagv_msgs/msg")

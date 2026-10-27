@@ -1,0 +1,40 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/link.d"
+  "CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/action__type_support.cpp.o"
+  "CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/action__type_support.cpp.o.d"
+  "CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/action_stamped__type_support.cpp.o"
+  "CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/action_stamped__type_support.cpp.o.d"
+  "CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/actions__type_support.cpp.o"
+  "CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/actions__type_support.cpp.o.d"
+  "CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/actions_stamped__type_support.cpp.o"
+  "CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/actions_stamped__type_support.cpp.o.d"
+  "CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/line__type_support.cpp.o"
+  "CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/line__type_support.cpp.o.d"
+  "CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/line_stamped__type_support.cpp.o"
+  "CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/line_stamped__type_support.cpp.o.d"
+  "CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/tag__type_support.cpp.o"
+  "CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/tag__type_support.cpp.o.d"
+  "CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/tag_stamped__type_support.cpp.o"
+  "CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/tag_stamped__type_support.cpp.o.d"
+  "CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/tags__type_support.cpp.o"
+  "CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/tags__type_support.cpp.o.d"
+  "CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/tags_stamped__type_support.cpp.o"
+  "CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amsagv_msgs/msg/tags_stamped__type_support.cpp.o.d"
+  "libamsagv_msgs__rosidl_typesupport_cpp.pdb"
+  "libamsagv_msgs__rosidl_typesupport_cpp.so"
+  "rosidl_typesupport_cpp/amsagv_msgs/msg/action__type_support.cpp"
+  "rosidl_typesupport_cpp/amsagv_msgs/msg/action_stamped__type_support.cpp"
+  "rosidl_typesupport_cpp/amsagv_msgs/msg/actions__type_support.cpp"
+  "rosidl_typesupport_cpp/amsagv_msgs/msg/actions_stamped__type_support.cpp"
+  "rosidl_typesupport_cpp/amsagv_msgs/msg/line__type_support.cpp"
+  "rosidl_typesupport_cpp/amsagv_msgs/msg/line_stamped__type_support.cpp"
+  "rosidl_typesupport_cpp/amsagv_msgs/msg/tag__type_support.cpp"
+  "rosidl_typesupport_cpp/amsagv_msgs/msg/tag_stamped__type_support.cpp"
+  "rosidl_typesupport_cpp/amsagv_msgs/msg/tags__type_support.cpp"
+  "rosidl_typesupport_cpp/amsagv_msgs/msg/tags_stamped__type_support.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/amsagv_msgs__rosidl_typesupport_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

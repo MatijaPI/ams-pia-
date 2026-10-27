@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/pia/ros/build/amsagv_msgs/rosidl_generator_py/amsagv_msgs/amsagv_msgs_s__rosidl_typesupport_c.so" "TARGETS" "amsagv_msgs_s__rosidl_typesupport_c" "DESTINATION" "lib/python3.13/site-packages/amsagv_msgs")

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/pia/ros/src/amsagv_msgs" FILES "/home/pia/ros/build/amsagv_msgs/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/amsagv_msgs/cmake")

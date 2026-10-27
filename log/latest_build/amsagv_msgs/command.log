@@ -1,0 +1,6 @@
+Invoking command in '/home/pia/ros/build/amsagv_msgs': /usr/bin/cmake /home/pia/ros/src/amsagv_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pia/ros/install/amsagv_msgs
+Invoked command in '/home/pia/ros/build/amsagv_msgs' returned '0': /usr/bin/cmake /home/pia/ros/src/amsagv_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pia/ros/install/amsagv_msgs
+Invoking command in '/home/pia/ros/build/amsagv_msgs': /usr/bin/cmake --build /home/pia/ros/build/amsagv_msgs -- -j4 -l4
+Invoked command in '/home/pia/ros/build/amsagv_msgs' returned '0': /usr/bin/cmake --build /home/pia/ros/build/amsagv_msgs -- -j4 -l4
+Invoking command in '/home/pia/ros/build/amsagv_msgs': /usr/bin/cmake --install /home/pia/ros/build/amsagv_msgs
+Invoked command in '/home/pia/ros/build/amsagv_msgs' returned '0': /usr/bin/cmake --install /home/pia/ros/build/amsagv_msgs
