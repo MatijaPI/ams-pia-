@@ -3,7 +3,7 @@
 from math import *
 import rclpy
 from rclpy.executors import ExternalShutdownException
-from amsagv.ams import Node
+from amsagv.ams import Node, qos_sensor
 import tf2_ros
 from geometry_msgs.msg import TransformStamped
 from nav_msgs.msg import Odometry
@@ -24,7 +24,7 @@ class Localisation(object):
         self._tf_broadcaster = tf2_ros.TransformBroadcaster(node)
 
         # Odometry subscriber
-        self._sub_odom = node.create_subscription(Odometry, 'odom', self._handle_odometry, 10)
+        self._sub_odom = node.create_subscription(Odometry, 'odom', self._handle_odometry, qos_sensor)
         # Tag subscriber
         self._sub_tag = node.create_subscription(TagStamped, 'tag', self._handle_tag, 10)
         # Estimate publisher

@@ -3,7 +3,7 @@
 from math import *
 import rclpy
 from rclpy.executors import ExternalShutdownException
-from amsagv.ams import Node
+from amsagv.ams import Node, qos_sensor
 import tf2_ros
 from geometry_msgs.msg import TransformStamped
 from nav_msgs.msg import Odometry
@@ -86,7 +86,7 @@ def main():
         # Estimate publisher
         pub_estimate = node.create_publisher(Odometry, 'estimate', 1)
         # Odometry subscriber
-        sub_odom = node.create_subscription(Odometry, 'odom', handle_odometry, 10)
+        sub_odom = node.create_subscription(Odometry, 'odom', handle_odometry, qos_sensor)
         # GPS subscriber
         sub_gps = node.create_subscription(PointStamped, 'gps', handle_gps, 10)
 

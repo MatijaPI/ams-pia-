@@ -1,0 +1,13 @@
+<launch>
+  <arg name="ns" default="$(env ROS_NAMESPACE '')" />
+  <arg name="rvizconfig" default="$(find-pkg-share amsagv)/rviz/odom.rviz" />
+  <arg name="odom_frame" default="$(eval &quot;'$(var ns)'.strip('/') + '/odom' if '$(var ns)'.strip('/') else 'odom'&quot;)" />
+  <arg name="show" default="true" />
+
+  <group>
+    <push_ros_namespace namespace="$(var ns)" />
+    <node name="rviz" pkg="rviz2" exec="rviz2"
+      args="-d $(var rvizconfig) -f $(var odom_frame)"
+      if="$(var show)" />
+  </group>
+</launch>

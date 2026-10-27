@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import rclpy
 from rclpy.executors import ExternalShutdownException
-from amsagv.ams import Node
+from amsagv.ams import Node, qos_sensor
 from geometry_msgs.msg import Twist
 from amsagv_msgs.msg import LineStamped, TagStamped
 from math import pi, sin, cos, isnan
@@ -43,7 +43,7 @@ def main():
         # Velocity commands publisher.
         pub_cmd_vel = node.create_publisher(Twist, 'cmd_vel', 1)
         # Line sensor subscriber
-        sub_line = node.create_subscription(LineStamped, 'line', handle_line, 1)
+        sub_line = node.create_subscription(LineStamped, 'line', handle_line, qos_sensor)
         # Tag subscriber
         sub_tag = node.create_subscription(TagStamped, 'tag', handle_tag, 10)
 

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import rclpy
 from rclpy.executors import ExternalShutdownException
-from amsagv.ams import Node
+from amsagv.ams import Node, qos_sensor
 from geometry_msgs.msg import Twist
 from nav_msgs.msg import Odometry
 from amsagv.ams import msg_to_pose
@@ -35,7 +35,7 @@ def main():
         # Velocity commands publisher.
         pub_cmd_vel = node.create_publisher(Twist, 'cmd_vel', 1)
         # Odometry subscriber
-        sub_odom = node.create_subscription(Odometry, 'odom', handle_odometry, 1)
+        sub_odom = node.create_subscription(Odometry, 'odom', handle_odometry, qos_sensor)
 
         rclpy.spin(node)
     except (KeyboardInterrupt, ExternalShutdownException):

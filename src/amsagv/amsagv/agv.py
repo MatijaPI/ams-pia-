@@ -73,7 +73,6 @@ def main():
             # Odometry message
             msg_odom.header.stamp = t
             msg_odom.pose.pose = pose_to_msg(x, y, phi)
-            msg_odom.pose.pose.position.z = gamma
             # Publish odometry message
             pub_odom.publish(msg_odom)
 

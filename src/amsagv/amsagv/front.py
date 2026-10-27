@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import rclpy
 from rclpy.executors import ExternalShutdownException
-from amsagv.ams import Node
+from amsagv.ams import Node, qos_sensor
 import tf2_ros
 from geometry_msgs.msg import TransformStamped
 from amsagv_msgs.msg import LineStamped
@@ -34,7 +34,7 @@ def main():
         tf_broadcaster = tf2_ros.TransformBroadcaster(node)
 
         # Line sensor subscriber
-        sub_line = node.create_subscription(LineStamped, 'line', handle_line, 1)
+        sub_line = node.create_subscription(LineStamped, 'line', handle_line, qos_sensor)
 
         rclpy.spin(node)
     except (KeyboardInterrupt, ExternalShutdownException):
