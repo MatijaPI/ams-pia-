@@ -5,22 +5,24 @@
 Kinematicni model mAGV = TRICIKEL s prednjim diferencialnim vozickom:
   - prednji vozicek ima dve gnani kolesi z inkrementalnima enkoderjema
     -> iz njiju dobimo pot vozicka dd v vsakem koraku,
-  - absolutni enkoder (enc_heading) meri kot vozicka gamma glede na ohisje,
+  - enkoder smeri (enc_heading) meri zasuk vozicka glede na ohisje -> gamma,
   - poza (x, y, phi) se nanasa na SREDINO ZADNJE OSI ohisja,
   - D je medosna razdalja (zadnja os <-> os vrtenja vozicka).
 
-Enacbe (zvezno):            Diskretno (korak Ts = 0,02 s):
-  v   = v_s * cos(gamma)      ds   = dd * cos(gamma)
-  phi' = v_s * sin(gamma)/D   dphi = dd * sin(gamma) / D
-  x'  = v * cos(phi)          x   += ds * cos(phi + dphi/2)
-  y'  = v * sin(phi)          y   += ds * sin(phi + dphi/2)
+Enacbe (zvezno):             Diskretno (korak Ts = 0,02 s):
+  v    = v_s * cos(gamma)      ds   = dd * cos(gamma_sr)
+  phi' = v_s * sin(gamma)/D    dphi = dd * sin(gamma_sr) / D
+  x'   = v * cos(phi)          x   += ds * cos(phi + dphi/2)
+  y'   = v * sin(phi)          y   += ds * sin(phi + dphi/2)
 
-Ker kot vozicka merimo neposredno, odometrija NE potrebuje razmika koles
-vozicka L (ta je le v agvapi.set_vel za pretvorbo ukazov v hitrosti koles).
+gamma se racuna INKREMENTALNO (kot v delujoci kodi kolegov): ob zagonu je
+gamma = 0, nato pristevamo spremembe enkoderja smeri. Zato mora biti
+VOZICEK OB ZAGONU VOZLISCA PORAVNAN Z OHISJEM (gamma = 0). Tako ne
+potrebujemo odmika (offseta) absolutnega enkoderja.
 
-Vse kalibracijske konstante so ROS parametri, zato jih v laboratoriju lahko
-spreminjamo brez urejanja kode, npr.:
-  ros2 run amsagv agv --ros-args -p heading_offset:=1234 -p debug:=true
+Kalibracijske konstante so ROS parametri (privzete vrednosti spodaj),
+zato jih v laboratoriju lahko spreminjamo brez urejanja kode, npr.:
+  ros2 run amsagv agv --ros-args -p debug:=true
 '''
 import math
 import rclpy
@@ -35,23 +37,24 @@ from amsagv.agvapi import Agv, find_line_edges
 
 
 #
-# Privzete vrednosti kalibracijskih konstant (povozijo jih lahko ROS parametri)
+# Kalibracijski faktorji (izmerjeni s calibrate.py, prevzeti iz delujoce kode kolegov).
+# Predznak je ze vkljucen: pozitiven premik = robot naprej / vozicek levo (CCW).
+#   K_LEFT    ~ -pi*0.04672/16500  (levi enkoder pri voznji naprej steje navzdol)
+#   K_RIGHT   ~ +pi*0.04672/16500  (desni enkoder pri voznji naprej steje navzgor)
+#   K_HEADING ~ -2*pi/8200         (enkoder smeri: ~8200 impulzov na obrat, narasca v desno)
 #
-TICKS_PER_M = 116845.0          # Impulzi enkoderja kolesa na 1 m poti (meritev 1 m, calibrate.py)
-SIGN_LEFT = -1.0                # Predznak levega enkoderja (levi pri voznji naprej steje navzdol)
-SIGN_RIGHT = 1.0                # Predznak desnega enkoderja
-HEADING_TICKS_PER_REV = 16384.0 # Absolutni enkoder vozicka: 14 bit = 2^14 impulzov na obrat (PREVERI)
-HEADING_OFFSET = 0.0            # Vrednost enc_heading pri gamma = 0 (vozicek poravnan z ohisjem) (IZMERI)
-HEADING_SIGN = 1.0              # +1, ce gamma narasca pri zasuku vozicka v levo (CCW) (PREVERI)
+K_LEFT = -8.960016e-06          # [m/impulz]   (~111 600 impulzov/m)
+K_RIGHT = 8.831842e-06          # [m/impulz]   (~113 230 impulzov/m)
+K_HEADING = -7.662421e-04       # [rad/impulz]
 D_AXLE = 0.1207                 # Medosna razdalja D [m] (tehnicna risba magv.pdf)
-MAX_TICKS_PER_STEP = 5000       # Zascita pred nesmiselnimi skoki enkoderja v enem koraku
-                                # (pri najvecji hitrosti 0,3 m/s je to ~700 impulzov na 20 ms)
+DT = 1.0 / 50.0                 # Perioda glavne zanke [s]
 
-
-
-def heading_to_gamma(enc_heading, offset, sign, ticks_per_rev):
-    '''Pretvorba surove vrednosti absolutnega enkoderja v kot vozicka gamma [rad] na [-pi, pi).'''
-    return wrap_to_pi(sign * (enc_heading - offset) * 2.0 * math.pi / ticks_per_rev)
+# Zascita pred nesmiselnimi skoki enkoderjev v enem koraku (20 ms):
+#  - kolesa: pri najvecji hitrosti 0,3 m/s je to ~700 impulzov,
+#  - smer:   1000 impulzov ~ 44 deg v 20 ms, kar fizicno ni mogoce;
+#            tak skok pomeni napako komunikacije ali preliv stevca.
+MAX_WHEEL_TICKS_PER_STEP = 5000
+MAX_HEADING_TICKS_PER_STEP = 1000
 
 
 
@@ -77,11 +80,11 @@ def odometry_step(x, y, phi, gamma_prev, gamma, dd, d_axle):
     ds = dd * math.cos(gamma_mid)              # pot sredine zadnje osi
     dphi = dd * math.sin(gamma_mid) / d_axle   # sprememba orientacije ohisja
 
-    # Integracija s srednjo orientacijo (2. red, bolj natancno kot Euler)
+    # Integracija s srednjo orientacijo (midpoint / RK2, bolj natancno kot Euler)
     x += ds * math.cos(phi + dphi / 2.0)
     y += ds * math.sin(phi + dphi / 2.0)
     phi = wrap_to_pi(phi + dphi)
-    return x, y, phi
+    return x, y, phi, ds, dphi
 
 
 
@@ -108,43 +111,48 @@ def main():
             # Encoders
             enc_left, enc_right, enc_heading = robot.get_encoders()
 
-            # 1) Kot vozicka iz absolutnega enkoderja (ne integriramo ga, zato ne drsi)
-            gamma_new = heading_to_gamma(enc_heading, p_heading_offset, p_heading_sign, p_heading_ticks)
-
-            dd = 0.0  # Pot vozicka v tem koraku [m]
             if enc_prev is None:
-                # Prvi korak: le shranimo zacetne vrednosti enkoderjev (stevca nista nicelna)
-                enc_prev = (enc_left, enc_right)
-            else:
-                # 2) Razlike impulzov od prejsnjega koraka
-                dn_left = enc_left - enc_prev[0]
-                dn_right = enc_right - enc_prev[1]
-                enc_prev = (enc_left, enc_right)
+                # Prvi cikel: le shranimo zacetne vrednosti enkoderjev.
+                # (Stevci niso nicelni; brez tega bi prvi korak naredil ogromen skok.)
+                enc_prev = (enc_left, enc_right, enc_heading)
+                return
 
-                if abs(dn_left) > MAX_TICKS_PER_STEP or abs(dn_right) > MAX_TICKS_PER_STEP:
-                    # Nesmiseln skok (npr. napaka komunikacije) -> korak izpustimo
-                    node.get_logger().warn(f'Skok enkoderja zavrzen: {dn_left=}, {dn_right=}')
-                else:
-                    # 3) Pretvorba v pot posameznega kolesa (s predznakom: naprej = pozitivno)
-                    ds_left = p_sign_left * dn_left / p_ticks_per_m
-                    ds_right = p_sign_right * dn_right / p_ticks_per_m
-                    # Pot vozicka = povprecje poti obeh koles
-                    dd = (ds_left + ds_right) / 2.0
+            # 1) Spremembe enkoderjev od prejsnjega koraka (surove, brez predznakov)
+            dn_left = enc_left - enc_prev[0]
+            dn_right = enc_right - enc_prev[1]
+            dn_heading = enc_heading - enc_prev[2]
+            enc_prev = (enc_left, enc_right, enc_heading)
 
-                    # 4) Posodobitev poze ohisja (model tricikla)
-                    x, y, phi = odometry_step(x, y, phi, gamma, gamma_new, dd, p_d_axle)
+            # Zascita pred skoki (korak izpustimo, izgubimo najvec 20 ms gibanja)
+            if abs(dn_left) > MAX_WHEEL_TICKS_PER_STEP or abs(dn_right) > MAX_WHEEL_TICKS_PER_STEP:
+                node.get_logger().warn(f'Skok enkoderja koles zavrzen: {dn_left=}, {dn_right=}')
+                dn_left, dn_right = 0, 0
+            if abs(dn_heading) > MAX_HEADING_TICKS_PER_STEP:
+                node.get_logger().warn(f'Skok enkoderja smeri zavrzen: {dn_heading=}')
+                dn_heading = 0
 
-                    # 5) Skupna prevozena pot vozicka (za sledenje poti po akcijah)
-                    fd += dd
+            # 2) Pretvorba v fizikalne kolicine (predznak je ze v K_*)
+            ds_left = dn_left * p_k_left       # pot levega kolesa [m]
+            ds_right = dn_right * p_k_right    # pot desnega kolesa [m]
+            dd = 0.5 * (ds_left + ds_right)    # pot vozicka [m]
 
+            # 3) Kot vozicka: inkrementalno (gamma = 0 ob zagonu)
+            gamma_new = wrap_to_pi(gamma + dn_heading * p_k_heading)
+
+            # 4) Posodobitev poze ohisja (model tricikla)
+            x, y, phi, ds, dphi = odometry_step(x, y, phi, gamma, gamma_new, dd, p_d_axle)
             gamma = gamma_new
+
+            # 5) Skupna prevozena pot vozicka (za sledenje poti po akcijah)
+            fd += dd
 
             # Odometry message
             msg_odom.header.stamp = t
             msg_odom.pose.pose = pose_to_msg(x, y, phi)
             msg_odom.pose.pose.position.z = gamma  # Kot vozicka (dogovor pri vajah)
-            # Pot vozicka v tem koraku [m] (dogovor pri vajah: localisation jo bere kot d)
-            msg_odom.twist.twist.linear.x = dd
+            # Hitrosti ohisja (standardni pomen Twist): v [m/s], omega [rad/s]
+            msg_odom.twist.twist.linear.x = ds / DT
+            msg_odom.twist.twist.angular.z = dphi / DT
             # Publish odometry message
             pub_odom.publish(msg_odom)
 
@@ -187,12 +195,9 @@ def main():
             param_agv_frame_id = node.declare_parameter('agv_frame_id', f'{prefix}agv').value
 
             # Kalibracijski parametri odometrije (privzete vrednosti so zgoraj)
-            p_ticks_per_m = node.declare_parameter('ticks_per_m', TICKS_PER_M).value
-            p_sign_left = node.declare_parameter('sign_left', SIGN_LEFT).value
-            p_sign_right = node.declare_parameter('sign_right', SIGN_RIGHT).value
-            p_heading_ticks = node.declare_parameter('heading_ticks_per_rev', HEADING_TICKS_PER_REV).value
-            p_heading_offset = node.declare_parameter('heading_offset', HEADING_OFFSET).value
-            p_heading_sign = node.declare_parameter('heading_sign', HEADING_SIGN).value
+            p_k_left = node.declare_parameter('k_left', K_LEFT).value
+            p_k_right = node.declare_parameter('k_right', K_RIGHT).value
+            p_k_heading = node.declare_parameter('k_heading', K_HEADING).value
             p_d_axle = node.declare_parameter('d_axle', D_AXLE).value
             p_debug = node.declare_parameter('debug', False).value
 
@@ -212,12 +217,12 @@ def main():
             msg_odom.child_frame_id = param_agv_frame_id
 
             # Odometry initial state
-            x, y, phi, gamma = 0.0, 0.0, 0.0, 0.0 # Robot configuration
+            x, y, phi, gamma = 0.0, 0.0, 0.0, 0.0 # Robot configuration (vozicek mora biti poravnan!)
             fd = 0.0 # Travelled distance of the front cart
-            enc_prev = None # Encoder values in the previous step (left, right)
+            enc_prev = None # Encoder values in the previous step (left, right, heading)
             step = 0 # Loop counter (for debug output)
 
-            timer = node.create_timer(1.0/50.0, handle_timer)
+            timer = node.create_timer(DT, handle_timer)
 
             rclpy.spin(node)
         except (KeyboardInterrupt, ExternalShutdownException):
